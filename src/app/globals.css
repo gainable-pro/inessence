@@ -1,32 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
 
 :root {
-  /* Palette Naturopathe Zen */
-  --bg-primary: #FDFCFB;
-  /* Blanc cassé / Sable très clair */
-  --bg-secondary: #F5F2EE;
-  /* Sable doux */
-  --text-main: #2C3E50;
-  /* Bleu-gris sombre et pro */
-  --text-muted: #5D6D7E;
-  --accent-sauge: #8BA88E;
-  /* Vert sauge doux */
-  --accent-sauge-dark: #6B846E;
-  --accent-gold: #C5A059;
-  /* Or sourd (élégance) */
+  /* Vibrant & Warm Palette */
+  --sauge-light: #f0f4f1;
+  --sauge-medium: #8ba88e;
+  --sauge-dark: #5d7560;
+  --gold-warm: #d4af37;
+  --gold-vibrant: #e6c25d;
+  --sable-warm: #fdfaf6;
+  --sable-dark: #f2e9dc;
+
+  --text-main: #2c332d;
+  --text-muted: #5d665e;
+
   --white: #ffffff;
+  --bg-secondary: #f9f7f2;
+  --accent-gold: var(--gold-warm);
+  --accent-sauge: var(--sauge-medium);
 
   /* Layout & Spacing */
   --container-width: 1200px;
   --header-height: 80px;
   --section-padding: 100px;
+  --container-max: 1200px;
+  /* This seems redundant with --container-width, keeping both as per instruction */
 
   /* Typography */
   --font-serif: 'Playfair Display', serif;
   --font-sans: 'Inter', sans-serif;
 
+  /* Enhanced Shadows */
+  --shadow-soft: 0 10px 30px rgba(93, 117, 96, 0.08);
+  --shadow-warm: 0 15px 45px rgba(212, 175, 55, 0.05);
+
   /* Effects */
-  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.03);
   --glass: rgba(255, 255, 255, 0.8);
   --transition-smooth: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
