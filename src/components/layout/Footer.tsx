@@ -21,7 +21,7 @@ export function Footer() {
                         <ul style={{ listStyle: 'none', fontSize: '0.85rem', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px' }}>
                             {topVilles.map(city => (
                                 <li key={city}>
-                                    <Link href={`/villes/${city.toLowerCase().replace(/ /g, '-')}`} className="hover:text-sauge">
+                                    <Link href={`/villes/${city.toLowerCase().replace(/ /g, '-')}`} className="hover-text-sauge">
                                         {city}
                                     </Link>
                                 </li>

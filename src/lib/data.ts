@@ -11,12 +11,36 @@ export const CITIES = [
 ];
 
 export const PROBLEMATIQUES = [
-    { slug: "gestion-stress", title: "Gestion du stress" },
-    { slug: "troubles-sommeil", title: "Troubles du sommeil" },
-    { slug: "troubles-digestifs", title: "Troubles digestifs" },
-    { slug: "reequilibrage-alimentaire", title: "Rééquilibrage alimentaire" },
-    { slug: "fleurs-de-bach", title: "Fleurs de Bach" },
-    { slug: "reflexologie-plantaire", title: "Réflexologie plantaire" }
+    {
+        slug: "gestion-stress",
+        title: "Gestion du stress",
+        description: "Apprenez à libérer les tensions nerveuses et à retrouver un calme intérieur durable grâce à des techniques de relaxation et d'hygiène de vie adaptées."
+    },
+    {
+        slug: "troubles-sommeil",
+        title: "Troubles du sommeil",
+        description: "Retrouvez des nuits réparatrices en identifiant les causes de vos insomnies et en mettant en place des rituels naturels favorisant l'endormissement."
+    },
+    {
+        slug: "troubles-digestifs",
+        title: "Troubles digestifs",
+        description: "Optimisez votre confort intestinal et votre vitalité par un réglage alimentaire ciblé et l'usage de plantes apaisantes pour votre système digestif."
+    },
+    {
+        slug: "reequilibrage-alimentaire",
+        title: "Rééquilibrage alimentaire",
+        description: "Adoptez une alimentation qui vous ressemble, respectueuse de vos besoins physiologiques et de votre plaisir, pour une santé rayonnante."
+    },
+    {
+        slug: "fleurs-de-bach",
+        title: "Fleurs de Bach",
+        description: "Harmonisez vos émotions et traversez les périodes de changement avec sérénité grâce à la subtilité des essences florales du Dr Bach."
+    },
+    {
+        slug: "reflexologie-plantaire",
+        title: "Réflexologie plantaire",
+        description: "Relancez l'énergie de votre corps et évacuez les toxines par la stimulation des zones réflexes pour un bien-être global immédiat."
+    }
 ];
 
 export const TECHNIQUES = [
