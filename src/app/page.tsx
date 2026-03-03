@@ -172,7 +172,7 @@ export default function Home() {
         <div className="container">
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '100px', alignItems: 'center' }}>
             <div style={{ borderRadius: '50px', overflow: 'hidden', boxShadow: 'var(--shadow-soft)' }}>
-              <img src="/images/media__1772510730063.png" alt="Vision Naturopathie" style={{ width: '100%', display: 'block' }} />
+              <img src="/images/art-de-guerir.png" alt="Vision Naturopathie" style={{ width: '100%', display: 'block' }} />
             </div>
             <div>
               <h2 className="font-serif typewriter" style={{ marginBottom: '48px', fontSize: '4.5rem' }}>L'Art de <span className="text-gold italic">Guérir</span></h2>
