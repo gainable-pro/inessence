@@ -260,7 +260,7 @@ export const BLOG_POSTS: BlogPost[] = [
         metaTitle: "Renforcer Immunité Naturopathe Miramas | Prévention Hiver",
         metaDesc: "Rhumes fréquents ? Fatigue ? Apprenez à booster vos défenses immunitaires naturellement à Miramas avec les conseils de votre naturopathe.",
         symptom: "Défense naturelle, Prévention",
-        img: "fleurs_de_bach_botanical_1772494547152.png",
+        img: "tech-fleurs-de-bach.png",
         intro: "Votre système immunitaire est votre bouclier. À l'approche de l'hiver ou après une période de fatigue, il est essentiel de le renforcer pour éviter les infections à répétition.",
         understanding: {
             title: "Comprendre le système immunitaire",

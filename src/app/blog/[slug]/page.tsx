@@ -91,7 +91,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                     {/* ZIG ZAG 2: Why Consult */}
                     <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.2fr', gap: '100px', alignItems: 'center', marginBottom: '140px' }}>
                         <div style={{ borderRadius: '50px', overflow: 'hidden', boxShadow: 'var(--shadow-soft)' }}>
-                            <img src="/images/happy_healthy_people_naturopathy_1772512342001.png" alt="Accompagnement naturopathique Miramas" style={{ width: '100%', height: '500px', objectFit: 'cover' }} />
+                            <img src="/images/accompagnement-naturopathy.png" alt="Accompagnement naturopathique Miramas" style={{ width: '100%', height: '500px', objectFit: 'cover' }} />
                         </div>
                         <div>
                             <h2 className="font-serif" style={{ fontSize: '2.8rem', marginBottom: '32px', color: 'var(--sauge-dark)' }}>

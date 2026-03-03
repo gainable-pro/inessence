@@ -7,13 +7,13 @@ export default function Home() {
       number: "01",
       title: "Phytothérapie",
       desc: "La sagesse ancestrale des plantes pour restaurer votre équilibre physiologique et booster votre immunité.",
-      img: "media__1772494385825.png"
+      img: "tech-phytotherapie.png"
     },
     {
       number: "02",
       title: "Aromathérapie",
       desc: "L'essence vibrante des fleurs pour apaiser votre esprit, soigner votre corps et équilibrer vos émotions.",
-      img: "media__1772510768652.png"
+      img: "tech-aromatherapie.png"
     },
     {
       number: "03",
