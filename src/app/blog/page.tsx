@@ -61,7 +61,7 @@ export default function BlogIndex() {
                             >
                                 <div style={{ height: '320px', overflow: 'hidden' }}>
                                     <img
-                                        src={`/images/${post.sections[0].img}`}
+                                        src={`/images/${post.img}`}
                                         alt={post.title}
                                         style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                                         className="hover-scale"
@@ -75,7 +75,7 @@ export default function BlogIndex() {
                                     <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', lineHeight: 1.7, fontWeight: 300, marginBottom: '32px' }}>
                                         {post.intro.substring(0, 120)}...
                                     </p>
-                                    <span style={{ fontWeight: 700, letterSpacing: '2px', fontSize: '0.9rem', color: 'var(--sauge-dark)' }}>LIRE L'ARTICLE →</span>
+                                    <span style={{ fontWeight: 700, letterSpacing: '2px', fontSize: '0.9rem', color: 'var(--sauge-dark)' }}>DÉCOUVRIR L'ORIENTATION →</span>
                                 </div>
                             </Link>
                         ))}

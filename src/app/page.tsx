@@ -205,9 +205,9 @@ export default function Home() {
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '60px' }}>
             {[
-              { icon: "🧘", title: "Gestion du Stress", slug: "anxiete-stress-naturopathie", desc: "Apprenez à libérer les tensions nerveuses et à retrouver un calme intérieur durable." },
-              { icon: "🍃", title: "Troubles Digestifs", slug: "troubles-digestifs-naturopathie", desc: "Retrouvez votre confort et votre vitalité par une approche nutritionnelle ciblée." },
-              { icon: "⚡", title: "Maux de tête", slug: "maux-de-tete-naturopathie", desc: "Identifiez les causes profondes et soulagez les tensions naturellement." }
+              { icon: "🧘", title: "Gestion du Stress", slug: "gestion-stress-naturopathie-miramas", desc: "Apprenez à libérer les tensions nerveuses et à retrouver un calme intérieur durable." },
+              { icon: "🍃", title: "Troubles Digestifs", slug: "troubles-digestifs-naturopathe-miramas", desc: "Retrouvez votre confort et votre vitalité par une approche nutritionnelle ciblée." },
+              { icon: "⚡", title: "Maux de tête", slug: "migraine-naturopathe-miramas", desc: "Identifiez les causes profondes et soulagez les tensions naturellement." }
             ].map((pillar, idx) => (
               <div key={idx} style={{
                 padding: '80px 50px',
