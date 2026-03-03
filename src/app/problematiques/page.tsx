@@ -4,35 +4,45 @@ import { PROBLEMATIQUES } from "@/lib/data";
 export default function MotifsPage() {
     return (
         <div className="animate-fade-in">
-            <section style={{ padding: '120px 0 80px', backgroundColor: 'var(--bg-secondary)', textAlign: 'center' }}>
-                <div className="container">
-                    <h1 className="font-serif" style={{ fontSize: '3.5rem', marginBottom: '24px' }}>
-                        Motifs de <span className="text-gold">Consultation</span>
+            {/* Header Section */}
+            <section style={{ padding: '160px 0 100px', backgroundColor: 'var(--sable-warm)', textAlign: 'center' }}>
+                <div className="container" style={{ maxWidth: '900px' }}>
+                    <span style={{ textTransform: 'uppercase', letterSpacing: '4px', fontSize: '0.9rem', color: 'var(--gold-warm)', fontWeight: 600, display: 'block', marginBottom: '24px' }}>
+                        Accompagnement Sur-Mesure
+                    </span>
+                    <h1 className="font-serif" style={{ marginBottom: '32px' }}>
+                        Quand me <span className="text-sauge italic">consulter</span> ?
                     </h1>
-                    <p style={{ maxWidth: '750px', margin: '0 auto', fontSize: '1.2rem', color: 'var(--text-muted)' }}>
-                        Découvrez comment la naturopathie peut vous accompagner dans la gestion de vos problématiques quotidiennes pour retrouver un bien-être durable.
+                    <p style={{ fontSize: '1.3rem', color: 'var(--text-muted)', fontWeight: 300 }}>
+                        Chaque déséquilibre est une invitation à ralentir et à écouter. <br />
+                        Découvrez comment la naturopathie peut restaurer votre harmonie.
                     </p>
                 </div>
             </section>
 
-            <section style={{ padding: '100px 0' }}>
+            <section style={{ padding: '120px 0' }}>
                 <div className="container">
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '32px' }}>
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(380px, 1fr))', gap: '48px' }}>
                         {PROBLEMATIQUES.map((item, idx) => (
                             <div key={idx} style={{
-                                padding: '48px',
+                                padding: '60px',
                                 backgroundColor: 'var(--white)',
-                                borderRadius: '24px',
-                                border: '1px solid var(--sable-dark)',
+                                borderRadius: '32px',
+                                border: '1px solid rgba(0,0,0,0.02)',
                                 boxShadow: 'var(--shadow-soft)',
-                                transition: 'transform 0.3s ease'
-                            }} className="hover:shadow-md">
-                                <h3 className="font-serif" style={{ fontSize: '1.8rem', marginBottom: '20px', color: 'var(--sauge-dark)' }}>{item.title}</h3>
-                                <p style={{ color: 'var(--text-muted)', lineHeight: 1.8, marginBottom: '32px' }}>
-                                    {item.description}
-                                </p>
-                                <Link href={`/problematiques/${item.slug}`} className="text-gold font-bold tracking-widest hover:text-sauge transition-colors">
-                                    DÉCOUVRIR MON APPROCHE →
+                                transition: 'all 0.5s ease',
+                                display: 'flex',
+                                flexDirection: 'column',
+                                justifyContent: 'space-between'
+                            }} className="hover-lift">
+                                <div>
+                                    <h3 className="font-serif" style={{ fontSize: '2.2rem', marginBottom: '24px', color: 'var(--text-main)' }}>{item.title}</h3>
+                                    <p style={{ color: 'var(--text-muted)', lineHeight: 1.9, marginBottom: '40px', fontSize: '1.1rem', fontWeight: 300 }}>
+                                        {item.description}
+                                    </p>
+                                </div>
+                                <Link href={`/problematiques/${item.slug}-miramas`} className="text-gold" style={{ fontWeight: 700, letterSpacing: '2px', fontSize: '0.85rem', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '12px' }}>
+                                    EN SAVOIR PLUS <span style={{ fontSize: '1.2rem' }}>→</span>
                                 </Link>
                             </div>
                         ))}
@@ -40,13 +50,18 @@ export default function MotifsPage() {
                 </div>
             </section>
 
-            <section style={{ padding: '100px 0', backgroundColor: 'var(--text-main)', color: 'var(--white)', textAlign: 'center' }}>
-                <div className="container">
-                    <h2 className="font-serif" style={{ fontSize: '2.5rem', marginBottom: '32px', color: 'var(--white)' }}>Vous ne trouvez pas votre <span className="text-gold">problématique</span> ?</h2>
-                    <p style={{ maxWidth: '650px', margin: '0 auto 48px', opacity: 0.8, fontSize: '1.1rem' }}>
-                        Chaque individu est unique. Contactez-moi pour discuter de vos besoins spécifiques et voir comment un accompagnement personnalisé peut vous aider.
+            {/* Custom Support Section */}
+            <section style={{ padding: '120px 0', backgroundColor: 'var(--text-main)', color: 'var(--white)', textAlign: 'center' }}>
+                <div className="container" style={{ maxWidth: '800px' }}>
+                    <h2 className="font-serif" style={{ marginBottom: '40px', color: 'var(--white)' }}>
+                        Un besoin <span className="text-gold italic">particulier</span> ?
+                    </h2>
+                    <p style={{ marginBottom: '60px', opacity: 0.8, fontSize: '1.2rem', lineHeight: 1.8 }}>
+                        Votre parcours est unique. Si vous ne trouvez pas votre situation ici, discutons-en ensemble pour définir l'accompagnement le plus juste pour vous.
                     </p>
-                    <Link href="/contact" className="btn-premium" style={{ backgroundColor: 'var(--gold-warm)', color: 'var(--text-main)' }}>ME CONTACTER</Link>
+                    <Link href="/contact" className="btn-premium" style={{ backgroundColor: 'var(--gold-warm)', color: 'var(--text-main)', padding: '24px 60px' }}>
+                        PRENDRE RENDEZ-VOUS
+                    </Link>
                 </div>
             </section>
         </div>

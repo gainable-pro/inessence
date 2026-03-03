@@ -6,52 +6,32 @@ export default function Home() {
     {
       number: "01",
       title: "Phytothérapie",
-      desc: "Utilisation des plantes médicinales sous forme de tisanes, extraits ou poudres pour traiter divers maux naturellement."
+      desc: "La sagesse ancestrale des plantes pour restaurer votre équilibre physiologique."
     },
     {
       number: "02",
       title: "Aromathérapie",
-      desc: "Emploi des huiles essentielles pour stimuler le bien-être physique et émotionnel par inhalation ou application."
+      desc: "L'essence vibrante des fleurs pour apaiser votre esprit et soigner votre corps."
     },
     {
       number: "03",
-      title: "Gemmothérapie",
-      desc: "Macérats de jeunes pousses et bourgeons pour revitaliser le corps et soutenir le système immunitaire."
-    },
-    {
-      number: "04",
-      title: "Réflexologie plantaire",
-      desc: "Massage des zones réflexes du pied pour réduire le stress et améliorer la circulation générale."
-    },
-    {
-      number: "05",
-      title: "Techniques vibratoires",
-      desc: "Magnétisme et chromothérapie pour rééquilibrer les énergies et soulager les tensions profondes."
-    },
-    {
-      number: "06",
-      title: "Massages de Bien-être",
-      desc: "Massage ayurvédique pour l'harmonie corps-esprit ou massage facial Kobido pour la détente et la jeunesse."
-    },
-    {
-      number: "07",
-      title: "Fleurs de Bach",
-      desc: "Essences florales pour traiter les émotions et rétablir l'équilibre intérieur (anxiété, tristesse, colère)."
+      title: "Réflexologie",
+      desc: "Un toucher thérapeutique sous vos pieds pour relancer l'énergie de tout votre être."
     }
   ];
 
   const pillars = [
     {
-      title: "Rééquilibrage alimentaire",
-      desc: "Une alimentation adaptée à vos besoins spécifiques, vos goûts et vos intolérances pour optimiser votre capital santé."
+      title: "Nutrition Vibrante",
+      desc: "Retrouvez le plaisir d'une alimentation qui vous honore et vous régénère en profondeur."
     },
     {
-      title: "Gestion du stress",
-      desc: "Techniques de relaxation et de méditation pour apaiser le mental et retrouver une sérénité durable."
+      title: "Sérénité du Mental",
+      desc: "Libérez-vous du tumulte du stress pour redécouvrir la clarté de votre calme intérieur."
     },
     {
-      title: "Activité physique",
-      desc: "Intégration d'activités adaptées à votre état de santé pour stimuler votre vitalité sans épuisement."
+      title: "Vitalité en Mouvement",
+      desc: "Harmonisez votre corps à travers des rituels de mouvement doux et respectueux."
     }
   ];
 
@@ -60,7 +40,7 @@ export default function Home() {
       {/* HERO SECTION */}
       <section style={{
         height: 'min-content',
-        minHeight: '85vh',
+        minHeight: '95vh',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
@@ -70,183 +50,188 @@ export default function Home() {
         position: 'relative',
         background: 'linear-gradient(to bottom, var(--sable-warm), #ffffff)'
       }}>
-        <div style={{ maxWidth: '1000px', zIndex: 10 }}>
-          <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '40px' }}>
-            <img src="/images/logo-inessence.png" alt="Logo" style={{ width: '120px', height: '120px', objectFit: 'contain' }} />
+        <div style={{ maxWidth: '1100px', zIndex: 10 }}>
+          <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '48px' }} className="stagger-1">
+            <img src="/images/logo-inessence.png" alt="Logo" style={{ width: '130px', height: '130px', objectFit: 'contain' }} />
           </div>
-          <span style={{
-            fontSize: '1rem',
+          <span className="stagger-1" style={{
+            fontSize: '0.9rem',
             fontWeight: 700,
-            letterSpacing: '5px',
+            letterSpacing: '6px',
             textTransform: 'uppercase',
             color: 'var(--gold-warm)',
-            marginBottom: '24px',
+            marginBottom: '32px',
             display: 'block'
           }}>
-            Cabinet de Naturopathie & Vitalité
+            L'excellence de la santé naturelle
           </span>
-          <h1 style={{
-            fontSize: 'clamp(3rem, 10vw, 5.5rem)',
-            marginBottom: '32px',
-            lineHeight: 1.05,
-            letterSpacing: '-2px'
+          <h1 className="stagger-2" style={{
+            marginBottom: '40px',
+            lineHeight: 1.0,
+            letterSpacing: '-0.04em'
           }}>
-            Naturopathe à <span className="text-sauge">Miramas</span>
+            Cultivez votre <span className="text-sauge italic">Équilibre</span> <br />
+            à Miramas
           </h1>
-          <p style={{
-            fontSize: '1.4rem',
+          <p className="stagger-3" style={{
+            fontSize: '1.5rem',
             color: 'var(--text-muted)',
-            maxWidth: '800px',
-            margin: '0 auto 56px',
-            lineHeight: 1.7,
+            maxWidth: '850px',
+            margin: '0 auto 64px',
+            lineHeight: 1.6,
             fontWeight: 300
           }}>
-            Retrouvez votre équilibre par l'approche de santé globale. <br />
-            Accompagnement personnalisé pour cultiver vos ressources d'autoguérison.
+            Bienvenue dans un espace de ressourcement dédié à votre vitalité globale. <br />
+            Une approche de santé holistique pour honorer votre essence originelle.
           </p>
-          <div style={{ display: 'flex', gap: '24px', justifyContent: 'center' }}>
-            <Link href="/contact" className="btn-premium" style={{ padding: '18px 40px', fontSize: '1.1rem' }}>
-              FAIRE MA DEMANDE
+          <div style={{ display: 'flex', gap: '24px', justifyContent: 'center' }} className="stagger-3">
+            <Link href="/contact" className="btn-premium" style={{ padding: '20px 48px', fontSize: '1.1rem' }}>
+              REPRENDRE SON SOUFFLE
             </Link>
-            <Link href="#methode" className="btn-premium btn-outline" style={{ padding: '18px 40px', fontSize: '1.1rem' }}>
-              DÉCOUVRIR L'APPROCHE
+            <Link href="#methode" className="btn-premium btn-outline" style={{ padding: '20px 48px', fontSize: '1.1rem', backgroundColor: 'rgba(255,255,255,0.5)' }}>
+              L'APPROCHE ZEN
             </Link>
           </div>
         </div>
       </section>
 
       {/* SECTION DEFINITION */}
-      <section id="methode" style={{ padding: '120px 0', backgroundColor: 'var(--white)' }}>
-        <div className="container" style={{ maxWidth: '850px', textAlign: 'center' }}>
-          <h2 className="font-serif" style={{ fontSize: '3rem', marginBottom: '40px' }}>Une approche globale de la <span className="text-gold">SANTÉ</span></h2>
-          <p style={{ fontSize: '1.25rem', lineHeight: 1.9, color: 'var(--text-muted)' }}>
-            La naturopathie est une approche de santé globale qui vise à encourager l'autoguérison du corps en utilisant des méthodes naturelles.
-            Elle se fonde sur le principe que chaque individu a en lui les ressources nécessaires pour retrouver son équilibre.
+      <section id="methode" style={{ padding: '160px 0', backgroundColor: 'var(--white)' }}>
+        <div className="container" style={{ maxWidth: '900px', textAlign: 'center' }}>
+          <h2 className="font-serif" style={{ marginBottom: '48px' }}>L'Art de <span className="text-gold italic">Guérir</span> par la Nature</h2>
+          <p style={{ fontSize: '1.4rem', lineHeight: 1.9, color: 'var(--text-muted)', fontWeight: 300 }}>
+            La naturopathie n'est pas seulement une médecine douce, c'est une philosophie de vie.
+            Elle nous enseigne à écouter les soupirs de notre corps avant qu'ils ne deviennent des cris.
           </p>
-          <div style={{ marginTop: '48px', height: '2px', width: '80px', background: 'var(--gold-vibrant)', margin: '48px auto' }} />
-          <p style={{ fontSize: '1.1rem', opacity: 0.8 }}>
-            Mon rôle est d’accompagner chaque personne vers une meilleure compréhension de son corps, de son mode de vie
-            et des choix qu'elle peut faire pour améliorer son bien-être au quotidien.
+          <div style={{ marginTop: '60px', height: '1px', width: '120px', background: 'var(--gold-vibrant)', margin: '60px auto' }} />
+          <p style={{ fontSize: '1.2rem', opacity: 0.8, color: 'var(--text-main)', letterSpacing: '0.02em' }}>
+            Je vous accompagne avec bienveillance dans le sud de la France pour réveiller le médecin intérieur qui sommeille en vous.
           </p>
         </div>
       </section>
 
       {/* SECTION LES 3 PILIERS MAJEURS */}
-      <section style={{ padding: '120px 0', backgroundColor: 'var(--sable-dark)' }}>
+      <section style={{ padding: '160px 0', backgroundColor: 'var(--bg-secondary)', borderRadius: '120px 120px 0 0' }}>
         <div className="container">
-          <div style={{ textAlign: 'center', marginBottom: '80px' }}>
-            <h2 className="font-serif" style={{ fontSize: '3.5rem', marginBottom: '16px' }}>Les <span className="text-sauge">3 Piliers</span> de ma pratique</h2>
-            <p style={{ color: 'var(--text-muted)' }}>Le socle fondamental pour une transformation durable.</p>
+          <div style={{ textAlign: 'center', marginBottom: '100px' }}>
+            <h2 className="font-serif" style={{ marginBottom: '24px' }}>Les <span className="text-sauge">Fondations</span> de ma Pratique</h2>
+            <p style={{ color: 'var(--text-muted)', fontSize: '1.2rem', fontWeight: 300 }}>Un socle immuable pour votre renaissance personnelle.</p>
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '40px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '48px' }}>
             {pillars.map((pillar, idx) => (
               <div key={idx} style={{
-                padding: '50px 40px',
+                padding: '64px 48px',
                 backgroundColor: 'var(--white)',
-                borderRadius: '24px',
+                borderRadius: '40px',
                 boxShadow: 'var(--shadow-soft)',
                 textAlign: 'center',
-                border: '1px solid rgba(0,0,0,0.02)'
-              }}>
-                <h3 className="font-serif" style={{ fontSize: '1.8rem', marginBottom: '24px', color: 'var(--sauge-dark)' }}>{pillar.title}</h3>
-                <p style={{ lineHeight: 1.8, opacity: 0.7 }}>{pillar.desc}</p>
+                border: '1px solid rgba(0,0,0,0.01)'
+              }} className="hover-lift">
+                <h3 className="font-serif" style={{ fontSize: '1.8rem', marginBottom: '28px', color: 'var(--sauge-dark)' }}>{pillar.title}</h3>
+                <p style={{ lineHeight: 1.9, opacity: 0.7, fontSize: '1.05rem', fontWeight: 300 }}>{pillar.desc}</p>
               </div>
             ))}
           </div>
-          <p style={{ textAlign: 'center', marginTop: '60px', opacity: 0.5, fontStyle: 'italic' }}>
-            "Ces techniques majeures sont la base. Toutes les autres méthodes viennent en complément selon vos besoins."
-          </p>
         </div>
       </section>
 
-      {/* SECTION TECHNIQUES DETAILLEES */}
-      <section style={{ padding: '120px 0' }}>
+      {/* SECTION TECHNIQUES DETAILLEES (ZIG-ZAG FEEL) */}
+      <section style={{ padding: '160px 0' }}>
         <div className="container">
-          <div style={{ marginBottom: '80px' }}>
-            <h2 className="font-serif" style={{ fontSize: '3.5rem' }}>Techniques <span className="text-gold">Complémentaires</span></h2>
-            <p style={{ color: 'var(--text-muted)', marginTop: '16px', fontSize: '1.2rem' }}>Des outils naturels au service de votre vitalité.</p>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '80px', alignItems: 'center', marginBottom: '140px' }}>
+            <div>
+              <h2 className="font-serif" style={{ marginBottom: '40px' }}>Une synergie de <span className="text-gold">Savoirs</span></h2>
+              <p style={{ fontSize: '1.2rem', color: 'var(--text-muted)', marginBottom: '32px' }}>
+                J'allie la précision de la science moderne à la poésie des remèdes naturels pour créer votre protocole unique.
+              </p>
+              <div style={{ display: 'grid', gap: '24px' }}>
+                {techniques.map((tech, idx) => (
+                  <div key={idx} style={{ display: 'flex', gap: '24px', alignItems: 'flex-start' }}>
+                    <span className="font-serif" style={{ fontSize: '1.5rem', color: 'var(--gold-warm)', fontWeight: 700 }}>{tech.number}.</span>
+                    <div>
+                      <h4 style={{ fontSize: '1.2rem', marginBottom: '8px' }}>{tech.title}</h4>
+                      <p style={{ opacity: 0.6, fontSize: '0.95rem' }}>{tech.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div style={{ borderRadius: '48px', overflow: 'hidden', boxShadow: 'var(--shadow-soft)' }}>
+              <img src="/images/stress_relief_zen_1772494485058.png" alt="Sérénité" style={{ width: '100%', height: 'auto', display: 'block' }} />
+            </div>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(350px, 1fr))', gap: '32px' }}>
-            {techniques.map((tech, idx) => (
-              <div key={idx} className="hover-lift" style={{
-                padding: '40px',
-                backgroundColor: 'var(--white)',
-                border: '1px solid var(--sable-dark)',
-                borderRadius: '16px',
-                display: 'flex',
-                gap: '24px'
-              }}>
-                <span className="font-serif" style={{ fontSize: '2.5rem', color: 'var(--sauge-light)', fontWeight: 900 }}>{tech.number}</span>
-                <div>
-                  <h4 style={{ fontSize: '1.3rem', marginBottom: '12px' }}>{tech.title}</h4>
-                  <p style={{ fontSize: '0.95rem', lineHeight: 1.7, opacity: 0.8 }}>{tech.desc}</p>
-                </div>
-              </div>
-            ))}
+          <div style={{ textAlign: 'center' }}>
+            <Link href="/techniques" className="text-sauge font-bold tracking-widest hover:text-gold transition-colors" style={{ fontSize: '0.9rem' }}>
+              EXPLORER TOUTES MES TECHNIQUES →
+            </Link>
           </div>
         </div>
       </section>
 
       {/* SECTION ZONES D'INTERVENTION */}
-      <section id="villes" style={{ padding: '120px 0', backgroundColor: 'var(--bg-secondary)' }}>
+      <section id="villes" style={{ padding: '160px 0', backgroundColor: 'var(--sable-warm)', borderRadius: '0 0 120px 120px' }}>
         <div className="container">
-          <div style={{ textAlign: 'center', marginBottom: '80px' }}>
-            <h2 className="font-serif" style={{ fontSize: '3.5rem' }}>À votre <span className="text-sauge">écoute</span> en Provence</h2>
-            <p style={{ color: 'var(--text-muted)', marginTop: '20px', fontSize: '1.2rem' }}>
-              En cabinet à **Miramas**, à votre domicile ou en visioconférence.
+          <div style={{ textAlign: 'center', marginBottom: '100px' }}>
+            <h2 className="font-serif">À votre <span className="text-sauge">rencontre</span> en Provence</h2>
+            <p style={{ color: 'var(--text-muted)', marginTop: '24px', fontSize: '1.3rem', fontWeight: 300 }}>
+              Je vous accueille à **Miramas**, à votre domicile ou par la magie de la visioconférence.
             </p>
           </div>
 
           <div style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))',
-            gap: '12px'
+            gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))',
+            gap: '16px'
           }}>
-            {CITIES.map(city => (
+            {CITIES.slice(0, 12).map(city => (
               <a
                 key={city}
                 href={`/villes/${slugify(city)}`}
-                className="bg-white p-5 rounded-xl text-center text-sm shadow-sm hover:shadow-md transition-all hover:text-gold"
-                style={{ border: '1px solid rgba(0,0,0,0.04)' }}
+                className="bg-white p-6 rounded-2xl text-center text-sm shadow-sm hover:shadow-md transition-all hover:text-gold"
+                style={{ border: '1px solid rgba(0,0,0,0.02)', fontWeight: 500 }}
               >
                 Naturopathe {city}
               </a>
             ))}
+            <Link href="#villes" className="p-6 rounded-2xl text-center text-sm border-dashed border-2 flex items-center justify-center opacity-40 hover:opacity-100 transition-opacity">
+              Et 30 autres villes alentours
+            </Link>
           </div>
         </div>
       </section>
 
       {/* FINAL CALL TO ACTION */}
-      <section style={{ padding: '140px 0', textAlign: 'center', background: 'var(--text-main)', color: 'var(--white)' }}>
+      <section style={{ padding: '180px 0', textAlign: 'center', background: 'var(--text-main)', color: 'var(--white)' }}>
         <div className="container">
-          <h2 className="font-serif" style={{ fontSize: '4rem', marginBottom: '40px', color: 'var(--white)' }}>
-            Cultivons votre <span className="italic text-gold">ÉQUILIBRE</span>
+          <h2 className="font-serif" style={{ fontSize: '4.5rem', marginBottom: '48px', color: 'var(--white)' }}>
+            Retrouvez <span className="italic text-gold">l'Essence</span>
           </h2>
-          <p style={{ maxWidth: '700px', margin: '0 auto 60px', fontSize: '1.3rem', opacity: 0.8, lineHeight: 1.8 }}>
-            Prêt à transformer votre vitalité ? Contactez-moi pour un premier échange personnalisé.
+          <p style={{ maxWidth: '800px', margin: '0 auto 72px', fontSize: '1.4rem', opacity: 0.8, lineHeight: 1.8, fontWeight: 300 }}>
+            Votre voyage vers une santé vibrante commence par un simple échange. <br />
+            Oserez-vous prendre ce premier temps pour vous ?
           </p>
-          <Link href="/contact" className="btn-premium" style={{ padding: '24px 60px', fontSize: '1.2rem', backgroundColor: 'var(--gold-warm)', color: 'var(--text-main)' }}>
-            FAIRE MA DEMANDE DE RENDEZ-VOUS
+          <Link href="/contact" className="btn-premium" style={{ padding: '28px 80px', fontSize: '1.3rem', backgroundColor: 'var(--gold-warm)', color: 'var(--text-main)', borderRadius: '100px' }}>
+            PRENDRE RENDEZ-VOUS
           </Link>
         </div>
       </section>
 
       {/* MEDICAL DISCLAIMER */}
-      <footer style={{ padding: '60px 0', borderTop: '1px solid rgba(0,0,0,0.05)', backgroundColor: 'var(--white)' }}>
+      <footer style={{ padding: '80px 0', backgroundColor: 'var(--white)' }}>
         <div className="container text-center">
-          <div style={{ marginBottom: '32px' }}>
-            <img src="/images/logo-inessence.png" alt="Logo" style={{ width: '60px', opacity: 0.5 }} />
+          <div style={{ marginBottom: '40px' }}>
+            <img src="/images/logo-inessence.png" alt="Logo" style={{ width: '80px', opacity: 0.4 }} />
           </div>
-          <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', maxWidth: '900px', margin: '0 auto', lineHeight: 1.8, opacity: 0.7 }}>
-            <strong>Note de santé :</strong> La naturopathie est une approche complémentaire à la médecine traditionnelle.
-            Elle ne remplace pas un diagnostic médical ni un traitement en cours. N'interrompez jamais un suivi médical sans l'avis de votre médecin.
+          <p style={{ fontSize: '0.95rem', color: 'var(--text-muted)', maxWidth: '950px', margin: '0 auto', lineHeight: 1.9, opacity: 0.6, fontWeight: 300 }}>
+            <strong>Équilibre & Responsabilité :</strong> La naturopathie est une discipline d'accompagnement vers le bien-être.
+            Mes conseils ne constituent pas une prescription médicale et ne se substituent en aucun cas à un diagnostic ou un traitement prescrit par un médecin.
           </p>
-          <p style={{ marginTop: '40px', fontSize: '0.8rem', opacity: 0.4 }}>
-            © {new Date().getFullYear()} INESSENCE – Tous droits réservés.
+          <p style={{ marginTop: '56px', fontSize: '0.85rem', opacity: 0.3, letterSpacing: '1px' }}>
+            © {new Date().getFullYear()} INESSENCE – L'ART DE LA SANTÉ NATURELLE
           </p>
         </div>
-      </footer>
+      </footer >
     </div>
   );
 }
