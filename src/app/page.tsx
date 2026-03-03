@@ -47,13 +47,14 @@ export default function Home() {
     <div className="animate-fade-in">
       {/* IMMERSIVE HERO SECTION */}
       <section style={{
-        height: '95vh',
+        minHeight: '95vh',
         position: 'relative',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
         overflow: 'hidden',
-        color: 'var(--white)'
+        color: 'var(--white)',
+        padding: '120px 20px'
       }}>
         <div style={{
           position: 'absolute',
@@ -82,35 +83,35 @@ export default function Home() {
           <span style={{
             textTransform: 'uppercase',
             letterSpacing: '6px',
-            fontSize: '1rem',
+            fontSize: '0.9rem',
             fontWeight: 600,
-            marginBottom: '40px',
+            marginBottom: '32px',
             display: 'block',
             opacity: 0.9
           }}>
             L'EXCELLENCE DE LA SANTÉ NATURELLE
           </span>
           <h1 className="font-serif typewriter" style={{
-            fontSize: 'clamp(3rem, 10vw, 7rem)',
+            fontSize: 'clamp(2.5rem, 12vw, 7rem)',
             lineHeight: 1,
-            marginBottom: '40px',
+            marginBottom: '32px',
             color: 'var(--white)'
           }}>
             Retrouvez votre <span className="text-gold italic">Essence</span>
           </h1>
           <p style={{
-            fontSize: '1.6rem',
+            fontSize: 'clamp(1.1rem, 4vw, 1.6rem)',
             maxWidth: '800px',
-            margin: '0 auto 60px',
+            margin: '0 auto 48px',
             fontWeight: 300,
             lineHeight: 1.6,
             opacity: 0.95
           }}>
-            Une immersion au cœur du bien-être pour honorer votre temple intérieur <br />
+            Une immersion au cœur du bien-être pour honorer votre temple intérieur <br className="hidden-mobile" />
             à Miramas et partout en visioconférence.
           </p>
-          <div style={{ display: 'flex', gap: '30px', justifyContent: 'center' }}>
-            <Link href="/contact" className="btn-premium" style={{ backgroundColor: 'var(--gold-warm)', color: 'var(--text-main)', padding: '24px 60px', fontSize: '1.2rem', borderRadius: '100px' }}>
+          <div style={{ display: 'flex', gap: '20px', justifyContent: 'center', flexWrap: 'wrap' }}>
+            <Link href="/contact" className="btn-premium" style={{ backgroundColor: 'var(--gold-warm)', color: 'var(--text-main)', padding: '20px 48px', fontSize: '1.1rem', borderRadius: '100px' }}>
               DÉBUTER MON VOYAGE
             </Link>
           </div>
@@ -118,19 +119,19 @@ export default function Home() {
       </section>
 
       {/* IMMERSIVE SECTION 1: LE CABINET */}
-      <section style={{ padding: '200px 0', backgroundColor: 'var(--white)' }}>
+      <section style={{ padding: 'clamp(80px, 15vw, 200px) 0', backgroundColor: 'var(--white)' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1.1fr 0.9fr', gap: '120px', alignItems: 'center' }}>
+          <div className="responsive-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '60px', alignItems: 'center' }}>
             <div>
-              <h2 className="font-serif typewriter" style={{ fontSize: '4.5rem', marginBottom: '48px' }}>Un Havre de <span className="text-sauge">Paix</span></h2>
-              <p style={{ fontSize: '1.4rem', color: 'var(--text-muted)', lineHeight: 1.8, fontWeight: 300, marginBottom: '40px' }}>
-                Situé au cœur de <strong>Miramas</strong>, mon cabinet est conçu comme une parenthèse hors du temps. Dans une atmosphère imprégnée de douceur et de sérénité, je vous reçois pour un accompagnement holistique unique.
+              <h2 className="font-serif" style={{ fontSize: 'clamp(3rem, 8vw, 4.5rem)', marginBottom: '32px' }}>Un Havre de <span className="text-sauge">Paix</span></h2>
+              <p style={{ fontSize: 'clamp(1rem, 3vw, 1.4rem)', color: 'var(--text-muted)', lineHeight: 1.8, fontWeight: 300, marginBottom: '32px' }}>
+                Situé au cœur de <strong>Miramas</strong>, mon cabinet est conçu comme une parenthèse hors du temps. Dans une atmosphère imprégnée de douceur et de sérénité, je vous reçoit pour un accompagnement holistique unique.
               </p>
-              <div style={{ fontSize: '1.2rem', color: 'var(--text-main)', borderLeft: '4px solid var(--gold-warm)', paddingLeft: '32px', fontStyle: 'italic' }}>
+              <div style={{ fontSize: '1.1rem', color: 'var(--text-main)', borderLeft: '4px solid var(--gold-warm)', paddingLeft: '24px', fontStyle: 'italic' }}>
                 "Ici, chaque séance est une invitation à ralentir, à écouter votre corps et à restaurer votre équilibre profond."
               </div>
             </div>
-            <div style={{ borderRadius: '60px', overflow: 'hidden', boxShadow: 'var(--shadow-soft)' }}>
+            <div style={{ borderRadius: '40px', overflow: 'hidden', boxShadow: 'var(--shadow-soft)' }}>
               <img src="/images/cabinet-provence.png" alt="Cabinet Naturopathie Miramas" style={{ width: '100%', height: 'auto', display: 'block' }} />
             </div>
           </div>
@@ -138,27 +139,27 @@ export default function Home() {
       </section>
 
       {/* IMMERSIVE SECTION 2: WHY CHOOSE (ZEN PEOPLE) */}
-      <section style={{ padding: '200px 0', backgroundColor: 'var(--sable-warm)' }}>
+      <section style={{ padding: 'clamp(80px, 15vw, 200px) 0', backgroundColor: 'var(--sable-warm)' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.1fr', gap: '120px', alignItems: 'center' }}>
-            <div style={{ borderRadius: '60px', overflow: 'hidden', boxShadow: 'var(--shadow-soft)' }}>
+          <div className="responsive-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '60px', alignItems: 'center' }}>
+            <div style={{ borderRadius: '40px', overflow: 'hidden', boxShadow: 'var(--shadow-soft)' }}>
               <img src="/images/zen-people.png" alt="Rayonnant de santé" style={{ width: '100%', height: 'auto', display: 'block' }} />
             </div>
             <div>
-              <h2 className="font-serif typewriter" style={{ fontSize: '4.5rem', marginBottom: '48px' }}>Vitalité <span className="text-gold">Rayonnante</span></h2>
-              <p style={{ fontSize: '1.4rem', color: 'var(--text-muted)', lineHeight: 1.8, fontWeight: 300, marginBottom: '48px' }}>
+              <h2 className="font-serif" style={{ fontSize: 'clamp(3rem, 8vw, 4.5rem)', marginBottom: '32px' }}>Vitalité <span className="text-gold">Rayonnante</span></h2>
+              <p style={{ fontSize: 'clamp(1rem, 3vw, 1.4rem)', color: 'var(--text-muted)', lineHeight: 1.8, fontWeight: 300, marginBottom: '32px' }}>
                 Parce que la santé n'est pas seulement l'absence de maladie, mais un état de bien-être physique, mental et social complet. Je vous aide à retrouver cette étincelle de vie.
               </p>
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '32px' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: '20px' }}>
                 {[
                   { t: "Expertise", d: "Une approche scientifique et naturelle." },
                   { t: "Écoute", d: "Un temps dédié à votre histoire." },
                   { t: "Douceur", d: "Des solutions respectueuses de votre corps." },
                   { t: "Résultats", d: "Un équilibre retrouvé sur le long terme." }
                 ].map((item, idx) => (
-                  <div key={idx}>
-                    <h4 className="font-serif" style={{ fontSize: '1.5rem', marginBottom: '8px' }}>{item.t}</h4>
-                    <p style={{ fontSize: '0.95rem', opacity: 0.7 }}>{item.d}</p>
+                  <div key={idx} style={{ background: 'rgba(212, 175, 55, 0.05)', padding: '20px', borderRadius: '24px', border: '1px solid rgba(212, 175, 55, 0.1)' }}>
+                    <h4 className="font-serif" style={{ fontSize: '1.2rem', marginBottom: '8px', color: 'var(--gold-warm)' }}>{item.t}</h4>
+                    <p style={{ fontSize: '0.85rem', opacity: 0.7 }}>{item.d}</p>
                   </div>
                 ))}
               </div>
@@ -167,19 +168,18 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SECTION DEFINITION: MA VISION (ZIG-ZAG) */}
-      <section id="methode" style={{ padding: '160px 0', backgroundColor: 'var(--white)' }}>
+      <section id="methode" style={{ padding: 'clamp(80px, 12vw, 160px) 0', backgroundColor: 'var(--white)' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '100px', alignItems: 'center' }}>
-            <div style={{ borderRadius: '50px', overflow: 'hidden', boxShadow: 'var(--shadow-soft)' }}>
+          <div className="responsive-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '60px', alignItems: 'center' }}>
+            <div style={{ borderRadius: '40px', overflow: 'hidden', boxShadow: 'var(--shadow-soft)' }}>
               <img src="/images/art-de-guerir.png" alt="Vision Naturopathie" style={{ width: '100%', display: 'block' }} />
             </div>
             <div>
-              <h2 className="font-serif typewriter" style={{ marginBottom: '48px', fontSize: '4.5rem' }}>L'Art de <span className="text-gold italic">Guérir</span></h2>
-              <p style={{ fontSize: '1.4rem', lineHeight: 2, color: 'var(--text-muted)', fontWeight: 300, marginBottom: '32px' }}>
+              <h2 className="font-serif" style={{ marginBottom: '32px', fontSize: 'clamp(3rem, 8vw, 4.5rem)' }}>L'Art de <span className="text-gold italic">Guérir</span></h2>
+              <p style={{ fontSize: 'clamp(1rem, 3vw, 1.4rem)', lineHeight: 1.8, color: 'var(--text-muted)', fontWeight: 300, marginBottom: '24px' }}>
                 La naturopathie n'est pas seulement une médecine douce, c'est une reconnexion profonde aux lois de la nature. Mon rôle est de vous guider pour que vous deveniez l'acteur principal de votre santé.
               </p>
-              <p style={{ fontSize: '1.2rem', opacity: 0.8, color: 'var(--text-main)', letterSpacing: '0.02em', fontStyle: 'italic' }}>
+              <p style={{ fontSize: '1.1rem', opacity: 0.8, color: 'var(--text-main)', letterSpacing: '0.02em', fontStyle: 'italic', borderLeft: '4px solid var(--sauge-medium)', paddingLeft: '24px' }}>
                 "Chaque être possède en lui une force vitale capable de restaurer l'harmonie. Il suffit parfois d'enlever les obstacles qui l'empêchent de s'exprimer."
               </p>
             </div>
@@ -187,32 +187,31 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SECTION LES 3 PILIERS MAJEURS */}
-      <section style={{ padding: '160px 0', backgroundColor: 'var(--bg-secondary)', borderRadius: '150px 150px 0 0' }}>
+      <section style={{ padding: 'clamp(80px, 12vw, 160px) 0', backgroundColor: 'var(--bg-secondary)', borderRadius: 'clamp(40px, 10vw, 150px) clamp(40px, 10vw, 150px) 0 0' }}>
         <div className="container">
-          <div style={{ textAlign: 'center', marginBottom: '120px' }}>
-            <h2 className="font-serif typewriter" style={{ marginBottom: '32px', fontSize: '4.5rem' }}>Les <span className="text-sauge">Fondations</span></h2>
-            <p style={{ color: 'var(--text-muted)', fontSize: '1.4rem', fontWeight: 300 }}>Un accompagnement basé sur trois piliers fondamentaux pour une transformation durable.</p>
-            <ul style={{ listStyle: 'none', fontSize: '0.85rem', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px', maxWidth: '400px', margin: '40px auto 0' }}>
+          <div style={{ textAlign: 'center', marginBottom: '80px' }}>
+            <h2 className="font-serif" style={{ marginBottom: '24px', fontSize: 'clamp(3rem, 8vw, 4.5rem)' }}>Les <span className="text-sauge">Fondations</span></h2>
+            <p style={{ color: 'var(--text-muted)', fontSize: 'clamp(1rem, 3vw, 1.4rem)', fontWeight: 300 }}>Un accompagnement basé sur trois piliers fondamentaux pour une transformation durable.</p>
+            <ul style={{ listStyle: 'none', fontSize: '0.85rem', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(120px, 1fr))', gap: '8px', maxWidth: '600px', margin: '32px auto 0' }}>
               {topVilles.map(city => (
                 <li key={city}>
                   <Link href={`/villes/${slugify(city)}`} className="hover-text-sauge">
-                    {city}
+                    Naturopathe {city}
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '60px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '40px' }}>
             {[
               { icon: "🧘", title: "Gestion du Stress", slug: "gestion-stress-naturopathie-miramas", desc: "Apprenez à libérer les tensions nerveuses et à retrouver un calme intérieur durable." },
               { icon: "🍃", title: "Troubles Digestifs", slug: "troubles-digestifs-naturopathe-miramas", desc: "Retrouvez votre confort et votre vitalité par une approche nutritionnelle ciblée." },
               { icon: "⚡", title: "Maux de tête", slug: "migraine-naturopathe-miramas", desc: "Identifiez les causes profondes et soulagez les tensions naturellement." }
             ].map((pillar, idx) => (
               <div key={idx} style={{
-                padding: '80px 50px',
+                padding: '60px 40px',
                 backgroundColor: 'var(--white)',
-                borderRadius: '50px',
+                borderRadius: '40px',
                 boxShadow: 'var(--shadow-soft)',
                 textAlign: 'center',
                 border: '1px solid rgba(0,0,0,0.02)',
@@ -222,11 +221,11 @@ export default function Home() {
                 justifyContent: 'space-between'
               }} className="hover-lift">
                 <div>
-                  <div style={{ fontSize: '4rem', marginBottom: '40px' }}>{pillar.icon}</div>
-                  <h3 className="font-serif" style={{ fontSize: '2.2rem', marginBottom: '32px', color: 'var(--sauge-dark)' }}>{pillar.title}</h3>
-                  <p style={{ lineHeight: 2, opacity: 0.7, fontSize: '1.1rem', fontWeight: 300, marginBottom: '40px' }}>{pillar.desc}</p>
+                  <div style={{ fontSize: '3.5rem', marginBottom: '32px' }}>{pillar.icon}</div>
+                  <h3 className="font-serif" style={{ fontSize: '2rem', marginBottom: '24px', color: 'var(--sauge-dark)' }}>{pillar.title}</h3>
+                  <p style={{ lineHeight: 1.8, opacity: 0.7, fontSize: '1.05rem', fontWeight: 300, marginBottom: '32px' }}>{pillar.desc}</p>
                 </div>
-                <Link href={`/blog/${pillar.slug}`} className="text-gold" style={{ fontWeight: 700, letterSpacing: '2px', fontSize: '0.9rem', textTransform: 'uppercase' }}>
+                <Link href={`/blog/${pillar.slug}`} className="text-gold" style={{ fontWeight: 700, letterSpacing: '2px', fontSize: '0.85rem', textTransform: 'uppercase' }}>
                   LIRE L'ORIENTATION →
                 </Link>
               </div>
@@ -235,11 +234,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SECTION TECHNIQUES DETAILLEES (ZIG-ZAG LIVING) */}
-      <section style={{ padding: '200px 0', backgroundColor: 'var(--white)' }}>
+      <section style={{ padding: 'clamp(80px, 15vw, 200px) 0', backgroundColor: 'var(--white)' }}>
         <div className="container">
-          <div style={{ textAlign: 'center', marginBottom: '140px' }}>
-            <h2 className="font-serif typewriter" style={{ fontSize: '4.5rem' }}>Une expertise <span className="text-gold">Naturelle</span></h2>
+          <div style={{ textAlign: 'center', marginBottom: '80px' }}>
+            <h2 className="font-serif" style={{ fontSize: 'clamp(3rem, 8vw, 4.5rem)' }}>Une expertise <span className="text-gold">Naturelle</span></h2>
           </div>
 
           {techniques.map((tech, idx) => (
@@ -420,7 +418,7 @@ export default function Home() {
           <p style={{ fontSize: '1rem', color: 'var(--text-muted)', maxWidth: '1000px', margin: '0 auto', lineHeight: 2, opacity: 0.6, fontWeight: 300 }}>
             <strong>Note importante :</strong> La naturopathie est un ensemble de méthodes complémentaires qui visent à favoriser le bien-être physique, mental et émotionnel en utilisant des ressources naturelles. Elle ne remplace en aucun cas un avis médical, un diagnostic ou un traitement prescrit par un professionnel de santé.
           </p>
-          <div style={{ marginTop: '40px', display: 'flex', justifyContent: 'center', gap: '40px', fontSize: '0.9rem', fontWeight: 500, letterSpacing: '1px' }}>
+          <div style={{ marginTop: '40px', display: 'flex', justifyContent: 'center', gap: '20px 40px', fontSize: '0.9rem', fontWeight: 500, letterSpacing: '1px', flexWrap: 'wrap' }}>
             <Link href="/" className="hover-text-gold">ACCUEIL</Link>
             <Link href="/blog" className="hover-text-gold">BLOG</Link>
             <Link href="/consultations" className="hover-text-gold">CONSULTATIONS</Link>
