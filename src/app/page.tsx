@@ -420,9 +420,12 @@ export default function Home() {
           <p style={{ fontSize: '1rem', color: 'var(--text-muted)', maxWidth: '1000px', margin: '0 auto', lineHeight: 2, opacity: 0.6, fontWeight: 300 }}>
             <strong>Note importante :</strong> La naturopathie est un ensemble de méthodes complémentaires qui visent à favoriser le bien-être physique, mental et émotionnel en utilisant des ressources naturelles. Elle ne remplace en aucun cas un avis médical, un diagnostic ou un traitement prescrit par un professionnel de santé.
           </p>
-          <div style={{ marginTop: '40px', display: 'flex', justifyContent: 'center', gap: '30px', fontSize: '0.9rem' }}>
-            <Link href="/mentions-legales" className="hover-text-gold">Mentions Légales</Link>
-            <Link href="/confidentialite" className="hover-text-gold">Politique de Confidentialité</Link>
+          <div style={{ marginTop: '40px', display: 'flex', justifyContent: 'center', gap: '40px', fontSize: '0.9rem', fontWeight: 500, letterSpacing: '1px' }}>
+            <Link href="/" className="hover-text-gold">ACCUEIL</Link>
+            <Link href="/blog" className="hover-text-gold">BLOG</Link>
+            <Link href="/consultations" className="hover-text-gold">CONSULTATIONS</Link>
+            <Link href="/mentions-legales" className="hover-text-gold">LÉGAL</Link>
+            <Link href="/confidentialite" className="hover-text-gold">CONFIDENTIALITÉ</Link>
           </div>
           <p style={{ marginTop: '60px', fontSize: '0.8rem', opacity: 0.4, letterSpacing: '2px' }}>
             © {new Date().getFullYear()} INESSENCE — L'ART DE LA SANTÉ NATURELLE

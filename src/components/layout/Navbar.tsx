@@ -19,15 +19,15 @@ export function Navbar() {
                     </div>
                 </Link>
 
-                <nav style={{ display: 'flex', gap: '40px', fontSize: '0.95rem', fontWeight: 600, letterSpacing: '1.5px', alignItems: 'center' }}>
+                <nav style={{ display: 'flex', gap: '30px', fontSize: '0.9rem', fontWeight: 600, letterSpacing: '1.2px', alignItems: 'center' }}>
                     <Link href="/" className="hover-text-sauge">ACCUEIL</Link>
+                    <Link href="/blog" className="hover-text-sauge">BLOG</Link>
                     <Link href="/consultations" className="hover-text-sauge">CONSULTATIONS</Link>
                     <Link href="/problematiques" className="hover-text-sauge">MOTIFS</Link>
                     <Link href="/techniques" className="hover-text-sauge">TECHNIQUES</Link>
                     <Link href="/ateliers" className="hover-text-sauge">ATELIERS</Link>
-                    <Link href="/#villes" className="hover-text-sauge">ZONES</Link>
-                    <Link href="/contact" className="btn-premium" style={{ padding: '12px 32px', marginLeft: '20px', borderRadius: '100px' }}>
-                        FAIRE MA DEMANDE
+                    <Link href="/contact" className="btn-premium" style={{ padding: '12px 28px', marginLeft: '10px', borderRadius: '100px' }}>
+                        RDV
                     </Link>
                 </nav>
             </div>
