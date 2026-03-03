@@ -21,7 +21,7 @@
 
   /* Layout & Spacing */
   --container-width: 1200px;
-  --header-height: 80px;
+  --header-height: 140px;
   --section-padding: 100px;
   --container-max: 1200px;
   /* This seems redundant with --container-width, keeping both as per instruction */
@@ -279,8 +279,8 @@ header {
   width: 100%;
   z-index: 1000;
   background: var(--glass);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.03);
   display: flex;
   align-items: center;
   transition: var(--transition-smooth);
