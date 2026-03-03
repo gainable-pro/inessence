@@ -57,7 +57,7 @@ export default function TechniquesPage() {
                     <span style={{ textTransform: 'uppercase', letterSpacing: '4px', fontSize: '0.9rem', color: 'var(-- gold-warm)', fontWeight: 600, display: 'block', marginBottom: '24px' }}>
                         Le Chœur des Éléments
                     </span>
-                    <h1 className="font-serif" style={{ marginBottom: '32px' }}>
+                    <h1 className="font-serif typewriter" style={{ marginBottom: '32px' }}>
                         Mes <span className="text-sauge italic">Techniques</span> Sacrées
                     </h1>
                     <p style={{ fontSize: '1.3rem', color: 'var(--text-muted)', fontWeight: 300 }}>

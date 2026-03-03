@@ -67,7 +67,7 @@ export default async function ProblemPage({ params }: { params: Promise<{ proble
                     <nav style={{ fontSize: '0.85rem', marginBottom: '32px', letterSpacing: '2px', opacity: 0.5, textTransform: 'uppercase' }}>
                         <Link href="/" className="hover-text-sauge">ACCUEIL</Link> / <Link href="/problematiques" className="hover-text-sauge">MOTIFS</Link> / <span>{prob.title}</span>
                     </nav>
-                    <h1 style={{ marginBottom: '32px' }}>
+                    <h1 className="font-serif typewriter" style={{ marginBottom: '32px' }}>
                         {prob.title} à <span className="text-sauge italic">Miramas</span>
                     </h1>
                     <p style={{ fontSize: '1.3rem', color: 'var(--text-muted)', fontWeight: 300, maxWidth: '700px', margin: '0 auto' }}>
@@ -81,7 +81,7 @@ export default async function ProblemPage({ params }: { params: Promise<{ proble
                 <div className="container">
                     <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 1fr', gap: '80px', alignItems: 'center' }}>
                         <div>
-                            <h2 className="font-serif" style={{ marginBottom: '40px' }}>Comprendre et <span className="text-gold">Transformer</span></h2>
+                            <h2 className="font-serif typewriter" style={{ marginBottom: '40px' }}>Comprendre et <span className="text-gold">Transformer</span></h2>
                             <p style={{ color: 'var(--text-muted)', marginBottom: '28px' }}>
                                 {currentContent.detail1}
                             </p>
@@ -106,7 +106,7 @@ export default async function ProblemPage({ params }: { params: Promise<{ proble
                 <div className="container">
                     <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.2fr', gap: '80px', alignItems: 'center' }}>
                         <div style={{ position: 'relative', order: 2 }}>
-                            <h2 className="font-serif" style={{ marginBottom: '40px' }}>Le chemin vers la <span className="text-gold">Sérénité</span></h2>
+                            <h2 className="font-serif typewriter" style={{ marginBottom: '40px' }}>Le chemin vers la <span className="text-gold">Sérénité</span></h2>
                             <p style={{ marginBottom: '32px', color: 'var(--text-muted)' }}>
                                 Chaque individu est une entité unique. Mon approche ne se limite pas à traiter un symptôme, mais à cultiver votre terrain pour que la santé fleurisse d'elle-même.
                             </p>
@@ -136,7 +136,7 @@ export default async function ProblemPage({ params }: { params: Promise<{ proble
             {/* CTA Section */}
             <section style={{ padding: '140px 0', textAlign: 'center' }}>
                 <div className="container">
-                    <h2 className="font-serif" style={{ marginBottom: '40px' }}>Reprenez le pouvoir sur votre <span className="italic text-gold">BIEN-ÊTRE</span></h2>
+                    <h2 className="font-serif typewriter" style={{ marginBottom: '40px' }}>Reprenez le pouvoir sur votre <span className="italic text-gold">BIEN-ÊTRE</span></h2>
                     <p style={{ maxWidth: '600px', margin: '0 auto 56px', fontSize: '1.2rem', color: 'var(--text-muted)' }}>
                         Je vous accompagne à Miramas ou en ligne pour construire ensemble votre nouvelle hygiène de vie.
                     </p>

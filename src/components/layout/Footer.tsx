@@ -9,10 +9,15 @@ export function Footer() {
             <div className="container">
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '48px', marginBottom: '60px' }}>
                     <div>
-                        <h3 className="font-serif" style={{ marginBottom: '24px' }}>INESSENCE</h3>
-                        <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
-                            Naturopathie & Bien-être holistique. <br />
-                            Approche personnalisée pour un équilibre durable.
+                        <div style={{ width: '80px', height: '80px', marginBottom: '24px' }}>
+                            <img src="/images/logo-inessence.png" alt="Logo" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                        </div>
+                        <p style={{ fontSize: '0.9rem', color: 'var(--text-main)', fontWeight: 600, marginBottom: '8px' }}>
+                            6 rue pierre tristani, 13140 Miramas
+                        </p>
+                        <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', lineHeight: 1.6, fontWeight: 300 }}>
+                            Accompagnement holistique pour une santé vibrante. <br />
+                            Cabinet & Visioconférence.
                         </p>
                     </div>
 

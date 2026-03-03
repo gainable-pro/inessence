@@ -17,6 +17,8 @@ export default function RootLayout({
     <html lang="fr">
       <body>
         <div className="dynamic-bg" aria-hidden="true" />
+        <div className="blob-3" aria-hidden="true" />
+        <div className="grain-overlay" aria-hidden="true" />
         <Navbar />
         <main style={{ paddingTop: 'var(--header-height)' }}>
           {children}

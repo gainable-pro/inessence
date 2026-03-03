@@ -10,7 +10,7 @@ export default function MotifsPage() {
                     <span style={{ textTransform: 'uppercase', letterSpacing: '4px', fontSize: '0.9rem', color: 'var(--gold-warm)', fontWeight: 600, display: 'block', marginBottom: '24px' }}>
                         Accompagnement Sur-Mesure
                     </span>
-                    <h1 className="font-serif" style={{ marginBottom: '32px' }}>
+                    <h1 className="font-serif typewriter" style={{ marginBottom: '32px' }}>
                         Quand me <span className="text-sauge italic">consulter</span> ?
                     </h1>
                     <p style={{ fontSize: '1.3rem', color: 'var(--text-muted)', fontWeight: 300 }}>

@@ -29,7 +29,7 @@ export default function AteliersPage() {
             <section style={{ padding: '160px 0 100px', backgroundColor: 'var(--sable-dark)', textAlign: 'center' }}>
                 <div className="container">
                     <span style={{ textTransform: 'uppercase', letterSpacing: '4px', fontSize: '0.9rem', color: 'var(--gold-warm)', fontWeight: 600, display: 'block', marginBottom: '24px' }}>Transmission & Partage</span>
-                    <h1 className="font-serif" style={{ marginBottom: '32px' }}>
+                    <h1 className="font-serif typewriter" style={{ marginBottom: '32px' }}>
                         Les <span className="text-golditalic">Ateliers</span> Collectifs
                     </h1>
                     <p style={{ maxWidth: '750px', margin: '0 auto', fontSize: '1.3rem', color: 'var(--text-muted)', fontWeight: 300 }}>

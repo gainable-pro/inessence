@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function ContactPage() {
     return (
-        <div className="container animate-fade-in" style={{ maxWidth: '600px', padding: '100px 24px' }}>
-            <h1 className="font-serif" style={{ fontSize: '2.5rem', marginBottom: '16px', textAlign: 'center' }}>Prendre rendez-vous</h1>
+        <div className="container animate-fade-in" style={{ maxWidth: '800px', padding: '120px 24px' }}>
+            <h1 className="font-serif typewriter" style={{ fontSize: '3.5rem', marginBottom: '32px', textAlign: 'center' }}>Prendre rendez-vous</h1>
             <p style={{ textAlign: 'center', color: 'var(--text-muted)', marginBottom: '40px' }}>
                 Remplissez le formulaire ci-dessous pour une demande de bilan de vitalité ou pour toute question.
             </p>
@@ -52,6 +52,25 @@ export default function ContactPage() {
                     * La naturopathie ne remplace pas un avis médical.
                 </p>
             </form>
+
+            <div style={{ marginTop: '80px', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '40px' }}>
+                <div style={{ padding: '40px', background: 'var(--sable-warm)', borderRadius: '32px', textAlign: 'center' }}>
+                    <h3 style={{ marginBottom: '20px', fontSize: '2rem' }}>Le Cabinet</h3>
+                    <p style={{ fontSize: '1.2rem', color: 'var(--text-main)', fontWeight: 600 }}>6 rue pierre tristani</p>
+                    <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)' }}>13140 Miramas</p>
+                    <div style={{ marginTop: '20px', fontSize: '0.9rem', opacity: 0.6 }}>
+                        Un espace de sérénité au cœur de la ville.
+                    </div>
+                </div>
+                <div style={{ padding: '40px', background: 'var(--bg-secondary)', borderRadius: '32px', textAlign: 'center' }}>
+                    <h3 style={{ marginBottom: '20px', fontSize: '2rem' }}>Consultation Visio</h3>
+                    <p style={{ fontSize: '1.2rem', color: 'var(--text-main)', fontWeight: 600 }}>Partout en France</p>
+                    <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)' }}>Via Zoom ou WhatsApp</p>
+                    <div style={{ marginTop: '20px', fontSize: '0.9rem', opacity: 0.6 }}>
+                        La même qualité d'écoute, depuis votre foyer.
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }

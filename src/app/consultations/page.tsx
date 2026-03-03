@@ -13,7 +13,7 @@ export default function ConsultationsPage() {
                     <span className="stagger-1" style={{ textTransform: 'uppercase', letterSpacing: '4px', fontSize: '0.9rem', color: 'var(--gold-warm)', fontWeight: 600, display: 'block', marginBottom: '24px' }}>
                         L'Art de l'Équilibre
                     </span>
-                    <h1 className="font-serif stagger-2" style={{ marginBottom: '32px' }}>
+                    <h1 className="font-serif stagger-2 typewriter" style={{ marginBottom: '32px' }}>
                         Un voyage vers votre <span className="text-sauge italic">Essence</span>
                     </h1>
                     <p className="stagger-3" style={{ fontSize: '1.4rem', color: 'var(--text-muted)', fontWeight: 300 }}>
