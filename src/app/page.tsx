@@ -45,56 +45,124 @@ export default function Home() {
 
   return (
     <div className="animate-fade-in">
-      {/* HERO SECTION PREMIUM */}
+      {/* IMMERSIVE HERO SECTION */}
       <section style={{
-        height: 'min-content',
-        minHeight: '100vh',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        textAlign: 'center',
-        padding: '160px 24px 100px',
+        height: '95vh',
         position: 'relative',
-        background: 'linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url("/images/media__1772494385825.png")',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed'
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        overflow: 'hidden',
+        color: 'var(--white)'
       }}>
-        <div style={{ maxWidth: '1100px', zIndex: 10 }}>
-          <span className="stagger-1" style={{
-            fontSize: '1rem',
-            fontWeight: 700,
-            letterSpacing: '8px',
+        <div style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+          zIndex: -1
+        }}>
+          <img
+            src="/images/hero-zen.png"
+            alt="Zen Naturopathy"
+            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+          />
+          <div style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            background: 'linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0.4) 100%)'
+          }} />
+        </div>
+
+        <div className="container" style={{ textAlign: 'center', position: 'relative', zIndex: 2 }}>
+          <span style={{
             textTransform: 'uppercase',
-            color: 'var(--gold-warm)',
+            letterSpacing: '6px',
+            fontSize: '1rem',
+            fontWeight: 600,
             marginBottom: '40px',
-            display: 'block'
+            display: 'block',
+            opacity: 0.9
           }}>
-            L'excellence de la santé naturelle
+            L'EXCELLENCE DE LA SANTÉ NATURELLE
           </span>
-          <h1 className="stagger-2 typewriter" style={{
+          <h1 className="font-serif typewriter" style={{
+            fontSize: 'clamp(3rem, 10vw, 7rem)',
+            lineHeight: 1,
             marginBottom: '40px',
-            lineHeight: 1.0,
-            color: 'var(--text-main)'
+            color: 'var(--white)'
           }}>
-            Cultivez votre Équilibre
+            Retrouvez votre <span className="text-gold italic">Essence</span>
           </h1>
-          <p className="stagger-3" style={{
+          <p style={{
             fontSize: '1.6rem',
-            color: 'var(--text-muted)',
-            maxWidth: '900px',
-            margin: '0 auto 72px',
+            maxWidth: '800px',
+            margin: '0 auto 60px',
+            fontWeight: 300,
             lineHeight: 1.6,
-            fontWeight: 300
+            opacity: 0.95
           }}>
-            Bienvenue dans un espace de ressourcement dédié à votre vitalité globale. <br />
-            Une approche de santé holistique pour honorer votre essence originelle à Miramas et alentours.
+            Une immersion au cœur du bien-être pour honorer votre temple intérieur <br />
+            à Miramas et partout en visioconférence.
           </p>
-          <div style={{ display: 'flex', gap: '30px', justifyContent: 'center' }} className="stagger-3">
-            <Link href="/contact" className="btn-premium" style={{ padding: '24px 60px', fontSize: '1.2rem' }}>
-              REPRENDRE SON SOUFFLE
+          <div style={{ display: 'flex', gap: '30px', justifyContent: 'center' }}>
+            <Link href="/contact" className="btn-premium" style={{ backgroundColor: 'var(--gold-warm)', color: 'var(--text-main)', padding: '24px 60px', fontSize: '1.2rem', borderRadius: '100px' }}>
+              DÉBUTER MON VOYAGE
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* IMMERSIVE SECTION 1: LE CABINET */}
+      <section style={{ padding: '200px 0', backgroundColor: 'var(--white)' }}>
+        <div className="container">
+          <div style={{ display: 'grid', gridTemplateColumns: '1.1fr 0.9fr', gap: '120px', alignItems: 'center' }}>
+            <div>
+              <h2 className="font-serif typewriter" style={{ fontSize: '4.5rem', marginBottom: '48px' }}>Un Havre de <span className="text-sauge">Paix</span></h2>
+              <p style={{ fontSize: '1.4rem', color: 'var(--text-muted)', lineHeight: 1.8, fontWeight: 300, marginBottom: '40px' }}>
+                Situé au cœur de <strong>Miramas</strong>, mon cabinet est conçu comme une parenthèse hors du temps. Dans une atmosphère imprégnée de douceur et de sérénité, je vous reçois pour un accompagnement holistique unique.
+              </p>
+              <div style={{ fontSize: '1.2rem', color: 'var(--text-main)', borderLeft: '4px solid var(--gold-warm)', paddingLeft: '32px', fontStyle: 'italic' }}>
+                "Ici, chaque séance est une invitation à ralentir, à écouter votre corps et à restaurer votre équilibre profond."
+              </div>
+            </div>
+            <div style={{ borderRadius: '60px', overflow: 'hidden', boxShadow: 'var(--shadow-soft)' }}>
+              <img src="/images/cabinet-provence.png" alt="Cabinet Naturopathie Miramas" style={{ width: '100%', height: 'auto', display: 'block' }} />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* IMMERSIVE SECTION 2: WHY CHOOSE (ZEN PEOPLE) */}
+      <section style={{ padding: '200px 0', backgroundColor: 'var(--sable-warm)' }}>
+        <div className="container">
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.1fr', gap: '120px', alignItems: 'center' }}>
+            <div style={{ borderRadius: '60px', overflow: 'hidden', boxShadow: 'var(--shadow-soft)' }}>
+              <img src="/images/zen-people.png" alt="Rayonnant de santé" style={{ width: '100%', height: 'auto', display: 'block' }} />
+            </div>
+            <div>
+              <h2 className="font-serif typewriter" style={{ fontSize: '4.5rem', marginBottom: '48px' }}>Vitalité <span className="text-gold">Rayonnante</span></h2>
+              <p style={{ fontSize: '1.4rem', color: 'var(--text-muted)', lineHeight: 1.8, fontWeight: 300, marginBottom: '48px' }}>
+                Parce que la santé n'est pas seulement l'absence de maladie, mais un état de bien-être physique, mental et social complet. Je vous aide à retrouver cette étincelle de vie.
+              </p>
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '32px' }}>
+                {[
+                  { t: "Expertise", d: "Une approche scientifique et naturelle." },
+                  { t: "Écoute", d: "Un temps dédié à votre histoire." },
+                  { t: "Douceur", d: "Des solutions respectueuses de votre corps." },
+                  { t: "Résultats", d: "Un équilibre retrouvé sur le long terme." }
+                ].map((item, idx) => (
+                  <div key={idx}>
+                    <h4 className="font-serif" style={{ fontSize: '1.5rem', marginBottom: '8px' }}>{item.t}</h4>
+                    <p style={{ fontSize: '0.95rem', opacity: 0.7 }}>{item.d}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>

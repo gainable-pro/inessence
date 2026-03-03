@@ -5,7 +5,7 @@ export function Navbar() {
         <header>
             <div className="container" style={{ display: 'flex', justifyContent: 'space-between', width: '100%', alignItems: 'center' }}>
                 <Link href="/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
-                    <div style={{ position: 'relative', width: '100px', height: '100px' }}>
+                    <div style={{ position: 'relative', width: '140px', height: '140px' }}>
                         <img
                             src="/images/logo-inessence.png"
                             alt="Logo"
