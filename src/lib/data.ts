@@ -53,6 +53,66 @@ export const TECHNIQUES = [
     { slug: "fleurs-de-bach", title: "Fleurs de Bach" }
 ];
 
+export const BLOG_POSTS = [
+    {
+        slug: "maux-de-tete-naturopathie",
+        title: "Soulager les maux de tête naturellement",
+        symptom: "Maux de tête & Migraines",
+        intro: "Les maux de tête peuvent avoir de multiples origines : stress, fatigue oculaire, troubles digestifs ou tensions musculaires. La naturopathie cherche à identifier la cause profonde pour un soulagement durable.",
+        sections: [
+            {
+                title: "Pourquoi consulter en naturopathie ?",
+                content: "Plutôt que de simplement masquer la douleur, nous explorons votre hygiène de vie, votre alimentation et votre gestion émotionnelle pour comprendre l'origine des tensions.",
+                img: "media__1772494485058.png"
+            },
+            {
+                title: "Comment la naturopathie agit-elle ?",
+                content: "Grâce à la phytothérapie (plantes apaisantes), l'aromathérapie et la réflexologie, nous relançons les capacités d'autorégulation de votre corps pour espacer et diminuer les crises.",
+                img: "media__1772494385825.png"
+            }
+        ],
+        conclusion: "Ne laissez plus les maux de tête gâcher votre quotidien. Un accompagnement personnalisé peut faire toute la différence."
+    },
+    {
+        slug: "troubles-digestifs-naturopathie",
+        title: "Retrouver un confort digestif durable",
+        symptom: "Ballonnements, Digestion lente",
+        intro: "Le système digestif est notre 'deuxième cerveau'. Des troubles à ce niveau impactent votre énergie, votre moral et votre immunité générale.",
+        sections: [
+            {
+                title: "L'approche naturopathique",
+                content: "Nous travaillons sur le rééquilibrage alimentaire, l'usage de plantes carminatives et la gestion du stress, souvent lié aux désordres intestinaux.",
+                img: "digestive_health_nature_1772494512630.png"
+            },
+            {
+                title: "Quand s'inquiéter ?",
+                content: "Dès que l'inconfort devient quotidien ou impacte votre vie sociale. La naturopathie offre des outils concrets pour restaurer votre barrière intestinale.",
+                img: "nutrition_balance_bowl_1772494534045.png"
+            }
+        ],
+        conclusion: "Une digestion sereine est la clé d'une vitalité rayonnante. Commençons ce travail ensemble."
+    },
+    {
+        slug: "anxiete-stress-naturopathie",
+        title: "Gérer l'anxiété et le stress par la nature",
+        symptom: "Stress chronique, Anxiété, Épuisement",
+        intro: "Le stress chronique épuise nos réserves minérales et fatigue notre système nerveux. Apprendre à le réguler est essentiel pour préserver sa santé.",
+        sections: [
+            {
+                title: "Les outils du naturopathe",
+                content: "Gemmothérapie, Fleurs de Bach et techniques de respiration sont au cœur de l'accompagnement pour apaiser le mental et nourrir les surrénales.",
+                img: "stress_relief_zen_1772494485058.png"
+            },
+            {
+                title: "Pourquoi faire appel à nous ?",
+                content: "Pour sortir du cycle de l'épuisement. Mon rôle est de vous donner les clés pour redevenir acteur de votre sérénité au quotidien.",
+                img: "media__1772512342001.png"
+            }
+        ],
+        conclusion: "Le calme intérieur n'est pas un luxe, c'est une nécessité vitale. Retrouvons-le ensemble."
+    }
+];
+
 export function slugify(text: string) {
     return text
         .toString()

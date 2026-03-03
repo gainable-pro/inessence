@@ -204,7 +204,11 @@ export default function Home() {
             </ul>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '60px' }}>
-            {pillars.map((pillar, idx) => (
+            {[
+              { icon: "🧘", title: "Gestion du Stress", slug: "anxiete-stress-naturopathie", desc: "Apprenez à libérer les tensions nerveuses et à retrouver un calme intérieur durable." },
+              { icon: "🍃", title: "Troubles Digestifs", slug: "troubles-digestifs-naturopathie", desc: "Retrouvez votre confort et votre vitalité par une approche nutritionnelle ciblée." },
+              { icon: "⚡", title: "Maux de tête", slug: "maux-de-tete-naturopathie", desc: "Identifiez les causes profondes et soulagez les tensions naturellement." }
+            ].map((pillar, idx) => (
               <div key={idx} style={{
                 padding: '80px 50px',
                 backgroundColor: 'var(--white)',
@@ -212,11 +216,19 @@ export default function Home() {
                 boxShadow: 'var(--shadow-soft)',
                 textAlign: 'center',
                 border: '1px solid rgba(0,0,0,0.02)',
-                transition: 'all 0.4s ease'
+                transition: 'all 0.4s ease',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'space-between'
               }} className="hover-lift">
-                <div style={{ fontSize: '4rem', marginBottom: '40px' }}>{pillar.icon}</div>
-                <h3 className="font-serif" style={{ fontSize: '2.2rem', marginBottom: '32px', color: 'var(--sauge-dark)' }}>{pillar.title}</h3>
-                <p style={{ lineHeight: 2, opacity: 0.7, fontSize: '1.1rem', fontWeight: 300 }}>{pillar.desc}</p>
+                <div>
+                  <div style={{ fontSize: '4rem', marginBottom: '40px' }}>{pillar.icon}</div>
+                  <h3 className="font-serif" style={{ fontSize: '2.2rem', marginBottom: '32px', color: 'var(--sauge-dark)' }}>{pillar.title}</h3>
+                  <p style={{ lineHeight: 2, opacity: 0.7, fontSize: '1.1rem', fontWeight: 300, marginBottom: '40px' }}>{pillar.desc}</p>
+                </div>
+                <Link href={`/blog/${pillar.slug}`} className="text-gold" style={{ fontWeight: 700, letterSpacing: '2px', fontSize: '0.9rem', textTransform: 'uppercase' }}>
+                  LIRE L'ORIENTATION →
+                </Link>
               </div>
             ))}
           </div>
@@ -329,21 +341,91 @@ export default function Home() {
         </div>
       </section>
 
+      {/* SECTION BLOG / EXPERTISE NATUROPATHIE */}
+      <section style={{ padding: '160px 0', backgroundColor: 'var(--white)' }}>
+        <div className="container">
+          <div style={{ maxWidth: '800px', margin: '0 auto 100px', textAlign: 'center' }}>
+            <h2 className="font-serif typewriter" style={{ fontSize: '4.5rem', marginBottom: '40px' }}>L'Éveil de votre <span className="text-sauge">Vitalité</span></h2>
+            <p style={{ fontSize: '1.4rem', color: 'var(--text-muted)', lineHeight: 1.8, fontWeight: 300 }}>
+              La naturopathie est une approche de santé globale qui vise à encourager l'autoguérison du corps en utilisant des méthodes naturelles. Elle se fonde sur le principe que chaque individu a en lui les ressources nécessaires pour retrouver son équilibre et sa santé.
+            </p>
+          </div>
+
+          {/* MAJOR TECHNIQUES HEADER */}
+          <div style={{ backgroundColor: 'var(--sauge-light)', padding: '60px', borderRadius: '50px', marginBottom: '100px', textAlign: 'center' }}>
+            <h3 className="font-serif" style={{ fontSize: '2.5rem', marginBottom: '30px', color: 'var(--sauge-dark)' }}>Nos 3 Piliers Majeurs</h3>
+            <p style={{ fontSize: '1.2rem', color: 'var(--text-main)', opacity: 0.8, maxWidth: '700px', margin: '0 auto' }}>
+              Toute notre approche repose sur **l'alimentation**, la **gestion du stress** et **l'activité physique**. Toutes les autres techniques sont précieuses et complémentaires pour personnaliser votre parcours.
+            </p>
+          </div>
+
+          {/* TECHNIQUES GRID */}
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(380px, 1fr))', gap: '40px' }}>
+            {[
+              { id: "1", t: "Phytothérapie", img: "tech-phytotherapie.png", d: "Utilise les plantes médicinales pour traiter divers maux. Chaque plante a des propriétés spécifiques. Par exemple, la camomille peut apaiser l'anxiété, tandis que le gingembre est connu pour ses propriétés anti-inflammatoires." },
+              { id: "2", t: "Aromathérapie", img: "tech-aromatherapie.png", d: "Fait appel aux huiles essentielles pour stimuler le bien-être physique et émotionnel. Inhalées ou appliquées, comme la lavande pour ses effets relaxants, elles agissent en profondeur." },
+              { id: "3", t: "Gemmothérapie", img: "tech-gemmotherapie.png", d: "Utilise des macérats de jeunes pousses et bourgeons. Très concentrés, ces extraits aident à revitaliser le corps, améliorer le métabolisme et soutenir le système immunitaire." },
+              { id: "4", t: "Techniques Vibratoires", img: "tech-vibratoire.png", d: "Magnétisme pour rééquilibrer les énergies et chromothérapie (couleurs) pour réharmoniser. Le magnétisme canalise l’énergie pour soulager les tensions et favoriser la guérison." },
+              { id: "5", t: "Réflexologie Plantaire", img: "tech-reflexologie.png", d: "Massage des pieds où chaque zone correspond à un organe. En stimulant ces zones, on réduit le stress, améliore la circulation et favorise le bien-être général." },
+              { id: "6", t: "Massages Thérapeutiques", img: "tech-massage-ayurvedique.png", d: "Massage ayurvédique pour l'harmonie corps-esprit, ou massage facial Kobido pour la détente profonde et la jeunesse de la peau." },
+              { id: "7", t: "Rééquilibrage Alimentaire", img: "tech-nutrition.png", d: "Le pilier central. Je vous guide vers une alimentation adaptée à vos besoins, vos goûts et vos intolérances pour optimiser votre capital santé." },
+              { id: "8", t: "Gestion du Stress", img: "tech-stress.png", d: "Relaxation, méditation et activité physique adaptée. Un accompagnement pour retrouver calme intérieur et vitalité physique." },
+              { id: "9", t: "Fleurs de Bach", img: "tech-fleurs-de-bach.png", d: "Essences florales pour traiter les émotions (anxiété, tristesse, colère). Elles aident à rétablir l'équilibre émotionnel de façon subtile et efficace." }
+            ].map((item) => (
+              <div key={item.id} style={{
+                backgroundColor: 'var(--bg-secondary)',
+                borderRadius: '40px',
+                border: '1px solid rgba(0,0,0,0.03)',
+                transition: 'all 0.4s ease',
+                overflow: 'hidden',
+                display: 'flex',
+                flexDirection: 'column'
+              }} className="hover-lift">
+                <div style={{ height: '280px', overflow: 'hidden' }}>
+                  <img
+                    src={`/images/${item.img}`}
+                    alt={item.t}
+                    style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.6s ease' }}
+                    className="hover-scale"
+                  />
+                </div>
+                <div style={{ padding: '40px' }}>
+                  <span style={{ color: 'var(--gold-vibrant)', fontWeight: 700, fontSize: '0.8rem', letterSpacing: '2px', display: 'block', marginBottom: '15px' }}>TECHNIQUE 0{item.id}</span>
+                  <h4 className="font-serif" style={{ fontSize: '1.8rem', marginBottom: '20px', color: 'var(--text-main)' }}>{item.t}</h4>
+                  <p style={{ fontSize: '1rem', color: 'var(--text-muted)', lineHeight: 1.7, fontWeight: 300 }}>{item.d}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div style={{ maxWidth: '800px', margin: '100px auto 0', textAlign: 'center' }}>
+            <p style={{ fontSize: '1.2rem', fontStyle: 'italic', color: 'var(--sauge-dark)', lineHeight: 1.8 }}>
+              En tant que naturopathe, mon rôle est d’accompagner les personnes vers une meilleure compréhension de leur corps, de leur mode de vie et des choix qu'elles peuvent faire pour améliorer leur bien-être. <br />
+              <strong>Il existe énormément de techniques, le choix dépendra toujours des besoins spécifiques de chaque individu.</strong>
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* MEDICAL DISCLAIMER */}
-      <footer style={{ padding: '100px 0', backgroundColor: 'var(--white)' }}>
+      <footer style={{ padding: '100px 0', backgroundColor: 'var(--bg-secondary)' }}>
         <div className="container text-center">
           <div style={{ marginBottom: '40px' }}>
-            <img src="/images/logo-inessence.png" alt="Logo" style={{ width: '120px', opacity: 0.8 }} />
+            <img src="/images/logo-inessence.png" alt="Logo" style={{ width: '150px', mixBlendMode: 'multiply' }} />
           </div>
           <div style={{ marginBottom: '60px', display: 'flex', flexDirection: 'column', gap: '10px' }}>
             <p style={{ fontSize: '1.4rem', color: 'var(--text-main)', fontWeight: 600 }}>6 rue pierre tristani, 13140 Miramas</p>
-            <p style={{ fontSize: '1.2rem', color: 'var(--text-muted)' }}>Consultations en Cabinet & en Visioconférence</p>
+            <p style={{ fontSize: '1.2rem', color: 'var(--text-muted)' }}>Cabinet & Visioconférence</p>
           </div>
           <p style={{ fontSize: '1rem', color: 'var(--text-muted)', maxWidth: '1000px', margin: '0 auto', lineHeight: 2, opacity: 0.6, fontWeight: 300 }}>
-            <strong>Clause de non-responsabilité :</strong> Les conseils prodigués sur ce site ont pour but d'améliorer votre santé globale via des méthodes naturelles (hygiène de vie, alimentation, phytothérapie). Ils ne remplacent en aucun cas un avis médical, un diagnostic ou un traitement prescrit par un professionnel de santé. Ne jamais arrêter un traitement médical sans l'avis de votre médecin.
+            <strong>Note importante :</strong> La naturopathie est un ensemble de méthodes complémentaires qui visent à favoriser le bien-être physique, mental et émotionnel en utilisant des ressources naturelles. Elle ne remplace en aucun cas un avis médical, un diagnostic ou un traitement prescrit par un professionnel de santé.
           </p>
-          <p style={{ marginTop: '80px', fontSize: '0.9rem', opacity: 0.4, letterSpacing: '2px' }}>
-            © {new Date().getFullYear()} INESSENCE – L'ART DE LA SANTÉ NATURELLE
+          <div style={{ marginTop: '40px', display: 'flex', justifyContent: 'center', gap: '30px', fontSize: '0.9rem' }}>
+            <Link href="/mentions-legales" className="hover-text-gold">Mentions Légales</Link>
+            <Link href="/confidentialite" className="hover-text-gold">Politique de Confidentialité</Link>
+          </div>
+          <p style={{ marginTop: '60px', fontSize: '0.8rem', opacity: 0.4, letterSpacing: '2px' }}>
+            © {new Date().getFullYear()} INESSENCE — L'ART DE LA SANTÉ NATURELLE
           </p>
         </div>
       </footer >
