@@ -326,7 +326,7 @@ export default function Home() {
         position: 'relative',
         overflow: 'hidden'
       }}>
-        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', opacity: 0.1, backgroundImage: 'url("/images/media__1772510741180.png")', backgroundSize: 'cover' }} />
+        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', opacity: 0.1, backgroundImage: 'url("/images/cta-zen-bg.png")', backgroundSize: 'cover' }} />
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
           <h2 className="font-serif typewriter" style={{ fontSize: '6rem', marginBottom: '60px', color: 'var(--white)' }}>
             Retrouvez <span className="italic text-gold">l'Essence</span>
