@@ -31,13 +31,16 @@ export default function ConsultationsPage() {
                             <h2 className="font-serif" style={{ marginBottom: '40px' }}>Une écoute <span className="text-gold">Sincère</span> et profonde</h2>
                             <div style={{ color: 'var(--text-muted)' }}>
                                 <p style={{ marginBottom: '28px' }}>
-                                    Ma pratique de la naturopathie ne s'arrête pas aux conseils techniques. C'est avant tout un espace de parole et d'écoute, où chaque symptôme est accueilli comme un message de votre corps.
+                                    Ma pratique ne se limite pas à de simples conseils techniques. Elle s&rsquo;inscrit dans une approche globale et holistique, où l&rsquo;écoute et la parole occupent une place essentielle. Chaque symptôme est accueilli comme un signal du corps, une invitation à comprendre les déséquilibres et à en rechercher l&rsquo;origine. Que ce soit pour petits et grands, en cas de pathologies dégénératives, dans une démarche de prévention, pour les enfants HPI, le TDAH ou les périodes de burn-out, ou seulement vous faire du bien, je vous accompagne avec bienveillance vers un mieux-être global, en soutenant les capacités naturelles d&rsquo;équilibre et de régénération du corps.
                                 </p>
                                 <p style={{ marginBottom: '28px' }}>
-                                    Dans la quiétude de mon cabinet à Miramas ou le confort de votre foyer, nous tissons ensemble le fil de votre bien-être. J'utilise la quintessence des plantes, le souffle de la relaxation et la sagesse de l'alimentation pour restaurer votre harmonie originelle.
+                                    Dans un cadre apaisant, au sein de mon cabinet à Miramas ou dans le confort de votre foyer, je vous propose un accompagnement personnalisé, alliant naturopathie, soins énergétiques et massage bien-être. Cette synergie de techniques permet de soutenir les capacités naturelles d&rsquo;autorégulation du corps et de relancer son potentiel d&rsquo;auto-guérison.
+                                </p>
+                                <p style={{ marginBottom: '28px' }}>
+                                    À travers l&rsquo;utilisation des plantes, des techniques de relaxation, du toucher thérapeutique, d&rsquo;une alimentation adaptée et tellement de choses encore! Nous travaillons ensemble à rétablir l&rsquo;équilibre sur les plans physique, émotionnel et énergétique.
                                 </p>
                                 <p>
-                                    Mon rôle est de vous transmettre les clés de votre propre temple : votre santé.
+                                    Mon rôle est de vous guider, de vous transmettre des outils concrets et de vous accompagner vers une meilleure compréhension de votre corps, afin que vous deveniez acteur de votre santé et retrouviez un bien-être durable.
                                 </p>
                             </div>
                         </div>

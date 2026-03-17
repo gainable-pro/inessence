@@ -16,11 +16,10 @@ export function Navbar() {
 
     const navLinks = [
         { href: "/", label: "ACCUEIL" },
-        { href: "/blog", label: "BLOG" },
         { href: "/consultations", label: "CONSULTATIONS" },
-        { href: "/problematiques", label: "MOTIFS" },
-        { href: "/techniques", label: "TECHNIQUES" },
-        { href: "/ateliers", label: "ATELIERS" },
+        { href: "/prestations", label: "PRESTATIONS" },
+        { href: "/blog", label: "BLOG" },
+        { href: "/contact", label: "CONTACT" }
     ];
 
     return (
@@ -46,6 +45,10 @@ export function Navbar() {
                     {navLinks.map(link => (
                         <Link key={link.href} href={link.href} className="hover-text-sauge">{link.label}</Link>
                     ))}
+                    <a href="tel:+33761211132" style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-main)', marginLeft: '10px' }}>
+                        <span style={{ fontSize: '1.1rem' }}>📞</span>
+                        <span>07 61 21 11 32</span>
+                    </a>
                     <Link href="/contact" className="btn-premium" style={{ padding: '12px 28px', marginLeft: '10px', borderRadius: '100px' }}>
                         RDV
                     </Link>

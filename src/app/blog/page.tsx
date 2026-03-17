@@ -33,7 +33,7 @@ export default function BlogIndex() {
                         lineHeight: 1.8,
                         fontWeight: 300
                     }}>
-                        Découvrez nos dossiers complets pour comprendre vos symptômes et retrouver votre équilibre naturellement.
+                        Découvrez nos dossiers pour comprendre la cause de vos symptômes et retrouver votre équilibre naturellement.
                     </p>
                 </div>
             </section>

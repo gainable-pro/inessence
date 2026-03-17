@@ -107,8 +107,8 @@ export default function Home() {
             lineHeight: 1.6,
             opacity: 0.95
           }}>
-            Une immersion au cœur du bien-être pour honorer votre temple intérieur <br className="hidden-mobile" />
-            à Miramas et partout en visioconférence.
+            Une immersion au c&oelig;ur du bien-être pour honorer votre temple intérieur <br className="hidden-mobile" />
+            à Miramas et alentours, visio et déplacement possible.
           </p>
           <div style={{ display: 'flex', gap: '20px', justifyContent: 'center', flexWrap: 'wrap' }}>
             <Link href="/contact" className="btn-premium" style={{ backgroundColor: 'var(--gold-warm)', color: 'var(--text-main)', padding: '20px 48px', fontSize: '1.1rem', borderRadius: '100px' }}>
@@ -125,10 +125,10 @@ export default function Home() {
             <div>
               <h2 className="font-serif" style={{ fontSize: 'clamp(3rem, 8vw, 4.5rem)', marginBottom: '32px' }}>Un Havre de <span className="text-sauge">Paix</span></h2>
               <p style={{ fontSize: 'clamp(1rem, 3vw, 1.4rem)', color: 'var(--text-muted)', lineHeight: 1.8, fontWeight: 300, marginBottom: '32px' }}>
-                Situé au cœur de <strong>Miramas</strong>, mon cabinet est conçu comme une parenthèse hors du temps. Dans une atmosphère imprégnée de douceur et de sérénité, je vous reçoit pour un accompagnement holistique unique.
+                Situé au c&oelig;ur de <strong>Miramas</strong>, mon cabinet est conçu comme une parenthèse hors du temps. Dans une atmosphère imprégnée de douceur et de sérénité, je vous reçois pour un accompagnement holistique unique.
               </p>
               <div style={{ fontSize: '1.1rem', color: 'var(--text-main)', borderLeft: '4px solid var(--gold-warm)', paddingLeft: '24px', fontStyle: 'italic' }}>
-                "Ici, chaque séance est une invitation à ralentir, à écouter votre corps et à restaurer votre équilibre profond."
+                &quot;Ici, chaque séance est une invitation à ralentir, à écouter votre corps et à restaurer votre équilibre profond.&quot;
               </div>
             </div>
             <div style={{ borderRadius: '40px', overflow: 'hidden', boxShadow: 'var(--shadow-soft)' }}>
@@ -148,7 +148,7 @@ export default function Home() {
             <div>
               <h2 className="font-serif" style={{ fontSize: 'clamp(3rem, 8vw, 4.5rem)', marginBottom: '32px' }}>Vitalité <span className="text-gold">Rayonnante</span></h2>
               <p style={{ fontSize: 'clamp(1rem, 3vw, 1.4rem)', color: 'var(--text-muted)', lineHeight: 1.8, fontWeight: 300, marginBottom: '32px' }}>
-                Parce que la santé n'est pas seulement l'absence de maladie, mais un état de bien-être physique, mental et social complet. Je vous aide à retrouver cette étincelle de vie.
+                Parce que la santé n&apos;est pas seulement l&apos;absence de maladie, mais un état de bien-être physique, mental et social complet. Je vous aide à retrouver cette étincelle de vie.
               </p>
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: '20px' }}>
                 {[
@@ -180,7 +180,31 @@ export default function Home() {
                 La naturopathie n'est pas seulement une médecine douce, c'est une reconnexion profonde aux lois de la nature. Mon rôle est de vous guider pour que vous deveniez l'acteur principal de votre santé.
               </p>
               <p style={{ fontSize: '1.1rem', opacity: 0.8, color: 'var(--text-main)', letterSpacing: '0.02em', fontStyle: 'italic', borderLeft: '4px solid var(--sauge-medium)', paddingLeft: '24px' }}>
-                "Chaque être possède en lui une force vitale capable de restaurer l'harmonie. Il suffit parfois d'enlever les obstacles qui l'empêchent de s'exprimer."
+                &quot;Chaque être possède en lui une force vitale capable de restaurer l&apos;harmonie. Il suffit parfois d&apos;enlever les obstacles qui l&apos;empêchent de s&apos;exprimer.&quot;
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* NOUVELLE SECTION : PRÉSENTATION & DÉMARCHE */}
+      <section style={{ padding: 'clamp(80px, 12vw, 160px) 0', backgroundColor: 'var(--sable-warm)' }}>
+        <div className="container">
+          <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+            <h2 className="font-serif" style={{ marginBottom: '40px', fontSize: 'clamp(2.5rem, 6vw, 4rem)', textAlign: 'center' }}>Ma <span className="text-sauge">Démarche</span></h2>
+            
+            <div style={{ fontSize: '1.2rem', color: 'var(--text-muted)', lineHeight: 1.8, fontWeight: 300, display: 'flex', flexDirection: 'column', gap: '24px' }}>
+              <p>
+                <strong>Naturopathe, praticienne en massage bien-être et en soins énergétiques</strong>, j&rsquo;accompagne chaque personne vers un mieux-être global, en prenant en compte le corps, l&rsquo;esprit et les émotions.
+              </p>
+              <p>
+                Mon chemin vers la naturopathie est avant tout personnel. Milieu de la vingtaine, confrontée à un déséquilibre profond de mon organisme et à une baisse d&rsquo;énergie vitale et de mon système immunitaire, j&rsquo;ai ressenti le besoin de comprendre ce que mon corps cherchait à exprimer. Cette période a été un véritable tournant, m&rsquo;amenant à me questionner sur des approches plus globales et naturelles de la santé.
+              </p>
+              <p>
+                Déjà sensible aux soins énergétiques, j&rsquo;ai alors choisi de me former et d&rsquo;explorer la médecine holistique afin de mieux comprendre les mécanismes du corps, ses capacités d&rsquo;autorégulation et les voies possibles d&rsquo;auto-guérison. Ce chemin m&rsquo;a permis d&rsquo;apprendre à écouter le corps, à en rechercher les causes profondes des déséquilibres, et à rétablir un équilibre durable.
+              </p>
+              <p style={{ fontSize: '1.3rem', color: 'var(--text-main)', fontWeight: 400, borderLeft: '3px solid var(--gold-warm)', paddingLeft: '20px', marginTop: '16px' }}>
+                Aujourd&rsquo;hui, forte de cette expérience et de ces connaissances, je mets à votre service un accompagnement personnalisé, visant à soutenir votre vitalité et à vous aider à retrouver un équilibre sur tous les plans : physique, mental et émotionnel.
               </p>
             </div>
           </div>
@@ -350,14 +374,47 @@ export default function Home() {
           </div>
 
           {/* MAJOR TECHNIQUES HEADER */}
-          <div style={{ backgroundColor: 'var(--sauge-light)', padding: '60px', borderRadius: '50px', marginBottom: '100px', textAlign: 'center' }}>
-            <h3 className="font-serif" style={{ fontSize: '2.5rem', marginBottom: '30px', color: 'var(--sauge-dark)' }}>Nos 3 Piliers Majeurs</h3>
-            <p style={{ fontSize: '1.2rem', color: 'var(--text-main)', opacity: 0.8, maxWidth: '700px', margin: '0 auto' }}>
-              Toute notre approche repose sur **l'alimentation**, la **gestion du stress** et **l'activité physique**. Toutes les autres techniques sont précieuses et complémentaires pour personnaliser votre parcours.
+          <div style={{ backgroundColor: 'var(--sauge-light)', padding: '60px', borderRadius: '50px', marginBottom: '100px' }}>
+            <h3 className="font-serif" style={{ fontSize: '2.5rem', marginBottom: '30px', color: 'var(--sauge-dark)', textAlign: 'center' }}>Les 3 Piliers Essentiels</h3>
+            <p style={{ fontSize: '1.15rem', color: 'var(--text-main)', opacity: 0.9, maxWidth: '850px', margin: '0 auto 40px', lineHeight: 1.8, textAlign: 'center' }}>
+              Au c&oelig;ur de la naturopathie se trouvent trois piliers essentiels : une alimentation saine et adaptée, une gestion équilibrée du stress, et une activité physique régulière. Ces approches fondamentales permettent de soutenir les capacités naturelles du corps à s&rsquo;autoréguler et à s&rsquo;auto-guérir. En nourrissant l&rsquo;organisme de manière optimale, en apaisant le système nerveux et en stimulant la vitalité par le mouvement, la naturopathie accompagne le corps dans son équilibre global. Elle favorise ainsi un terrain propice au bien-être durable, en respectant le fonctionnement naturel et les besoins spécifiques de chacun. <br /><br /><strong>Suivant les besoins, des techniques complémentaires seront mises en place.</strong>
             </p>
+
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '40px', maxWidth: '900px', margin: '0 auto', textAlign: 'left' }}>
+              {/* Pilier 1 */}
+              <div style={{ background: 'var(--white)', padding: '40px', borderRadius: '30px', boxShadow: 'var(--shadow-soft)' }}>
+                  <h4 style={{ fontSize: '1.5rem', color: 'var(--gold-vibrant)', marginBottom: '16px' }}>1 / L&rsquo;alimentation : nourrir le corps en profondeur</h4>
+                  <p style={{ color: 'var(--text-muted)', lineHeight: 1.7, fontSize: '1.05rem' }}>
+                    Une alimentation équilibrée et adaptée aux besoins de chacun constitue la base d&rsquo;une bonne santé. Le rééquilibrage alimentaire permet d&rsquo;apporter au corps les nutriments essentiels dont il a besoin pour fonctionner de manière optimale : vitamines, minéraux, acides gras, protéines&hellip; <br /><br />
+                    En soutenant les fonctions digestives et métaboliques, il favorise l&rsquo;élimination des toxines, renforce le système immunitaire et améliore les niveaux d&rsquo;énergie. Le corps retrouve ainsi un terrain plus sain, propice à ses mécanismes naturels d&rsquo;auto-guérison et d&rsquo;autorégulation.
+                  </p>
+              </div>
+
+               {/* Pilier 2 */}
+               <div style={{ background: 'var(--white)', padding: '40px', borderRadius: '30px', boxShadow: 'var(--shadow-soft)' }}>
+                  <h4 style={{ fontSize: '1.5rem', color: 'var(--gold-vibrant)', marginBottom: '16px' }}>2 / La gestion du stress : apaiser et rééquilibrer l&rsquo;organisme</h4>
+                  <p style={{ color: 'var(--text-muted)', lineHeight: 1.7, fontSize: '1.05rem' }}>
+                    Le stress chronique perturbe profondément l&rsquo;équilibre du corps, impactant le système nerveux, hormonal et immunitaire. Apprendre à mieux gérer son stress permet de rétablir un état de calme intérieur et de sécurité. <br /><br />
+                    En apaisant le système nerveux, on favorise une meilleure qualité de sommeil, une digestion plus harmonieuse et une régulation émotionnelle plus stable. Le corps peut alors sortir du mode &ldquo;alerte&rdquo; pour revenir à un fonctionnement optimal, où les processus de réparation, de régénération et d&rsquo;équilibre interne peuvent pleinement s&rsquo;exprimer.
+                  </p>
+              </div>
+
+               {/* Pilier 3 */}
+               <div style={{ background: 'var(--white)', padding: '40px', borderRadius: '30px', boxShadow: 'var(--shadow-soft)' }}>
+                  <h4 style={{ fontSize: '1.5rem', color: 'var(--gold-vibrant)', marginBottom: '16px' }}>3 / L&rsquo;activité physique : relancer la vitalité</h4>
+                  <p style={{ color: 'var(--text-muted)', lineHeight: 1.7, fontSize: '1.05rem' }}>
+                    Le mouvement est indispensable à la vie. Une activité physique régulière stimule la circulation sanguine et lymphatique, favorise l&rsquo;oxygénation des cellules et soutient l&rsquo;élimination des déchets. <br /><br />
+                    Elle contribue également à l&rsquo;équilibre nerveux en libérant des hormones du bien-être, tout en renforçant le corps dans sa globalité. En remettant le corps en mouvement, on active ses capacités naturelles d&rsquo;adaptation, d&rsquo;autorégulation et de vitalité, essentielles au maintien d&rsquo;une santé durable.
+                  </p>
+              </div>
+            </div>
           </div>
 
-          {/* TECHNIQUES GRID */}
+          <div style={{ textAlign: 'center', marginBottom: '60px' }}>
+              <h3 className="font-serif" style={{ fontSize: '2rem', color: 'var(--sauge-dark)' }}>Les Techniques Complémentaires</h3>
+          </div>
+
+          {/* TECHNIQUES COMPLEMENTAIRES GRID */}
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(380px, 1fr))', gap: '40px' }}>
             {[
               { id: "1", t: "Phytothérapie", img: "tech-phytotherapie.png", d: "Utilise les plantes médicinales pour traiter divers maux. Chaque plante a des propriétés spécifiques. Par exemple, la camomille peut apaiser l'anxiété, tandis que le gingembre est connu pour ses propriétés anti-inflammatoires." },
@@ -366,9 +423,7 @@ export default function Home() {
               { id: "4", t: "Techniques Vibratoires", img: "tech-vibratoire.png", d: "Magnétisme pour rééquilibrer les énergies et chromothérapie (couleurs) pour réharmoniser. Le magnétisme canalise l’énergie pour soulager les tensions et favoriser la guérison." },
               { id: "5", t: "Réflexologie Plantaire", img: "tech-reflexologie.png", d: "Massage des pieds où chaque zone correspond à un organe. En stimulant ces zones, on réduit le stress, améliore la circulation et favorise le bien-être général." },
               { id: "6", t: "Massages Thérapeutiques", img: "tech-massage-ayurvedique.png", d: "Massage ayurvédique pour l'harmonie corps-esprit, ou massage facial Kobido pour la détente profonde et la jeunesse de la peau." },
-              { id: "7", t: "Rééquilibrage Alimentaire", img: "tech-nutrition.png", d: "Le pilier central. Je vous guide vers une alimentation adaptée à vos besoins, vos goûts et vos intolérances pour optimiser votre capital santé." },
-              { id: "8", t: "Gestion du Stress", img: "tech-stress.png", d: "Relaxation, méditation et activité physique adaptée. Un accompagnement pour retrouver calme intérieur et vitalité physique." },
-              { id: "9", t: "Fleurs de Bach", img: "tech-fleurs-de-bach.png", d: "Essences florales pour traiter les émotions (anxiété, tristesse, colère). Elles aident à rétablir l'équilibre émotionnel de façon subtile et efficace." }
+              { id: "7", t: "Fleurs de Bach", img: "tech-fleurs-de-bach.png", d: "Essences florales pour traiter les émotions (anxiété, tristesse, colère). Elles aident à rétablir l'équilibre émotionnel de façon subtile et efficace." }
             ].map((item) => (
               <div key={item.id} style={{
                 backgroundColor: 'var(--bg-secondary)',
