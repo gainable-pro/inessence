@@ -4,13 +4,14 @@ import { notFound } from 'next/navigation'
 
 export const revalidate = 0
 
-export default async function EditPostPage({ params }: { params: { id: string } }) {
+export default async function EditPostPage({ params }: { params: Promise<{ id: string }> }) {
+  const resolvedParams = await params;
   const supabase = await createClient()
   
   const { data: post, error } = await supabase
     .from('posts')
     .select('*')
-    .eq('id', params.id)
+    .eq('id', resolvedParams.id)
     .single()
 
   if (error || !post) {

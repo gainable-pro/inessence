@@ -5,9 +5,10 @@ import { Metadata } from 'next';
 
 export const revalidate = 60;
 
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+    const resolvedParams = await params;
     const supabase = await createClient();
-    const { data: post } = await supabase.from('posts').select('*').eq('slug', params.slug).single();
+    const { data: post } = await supabase.from('posts').select('*').eq('slug', resolvedParams.slug).single();
     if (!post) return { title: 'Article non trouvé' };
 
     const coverBlock = post.content_blocks?.find((b: any) => b.type === 'image' && b.url);
@@ -23,13 +24,14 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     };
 }
 
-export default async function BlogPostPage({ params }: { params: { slug: string } }) {
+export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
+    const resolvedParams = await params;
     const supabase = await createClient();
     
     const { data: post, error } = await supabase
         .from('posts')
         .select('*')
-        .eq('slug', params.slug)
+        .eq('slug', resolvedParams.slug)
         .eq('is_published', true)
         .single();
 
