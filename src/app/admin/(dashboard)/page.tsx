@@ -9,7 +9,7 @@ export default async function AdminDashboardPage() {
   // Récupérer les articles triés par date
   const { data: posts, error } = await supabase
     .from('posts')
-    .select('id, title, is_published, created_at, city_tag')
+    .select('id, title, slug, is_published, created_at, city_tag')
     .order('created_at', { ascending: false })
 
   return (
@@ -64,9 +64,16 @@ export default async function AdminDashboardPage() {
                     )}
                   </td>
                   <td style={{ padding: '20px 24px', textAlign: 'right' }}>
-                    <Link href={`/admin/posts/${post.id}`} style={{ color: 'var(--sauge-dark)', fontWeight: 600, fontSize: '0.9rem', border: '1px solid var(--sauge-dark)', padding: '6px 16px', borderRadius: '6px' }}>
-                      Éditer
-                    </Link>
+                    <div style={{ display: 'flex', gap: '10px', justifyContent: 'flex-end' }}>
+                      <Link href={`/admin/posts/${post.id}`} style={{ color: 'var(--sauge-dark)', fontWeight: 600, fontSize: '0.9rem', border: '1px solid var(--sauge-dark)', padding: '6px 16px', borderRadius: '6px' }}>
+                        Éditer
+                      </Link>
+                      {post.is_published && (
+                        <a href={`/blog/${post.slug}`} target="_blank" rel="noopener noreferrer" style={{ color: 'white', backgroundColor: 'var(--sauge-dark)', fontWeight: 600, fontSize: '0.9rem', padding: '6px 16px', borderRadius: '6px', textDecoration: 'none' }}>
+                          Voir
+                        </a>
+                      )}
+                    </div>
                   </td>
                 </tr>
               ))}

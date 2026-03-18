@@ -158,7 +158,7 @@ export default function PostEditor({ initialPost }: { initialPost?: any }) {
                <label style={{ display: 'block', fontSize: '0.85rem', fontWeight: 600, marginBottom: '8px' }}>Titre de l'article *</label>
                <input 
                  value={title} 
-                 onChange={e => { setTitle(e.target.value); if(!initialPost) setSlug(generateSlug(e.target.value)) }}
+                 onChange={e => { setTitle(e.target.value); setSlug(generateSlug(e.target.value)); }}
                  style={{ width: '100%', padding: '12px', borderRadius: '8px', border: '1px solid #e2e8f0', fontSize: '1.1rem', backgroundColor: '#f8fafc', outline: 'none' }}
                  placeholder="Ex: Les bienfaits de la réflexologie..."
                />
@@ -166,11 +166,17 @@ export default function PostEditor({ initialPost }: { initialPost?: any }) {
 
              <div>
                <label style={{ display: 'block', fontSize: '0.85rem', fontWeight: 600, marginBottom: '8px' }}>Lien permanent (Slug) *</label>
-               <input 
-                 value={slug} 
-                 onChange={e => setSlug(e.target.value)}
-                 style={{ width: '100%', padding: '10px', borderRadius: '8px', border: '1px solid #e2e8f0', fontSize: '0.9rem', color: '#64748b', outline: 'none' }}
-               />
+               <div style={{ display: 'flex', alignItems: 'center', backgroundColor: 'white', border: '1px solid #e2e8f0', borderRadius: '8px', overflow: 'hidden' }}>
+                 <span style={{ padding: '11px 15px', borderRight: '1px solid #e2e8f0', backgroundColor: '#f8fafc', color: '#64748b', fontSize: '0.9rem', whiteSpace: 'nowrap' }}>
+                   /blog/
+                 </span>
+                 <input 
+                   value={slug} 
+                   onChange={e => setSlug(generateSlug(e.target.value))}
+                   style={{ width: '100%', padding: '11px', border: 'none', fontSize: '0.95rem', color: 'var(--text-main)', outline: 'none', backgroundColor: 'transparent' }}
+                   placeholder="titre-de-larticle"
+                 />
+               </div>
              </div>
           </div>
 
