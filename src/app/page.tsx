@@ -462,6 +462,21 @@ export default function Home() {
               En tant que naturopathe, mon rôle est d’accompagner les personnes vers une meilleure compréhension de leur corps, de leur mode de vie et des choix qu'elles peuvent faire pour améliorer leur bien-être. <br />
               <strong>Il existe énormément de techniques, le choix dépendra toujours des besoins spécifiques de chaque individu.</strong>
             </p>
+
+            <div style={{ marginTop: '50px' }}>
+              <Link href="/blog" className="btn-premium" style={{ 
+                  padding: '24px 60px', 
+                  borderRadius: '100px', 
+                  backgroundColor: 'var(--sauge-dark)', 
+                  color: 'white', 
+                  fontSize: '1.1rem', 
+                  display: 'inline-block',
+                  fontWeight: 600,
+                  letterSpacing: '1px'
+                }}>
+                DÉCOUVRIR MES ACTUALITÉS & ARTICLES
+              </Link>
+            </div>
           </div>
         </div>
       </section>

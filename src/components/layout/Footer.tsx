@@ -15,10 +15,13 @@ export function Footer() {
                         <p style={{ fontSize: '0.9rem', color: 'var(--text-main)', fontWeight: 600, marginBottom: '8px' }}>
                             6 rue pierre tristani, 13140 Miramas
                         </p>
-                        <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', lineHeight: 1.6, fontWeight: 300 }}>
+                        <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', lineHeight: 1.6, fontWeight: 300, marginBottom: '16px' }}>
                             Accompagnement holistique pour une santé vibrante. <br />
                             Cabinet & Visioconférence.
                         </p>
+                        <a href="tel:+33761211132" style={{ fontSize: '1.1rem', fontWeight: 600, color: 'var(--gold-warm)', textDecoration: 'none' }}>
+                            07 61 21 11 32
+                        </a>
                     </div>
 
                     <div>
