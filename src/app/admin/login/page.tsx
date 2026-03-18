@@ -25,7 +25,7 @@ export default function LoginPage({ searchParams }: { searchParams: { error?: st
               name="email" 
               type="email" 
               required 
-              placeholder="inessence.naturopathe@gmail.com"
+              placeholder="votre.email@exemple.fr"
               style={{ width: '100%', padding: '12px 16px', borderRadius: '8px', border: '1px solid #e5e7eb', fontSize: '1rem', outline: 'none' }}
             />
           </div>
