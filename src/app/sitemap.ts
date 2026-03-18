@@ -2,7 +2,7 @@ import { Metadata, MetadataRoute } from 'next';
 import { BLOG_POSTS, CITIES, slugify } from '@/lib/data';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://inessence.vercel.app'; // Replace with actual domain if known, inessence.vercel.app seems to be the current one
+    const baseUrl = 'https://www.inessencenaturopathe.com';
 
     // Main pages
     const routes = [
