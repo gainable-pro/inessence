@@ -191,6 +191,10 @@ export default function Home() {
       <section style={{ padding: 'clamp(80px, 12vw, 160px) 0', backgroundColor: 'var(--sable-warm)' }}>
         <div className="container">
           <div className="responsive-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '60px', alignItems: 'center' }}>
+            <div style={{ borderRadius: '40px', overflow: 'hidden', boxShadow: 'var(--shadow-soft)' }}>
+              <img src="/images/portrait-ines.jpg" alt="Portrait Inessence Naturopathe" style={{ width: '100%', height: 'auto', display: 'block' }} />
+            </div>
+
             <div>
               <h2 className="font-serif" style={{ marginBottom: '40px', fontSize: 'clamp(2.5rem, 6vw, 4rem)' }}>Ma <span className="text-sauge">Démarche</span></h2>
               
@@ -208,10 +212,6 @@ export default function Home() {
                   Aujourd&rsquo;hui, forte de cette expérience et de ces connaissances, je mets à votre service un accompagnement personnalisé, visant à soutenir votre vitalité et à vous aider à retrouver un équilibre sur tous les plans : physique, mental et émotionnel.
                 </p>
               </div>
-            </div>
-            
-            <div style={{ borderRadius: '40px', overflow: 'hidden', boxShadow: 'var(--shadow-soft)' }}>
-              <img src="/images/portrait-ines.jpg" alt="Portrait Inessence Naturopathe" style={{ width: '100%', height: 'auto', display: 'block' }} />
             </div>
           </div>
         </div>
