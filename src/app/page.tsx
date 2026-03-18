@@ -190,22 +190,28 @@ export default function Home() {
       {/* NOUVELLE SECTION : PRÉSENTATION & DÉMARCHE */}
       <section style={{ padding: 'clamp(80px, 12vw, 160px) 0', backgroundColor: 'var(--sable-warm)' }}>
         <div className="container">
-          <div style={{ maxWidth: '900px', margin: '0 auto' }}>
-            <h2 className="font-serif" style={{ marginBottom: '40px', fontSize: 'clamp(2.5rem, 6vw, 4rem)', textAlign: 'center' }}>Ma <span className="text-sauge">Démarche</span></h2>
+          <div className="responsive-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '60px', alignItems: 'center' }}>
+            <div>
+              <h2 className="font-serif" style={{ marginBottom: '40px', fontSize: 'clamp(2.5rem, 6vw, 4rem)' }}>Ma <span className="text-sauge">Démarche</span></h2>
+              
+              <div style={{ fontSize: '1.1rem', color: 'var(--text-muted)', lineHeight: 1.8, fontWeight: 300, display: 'flex', flexDirection: 'column', gap: '20px' }}>
+                <p>
+                  <strong>Naturopathe, praticienne en massage bien-être et en soins énergétiques</strong>, j&rsquo;accompagne chaque personne vers un mieux-être global, en prenant en compte le corps, l&rsquo;esprit et les émotions.
+                </p>
+                <p>
+                  Mon chemin vers la naturopathie est avant tout personnel. Milieu de la vingtaine, confrontée à un déséquilibre profond de mon organisme et à une baisse d&rsquo;énergie vitale et de mon système immunitaire, j&rsquo;ai ressenti le besoin de comprendre ce que mon corps cherchait à exprimer. Cette période a été un véritable tournant, m&rsquo;amenant à me questionner sur des approches plus globales et naturelles de la santé.
+                </p>
+                <p>
+                  Déjà sensible aux soins énergétiques, j&rsquo;ai alors choisi de me former et d&rsquo;explorer la médecine holistique afin de mieux comprendre les mécanismes du corps, ses capacités d&rsquo;autorégulation et les voies possibles d&rsquo;auto-guérison. Ce chemin m&rsquo;a permis d&rsquo;apprendre à écouter le corps, à en rechercher les causes profondes des déséquilibres, et à rétablir un équilibre durable.
+                </p>
+                <p style={{ fontSize: '1.15rem', color: 'var(--text-main)', fontWeight: 400, borderLeft: '3px solid var(--gold-warm)', paddingLeft: '20px', marginTop: '16px' }}>
+                  Aujourd&rsquo;hui, forte de cette expérience et de ces connaissances, je mets à votre service un accompagnement personnalisé, visant à soutenir votre vitalité et à vous aider à retrouver un équilibre sur tous les plans : physique, mental et émotionnel.
+                </p>
+              </div>
+            </div>
             
-            <div style={{ fontSize: '1.2rem', color: 'var(--text-muted)', lineHeight: 1.8, fontWeight: 300, display: 'flex', flexDirection: 'column', gap: '24px' }}>
-              <p>
-                <strong>Naturopathe, praticienne en massage bien-être et en soins énergétiques</strong>, j&rsquo;accompagne chaque personne vers un mieux-être global, en prenant en compte le corps, l&rsquo;esprit et les émotions.
-              </p>
-              <p>
-                Mon chemin vers la naturopathie est avant tout personnel. Milieu de la vingtaine, confrontée à un déséquilibre profond de mon organisme et à une baisse d&rsquo;énergie vitale et de mon système immunitaire, j&rsquo;ai ressenti le besoin de comprendre ce que mon corps cherchait à exprimer. Cette période a été un véritable tournant, m&rsquo;amenant à me questionner sur des approches plus globales et naturelles de la santé.
-              </p>
-              <p>
-                Déjà sensible aux soins énergétiques, j&rsquo;ai alors choisi de me former et d&rsquo;explorer la médecine holistique afin de mieux comprendre les mécanismes du corps, ses capacités d&rsquo;autorégulation et les voies possibles d&rsquo;auto-guérison. Ce chemin m&rsquo;a permis d&rsquo;apprendre à écouter le corps, à en rechercher les causes profondes des déséquilibres, et à rétablir un équilibre durable.
-              </p>
-              <p style={{ fontSize: '1.3rem', color: 'var(--text-main)', fontWeight: 400, borderLeft: '3px solid var(--gold-warm)', paddingLeft: '20px', marginTop: '16px' }}>
-                Aujourd&rsquo;hui, forte de cette expérience et de ces connaissances, je mets à votre service un accompagnement personnalisé, visant à soutenir votre vitalité et à vous aider à retrouver un équilibre sur tous les plans : physique, mental et émotionnel.
-              </p>
+            <div style={{ borderRadius: '40px', overflow: 'hidden', boxShadow: 'var(--shadow-soft)' }}>
+              <img src="/images/portrait-ines.jpg" alt="Portrait Inessence Naturopathe" style={{ width: '100%', height: 'auto', display: 'block' }} />
             </div>
           </div>
         </div>
