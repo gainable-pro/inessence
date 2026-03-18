@@ -40,7 +40,7 @@ export function Footer() {
                     <div>
                         <h4 style={{ fontSize: '0.9rem', marginBottom: '20px', letterSpacing: '1px' }}>LIENS UTILES</h4>
                         <ul style={{ listStyle: 'none', fontSize: '0.85rem', display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                            <li><Link href="/blog" className="hover-text-sauge" style={{ fontWeight: 600, color: 'var(--sauge-dark)' }}>Nos Articles & Actualités</Link></li>
+                            <li><Link href="/articles" className="hover-text-sauge" style={{ fontWeight: 600, color: 'var(--sauge-dark)' }}>Articles</Link></li>
                             <li><Link href="/mentions-legales" className="hover-text-sauge">Mentions Légales</Link></li>
                             <li><Link href="/confidentialite" className="hover-text-sauge">Confidentialité</Link></li>
                         </ul>
