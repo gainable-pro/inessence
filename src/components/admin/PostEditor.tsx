@@ -168,7 +168,7 @@ export default function PostEditor({ initialPost }: { initialPost?: any }) {
                <label style={{ display: 'block', fontSize: '0.85rem', fontWeight: 600, marginBottom: '8px' }}>Lien permanent (Slug) *</label>
                <div style={{ display: 'flex', alignItems: 'center', backgroundColor: 'white', border: '1px solid #e2e8f0', borderRadius: '8px', overflow: 'hidden' }}>
                  <span style={{ padding: '11px 15px', borderRight: '1px solid #e2e8f0', backgroundColor: '#f8fafc', color: '#64748b', fontSize: '0.9rem', whiteSpace: 'nowrap' }}>
-                   /blog/
+                   /articles/
                  </span>
                  <input 
                    value={slug} 

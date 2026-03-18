@@ -464,7 +464,7 @@ export default function Home() {
             </p>
 
             <div style={{ marginTop: '50px' }}>
-              <Link href="/blog" className="btn-premium" style={{ 
+              <Link href="/articles" className="btn-premium" style={{ 
                   padding: '24px 60px', 
                   borderRadius: '100px', 
                   backgroundColor: 'var(--sauge-dark)', 
