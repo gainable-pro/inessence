@@ -7,13 +7,13 @@ export default function PrestationsPage() {
             <section style={{ padding: '160px 0 100px', backgroundColor: 'var(--sable-dark)', textAlign: 'center' }}>
                 <div className="container">
                     <span style={{ textTransform: 'uppercase', letterSpacing: '4px', fontSize: '0.9rem', color: 'var(--gold-warm)', fontWeight: 600, display: 'block', marginBottom: '24px' }}>
-                        D&eacute;couvrir mes approches
+                        Découvrir mes approches
                     </span>
                     <h1 className="font-serif typewriter" style={{ marginBottom: '32px' }}>
                         Prestations et <span className="text-gold italic">Tarifs</span>
                     </h1>
                     <p style={{ maxWidth: '750px', margin: '0 auto', fontSize: '1.3rem', color: 'var(--text-muted)', fontWeight: 300 }}>
-                        Un accompagnement sur-mesure pour r&eacute;pondre &agrave; vos besoins physiques, &eacute;motionnels et &eacute;nerg&eacute;tiques.
+                        Un accompagnement sur-mesure pour répondre à vos besoins physiques, émotionnels et énergétiques.
                     </p>
                 </div>
             </section>
@@ -28,41 +28,41 @@ export default function PrestationsPage() {
                         
                         <div style={{ display: 'grid', gap: '30px' }}>
                             <ServiceCard 
-                                title="Bilan vital - anamn&egrave;se compl&egrave;te" 
-                                price="80&euro;" 
-                                duration="1h30 &agrave; 2h"
+                                title="Bilan vital - anamnèse complète" 
+                                price="80€" 
+                                duration="1h30 à 2h"
                                 desc={[
-                                    "Le bilan vital est un v&eacute;ritable temps pour vous, une parenth&egrave;se d&eacute;di&eacute;e &agrave; la compr&eacute;hension de votre corps et de vos besoins. Lors de cette premi&egrave;re s&eacute;ance, nous prenons le temps d&rsquo;explorer en profondeur votre mode de vie, votre alimentation, votre &eacute;nergie, votre sommeil et votre &eacute;tat &eacute;motionnel.",
-                                    "Cet &eacute;change me permet d&rsquo;identifier les d&eacute;s&eacute;quilibres et de remonter &agrave; l&rsquo;origine de vos troubles, afin de vous proposer des conseils personnalis&eacute;s et adapt&eacute;s &agrave; votre quotidien.",
-                                    "&Agrave; l&rsquo;issue du bilan, vous repartez avec des cl&eacute;s concr&egrave;tes pour mieux comprendre votre corps, retrouver votre &eacute;quilibre et avancer vers un mieux-&ecirc;tre durable, &agrave; votre rythme."
+                                    "Le bilan vital est un véritable temps pour vous, une parenthèse dédiée à la compréhension de votre corps et de vos besoins. Lors de cette première séance, nous prenons le temps d’explorer en profondeur votre mode de vie, votre alimentation, votre énergie, votre sommeil et votre état émotionnel.",
+                                    "Cet échange me permet d’identifier les déséquilibres et remonter à l’origine de vos troubles, afin de vous proposer des conseils personnalisés et adaptés à votre quotidien.",
+                                    "À l’issue du bilan, vous repartez avec des clés concrètes pour mieux comprendre votre corps, retrouver votre équilibre et avancer vers un mieux-être durable, à votre rythme."
                                 ]}
                             />
                             <ServiceCard 
                                 title="Suivi seul" 
-                                price="60&euro;" 
+                                price="60€" 
                                 desc={[
-                                    "La s&eacute;ance de suivi est un moment privil&eacute;gi&eacute; pour faire le point sur votre &eacute;volution et ajuster votre accompagnement en fonction de vos besoins du moment.",
-                                    "Elle permet d&rsquo;observer les changements d&eacute;j&agrave; mis en place, de lever d&rsquo;&eacute;ventuels blocages et d&rsquo;affiner les conseils pour continuer &agrave; avancer en douceur vers votre &eacute;quilibre.",
-                                    "Chaque suivi est personnalis&eacute; et s&rsquo;adapte &agrave; votre rythme, &agrave; vos ressentis et &agrave; vos objectifs. C&rsquo;est un espace d&rsquo;&eacute;change, de soutien et d&rsquo;ajustement, pour vous aider &agrave; ancrer durablement les nouvelles habitudes et renforcer les capacit&eacute;s naturelles de votre corps."
+                                    "La séance de suivi est un moment privilégié pour faire le point sur votre évolution et ajuster votre accompagnement en fonction de vos besoins du moment.",
+                                    "Elle permet d’observer les changements déjà mis en place, de lever d’éventuels blocages et d’affiner les conseils pour continuer à avancer en douceur vers votre équilibre.",
+                                    "Chaque suivi est personnalisé et s’adapte à votre rythme, à vos ressentis et à vos objectifs. C’est un espace d’échange, de soutien et d’ajustement, pour vous aider à ancrer durablement les nouvelles habitudes et renforcer les capacités naturelles de votre corps."
                                 ]}
                             />
                             <ServiceCard 
-                                title="Suivi conseill&eacute; et r&eacute;ajustement (3 s&eacute;ances)" 
-                                price="160&euro;" 
+                                title="Suivi conseillé et réajustement (3 séances)" 
+                                price="160€" 
                                 desc={[
-                                    "Le suivi en 3 s&eacute;ances permet d&rsquo;inscrire votre d&eacute;marche dans la dur&eacute;e et d&rsquo;accompagner en profondeur les changements mis en place.",
-                                    "Ce format offre un cadre rassurant pour avancer &eacute;tape par &eacute;tape, observer les &eacute;volutions, ajuster les conseils et soutenir votre progression en fonction de vos besoins.",
-                                    "Au fil des s&eacute;ances, nous consolidons les bases de votre hygi&egrave;ne de vie, levons les &eacute;ventuels freins et renfor&ccedil;ons les capacit&eacute;s d&rsquo;adaptation et d&rsquo;autor&eacute;gulation de votre organisme. Un accompagnement id&eacute;al pour ancrer durablement de nouvelles habitudes et retrouver un &eacute;quilibre global, en douceur et &agrave; votre rythme."
+                                    "Le suivi en 3 séances permet d’inscrire votre démarche dans la durée et d’accompagner en profondeur les changements mis en place.",
+                                    "Ce format offre un cadre rassurant pour avancer étape par étape, observer les évolutions, ajuster les conseils et soutenir votre progression en fonction de vos besoins.",
+                                    "Au fil des séances, nous consolidons les bases de votre hygiène de vie, levons les éventuels freins et renforçons les capacités d’adaptation et d’autorégulation de votre organisme. Un accompagnement idéal pour ancrer durablement de nouvelles habitudes et retrouver un équilibre global, en douceur et à votre rythme."
                                 ]}
                             />
                             <ServiceCard 
                                 title="Forfait accompagnement complet" 
-                                subtitle="(1 bilan vital + 1 suivi + 1 massage d&apos;1h au choix)"
-                                price="190&euro;" 
+                                subtitle="(1 bilan vital + 1 suivi + 1 massage d'1h au choix)"
+                                price="190€" 
                                 desc={[
-                                    "Cet accompagnement complet a &eacute;t&eacute; pens&eacute; pour vous offrir une prise en charge globale, alliant compr&eacute;hension, suivi et d&eacute;tente.",
-                                    "Il comprend un bilan vital approfondi pour faire le point sur votre &eacute;tat g&eacute;n&eacute;ral, une s&eacute;ance de suivi pour ajuster et ancrer les conseils dans votre quotidien, ainsi qu&rsquo;un massage bien-&ecirc;tre d&rsquo;une heure, au choix, pour favoriser la d&eacute;tente, le l&acirc;cher-prise et la circulation des &eacute;nergies.",
-                                    "Cette formule permet d&rsquo;agir &agrave; la fois sur le plan physique, &eacute;motionnel et &eacute;nerg&eacute;tique, afin de soutenir en profondeur l&rsquo;&eacute;quilibre de votre organisme. Un accompagnement id&eacute;al pour prendre soin de vous dans votre globalit&eacute; et vous offrir un v&eacute;ritable temps de reconnexion &agrave; votre corps."
+                                    "Cet accompagnement complet a été pensé pour vous offrir une prise en charge globale, alliant compréhension, suivi et détente.",
+                                    "Il comprend un bilan vital approfondi pour faire le point sur votre état général, une séance de suivi pour ajuster et ancrer les conseils dans votre quotidien, ainsi qu’un massage bien-être d’une heure, au choix, pour favoriser la détente, le lâcher-prise et la circulation des énergies.",
+                                    "Cette formule permet d’agir à la fois sur le plan physique, émotionnel et énergétique, afin de soutenir en profondeur l’équilibre de votre organisme. Un accompagnement idéal pour prendre soin de vous dans votre globalité et vous offrir un véritable temps de reconnexion à votre corps."
                                 ]}
                                 isPremium={true}
                             />
@@ -71,30 +71,60 @@ export default function PrestationsPage() {
 
                     {/* CATEGORY 2: SOINS BIEN-ÊTRE */}
                     <div style={{ marginBottom: '100px' }}>
-                        <h2 className="font-serif" style={{ fontSize: '3rem', color: 'var(--sauge-dark)', borderBottom: '2px solid var(--gold-warm)', paddingBottom: '20px', marginBottom: '40px' }}>Soins Bien-&Ecirc;tre</h2>
+                        <h2 className="font-serif" style={{ fontSize: '3rem', color: 'var(--sauge-dark)', borderBottom: '2px solid var(--gold-warm)', paddingBottom: '20px', marginBottom: '40px' }}>Soins Bien-Être</h2>
                         
                         <div style={{ display: 'grid', gap: '30px' }}>
                             <ServiceCard 
-                                title="R&eacute;flexologie plantaire" 
-                                price="45&euro;" 
+                                title="Réflexologie plantaire" 
+                                price="45€" 
                                 duration="30 minutes"
-                                forfait={[{name: "Forfait 3 s&eacute;ances", price: "125&euro;"}, {name: "Forfait 5 s&eacute;ances", price: "210&euro;"}]}
                                 desc={[
-                                    "La r&eacute;flexologie plantaire est une technique douce qui consiste &agrave; stimuler des zones r&eacute;flexes situ&eacute;es sur les pieds, en lien avec les diff&eacute;rents organes et syst&egrave;mes du corps. &Agrave; travers des pressions cibl&eacute;es, cette pratique permet de relancer la circulation &eacute;nerg&eacute;tique, de favoriser l&rsquo;&eacute;limination des tensions et de soutenir les fonctions naturelles de l&rsquo;organisme.",
-                                    "Elle procure une profonde d&eacute;tente, aide &agrave; r&eacute;&eacute;quilibrer le syst&egrave;me nerveux et accompagne le corps dans ses capacit&eacute;s d&rsquo;autor&eacute;gulation. Un v&eacute;ritable moment de l&acirc;cher-prise, pour apaiser le corps et l&rsquo;esprit tout en agissant en profondeur sur votre &eacute;quilibre global.",
-                                    "**Forfait 3 s&eacute;ances :** Permet d&rsquo;accompagner le corps en profondeur et dans la dur&eacute;e de mani&egrave;re progressive, favorisant un r&eacute;&eacute;quilibrage global, une meilleure circulation &eacute;nerg&eacute;tique et un rel&acirc;chement durable des tensions.",
-                                    "**Forfait 5 s&eacute;ances :** Permet un travail encore plus en profondeur, id&eacute;al pour accompagner durablement les d&eacute;s&eacute;quilibres install&eacute;s. Le corps int&egrave;gre progressivement les bienfaits : rel&acirc;chement, am&eacute;lioration de la circulation, r&eacute;&eacute;quilibrage &eacute;nerg&eacute;tique et apaisement du syst&egrave;me nerveux."
+                                    "La réflexologie plantaire est une technique douce qui consiste à stimuler des zones réflexes situées sur les pieds, en lien avec les différents organes et systèmes du corps.",
+                                    "À travers des pressions ciblées, cette pratique permet de relancer la circulation énergétique, de favoriser l’élimination des tensions et de soutenir les fonctions naturelles de l’organisme.",
+                                    "Elle procure une profonde détente, aide à rééquilibrer le système nerveux et accompagne le corps dans ses capacités d’autorégulation.",
+                                    "Un véritable moment de lâcher-prise, pour apaiser le corps et l’esprit tout en agissant en profondeur sur votre équilibre global."
                                 ]}
                             />
                             <ServiceCard 
-                                title="Soin &eacute;nerg&eacute;tique" 
-                                price="50&euro;" 
-                                duration="30 minutes"
-                                forfait={[{name: "Forfait 3 s&eacute;ances", price: "130&euro;"}]}
+                                title="Forfait 3 séances Réflexologie" 
+                                price="125€" 
                                 desc={[
-                                    "Les soins &eacute;nerg&eacute;tiques visent &agrave; r&eacute;&eacute;quilibrer la circulation de l&rsquo;&eacute;nergie dans le corps, en agissant sur les plans physique, &eacute;motionnel et subtil. &Agrave; travers une approche douce et intuitive, ils permettent de lib&eacute;rer les blocages, d&rsquo;apaiser les tensions et de relancer la vitalit&eacute. Le corps retrouve ainsi une meilleure harmonie, favorisant un profond &eacute;tat de d&eacute;tente et de recentrage.",
-                                    "Ces soins accompagnent &eacute;galement les p&eacute;riodes de fatigue, de stress, de surcharge &eacute;motionnelle ou de transition de vie, en soutenant les capacit&eacute;s naturelles d&rsquo;&eacute;quilibre et de r&eacute;g&eacute;n&eacute;ration.",
-                                    "**Forfait 3 s&eacute;ances :** Espac&eacute;es d&rsquo;une &agrave; deux semaines, permettent un travail progressif et en profondeur. Cet accompagnement favorise une lib&eacute;ration en douceur des blocages, l&rsquo;&eacute;nergie circule plus librement et un mieux-&ecirc;tre global s&rsquo;installe durablement."
+                                    "Le forfait 3 séances en réflexologie plantaire permet d’accompagner le corps en profondeur et dans la durée.",
+                                    "En répétant les séances, le travail se fait de manière progressive, favorisant un rééquilibrage global, une meilleure circulation énergétique et un relâchement durable des tensions.",
+                                    "Ce format est idéal pour soutenir les fonctions de l’organisme, ancrer les bienfaits et permettre au corps de retrouver son équilibre naturel, en douceur.",
+                                    "Un accompagnement recommandé pour prolonger les effets de la réflexologie et s’inscrire dans une véritable démarche de mieux-être."
+                                ]}
+                            />
+                            <ServiceCard 
+                                title="Forfait 5 séances Réflexologie" 
+                                price="210€" 
+                                desc={[
+                                    "Le forfait 5 séances permet un travail encore plus en profondeur, idéal pour accompagner durablement les déséquilibres installés ou soutenir l’organisme sur le long terme.",
+                                    "Grâce à la régularité des séances, le corps intègre progressivement les bienfaits de la réflexologie : relâchement des tensions, amélioration de la circulation, rééquilibrage énergétique et apaisement du système nerveux.",
+                                    "Ce format favorise une véritable transformation, en laissant au corps le temps nécessaire pour retrouver son harmonie naturelle et renforcer ses capacités d’autorégulation.",
+                                    "Un accompagnement complet pour s’inscrire dans une démarche globale et durable de bien-être."
+                                ]}
+                            />
+                            <ServiceCard 
+                                title="Soin énergétique" 
+                                price="50€" 
+                                duration="30 minutes"
+                                desc={[
+                                    "Les soins énergétiques visent à rééquilibrer la circulation de l’énergie dans le corps, en agissant sur les plans physique, émotionnel et subtil.",
+                                    "À travers une approche douce et intuitive, ils permettent de libérer les blocages, d’apaiser les tensions et de relancer la vitalité. Le corps retrouve ainsi une meilleure harmonie, favorisant un profond état de détente et de recentrage.",
+                                    "Ces soins accompagnent également les périodes de fatigue, de stress, de surcharge émotionnelle ou de transition de vie, en soutenant les capacités naturelles d’équilibre et de régénération.",
+                                    "Un véritable moment pour vous reconnecter à vous-même, retrouver votre énergie et rétablir une circulation fluide et apaisée."
+                                ]}
+                            />
+                            <ServiceCard 
+                                title="Forfait 3 séances Énergétique" 
+                                price="130€" 
+                                subtitle="Espacées d'une à deux semaines"
+                                desc={[
+                                    "Le forfait 3 séances, espacées d’une à deux semaines, permet un travail progressif et en profondeur sur les plans énergétique, émotionnel et physique.",
+                                    "Cet accompagnement favorise une libération en douceur des blocages, tout en laissant au corps le temps d’intégrer chaque séance et de réajuster son équilibre naturel.",
+                                    "Au fil des rendez-vous, l’énergie circule plus librement, les tensions s’apaisent et un mieux-être global s’installe durablement.",
+                                    "Un rythme idéal pour accompagner les transformations en respectant le temps et les besoins de votre corps."
                                 ]}
                             />
                         </div>
@@ -107,55 +137,94 @@ export default function PrestationsPage() {
                         <div style={{ display: 'grid', gap: '30px' }}>
                             <ServiceCard 
                                 title="Massage Lymphatique" 
-                                price="50&euro;" 
-                                duration="45 min - 60 min"
-                                forfait={[{name: "Forfait 5 s&eacute;ances", price: "210&euro;"}]}
+                                price="50€" 
+                                duration="45 à 60 minutes"
                                 desc={[
-                                    "Le massage drainant lymphatique est une technique douce et rythm&eacute;e qui vise &agrave; stimuler la circulation de la lymphe et &agrave; favoriser l&rsquo;&eacute;limination des toxines. Par des mouvements lents et pr&eacute;cis, il aide &agrave; d&eacute;congestionner les tissus, &agrave; r&eacute;duire les sensations de jambes lourdes, les gonflements et &agrave; soutenir le syst&egrave;me immunitaire.",
-                                    "Ce soin est &eacute;galement particuli&egrave;rement appr&eacute;ci&eacute; pour ses bienfaits esth&eacute;tiques : il contribue &agrave; am&eacute;liorer l&rsquo;aspect de la peau, &agrave; att&eacute;nuer la r&eacute;tention d&rsquo;eau et &agrave; lisser l&rsquo;aspect de la cellulite.",
-                                    "**Forfait 5 s&eacute;ances :** Espac&eacute;es de 3 jours maximum, ce rythme rapproch&eacute; est essentiel pour relancer le syst&egrave;me d&rsquo;&eacute;limination en continu. Les tissus se d&eacute;congestionnent, la r&eacute;tention d&rsquo;eau diminue, la silhouette s&rsquo;affine et la peau gagne en tonicit&eacute;."
+                                    "Le massage drainant lymphatique est une technique douce et rythmée qui vise à stimuler la circulation de la lymphe et à favoriser l’élimination des toxines.",
+                                    "Par des mouvements lents et précis, il aide à décongestionner les tissus, à réduire les sensations de jambes lourdes, les gonflements et à soutenir le système immunitaire.",
+                                    "Ce soin est également particulièrement apprécié pour ses bienfaits esthétiques : il contribue à améliorer l’aspect de la peau, à atténuer la rétention d’eau et à lisser l’aspect de la cellulite.",
+                                    "Il procure une profonde sensation de légèreté et de détente, tout en relançant les fonctions d’élimination du corps.",
+                                    "Un soin complet pour purifier l’organisme, affiner la silhouette et retrouver un bien-être global."
                                 ]}
                             />
                             <ServiceCard 
-                                title="Massage Kobido (japonais)" 
-                                price="70&euro;" 
-                                duration="45 min - 60 min"
-                                forfait={[{name: "Forfait 5 s&eacute;ances", price: "280&euro;"}, {name: "Forfait 10 s&eacute;ances", price: "560&euro;"}]}
+                                title="Forfait 5 séances Lymphatique" 
+                                price="210€"
+                                subtitle="Espacées de 3 jours maximum" 
                                 desc={[
-                                    "V&eacute;ritable rituel ancestral japonais, le Kobido est un massage du visage alliant technicit&eacute; et douceur, reconnu pour ses effets liftants naturels. &Agrave; travers des gestes pr&eacute;cis, rythm&eacute;s et profonds, il stimule la circulation sanguine et lymphatique, tonifie les muscles du visage et relance la production de collag&egrave;ne.",
-                                    "Ce soin permet de lisser les traits, redonner de l&rsquo;&eacute;clat au teint et pr&eacute;venir les signes du vieillissement, tout en procurant une profonde d&eacute;tente. Il lib&egrave;re &eacute;galement les tensions accumul&eacute;es au niveau du visage et du syst&egrave;me nerveux.",
-                                    "**Forfait 5 s&eacute;ances :** Id&eacute;alement espac&eacute;es d&rsquo;une semaine, permet d&rsquo;obtenir des r&eacute;sultats visibles et durables sur la qualit&eacute; de la peau. Les traits sont plus liss&eacute;s, le teint plus &eacute;clatant.",
-                                    "**Forfait 10 s&eacute;ances :** Une v&eacute;ritable cure r&eacute;g&eacute;n&eacute;rante. Cette r&eacute;gularit&eacute; stimule intens&eacute;ment la production de collag&egrave;ne. Les rides s&rsquo;estompent, la peau gagne en fermet&eacute; et en luminosit&eacute;. Id&eacute;al pour un accompagnement anti-&acirc;ge naturel."
+                                    "Le forfait 5 séances, espacées de 3 jours maximum, permet de stimuler efficacement et durablement la circulation lymphatique.",
+                                    "Ce rythme rapproché est essentiel pour relancer le système d’élimination du corps de manière continue, éviter que la lymphe ne stagne à nouveau et potentialiser les effets du drainage. Chaque séance vient renforcer les bienfaits de la précédente, permettant un travail progressif et en profondeur.",
+                                    "Au fil des séances, les tissus se décongestionnent, la rétention d’eau diminue, la silhouette s’affine et la peau gagne en tonicité.",
+                                    "Ce protocole est idéal pour obtenir des résultats visibles et durables, tout en soutenant les capacités naturelles de détoxification de l’organisme."
+                                ]}
+                            />
+                            <ServiceCard 
+                                title="Le Kobido (japonais)" 
+                                price="70€" 
+                                duration="45 à 60 minutes"
+                                desc={[
+                                    "Véritable rituel ancestral japonais, le Kobido est un massage du visage alliant technicité et douceur, reconnu pour ses effets liftants naturels.",
+                                    "À travers des gestes précis, rythmés et profonds, il stimule la circulation sanguine et lymphatique, tonifie les muscles du visage et relance la production de collagène.",
+                                    "Ce soin permet de lisser les traits, redonner de l’éclat au teint et prévenir les signes du vieillissement, tout en procurant une profonde détente.",
+                                    "Au-delà de ses bienfaits esthétiques, le Kobido agit également sur l’équilibre global en libérant les tensions accumulées au niveau du visage et du système nerveux.",
+                                    "Un véritable moment de lâcher-prise et de régénération, pour révéler l'éclat naturel de votre peau."
+                                ]}
+                            />
+                            <ServiceCard 
+                                title="Forfait 5 séances Kobido" 
+                                price="280€" 
+                                subtitle="Idéalement espacées d'une semaine"
+                                desc={[
+                                    "Le forfait 5 séances, idéalement espacées d’une semaine, permet d’obtenir des résultats visibles et durables sur la qualité de la peau et la tonicité du visage.",
+                                    "Ce rythme régulier stimule progressivement les muscles du visage, relance la circulation et soutient la production naturelle de collagène. Chaque séance vient renforcer les effets de la précédente, permettant un véritable travail en profondeur.",
+                                    "Au fil des séances, les traits sont plus lissés, le teint plus éclatant et la peau visiblement plus ferme.",
+                                    "Ce protocole est particulièrement recommandé pour installer un effet liftant naturel et prolonger les bienfaits du Kobido dans le temps."
+                                ]}
+                            />
+                            <ServiceCard 
+                                title="Forfait 10 séances Kobido" 
+                                price="560€" 
+                                subtitle="Pour des résultats profonds et durables"
+                                desc={[
+                                    "Le forfait 10 séances est une véritable cure régénérante, pensée pour des résultats profonds, visibles et durables.",
+                                    "À raison d’une séance par semaine, ce protocole permet de travailler en continu sur la tonicité des muscles du visage, la qualité de la peau et l’éclat du teint. Cette régularité est essentielle pour stimuler intensément la production de collagène et ancrer les effets liftants naturels du Kobido.",
+                                    "Au fil des séances, les traits se redessinent, les rides et ridules s’estompent, la peau gagne en fermeté et en luminosité. Le visage retrouve progressivement son éclat, comme revitalisé de l’intérieur.",
+                                    "Ce forfait est idéal pour celles et ceux qui souhaitent un véritable accompagnement anti-âge naturel, avec des résultats visibles séance après séance, et une peau durablement plus tonique et éclatante."
                                 ]}
                             />
                              <ServiceCard 
-                                title="Massage Ayurv&eacute;dique" 
-                                price="90&euro;" 
+                                title="L'Ayurvédique" 
+                                price="90€" 
                                 duration="90 minutes"
                                 desc={[
-                                    "Issu de l&rsquo;Ayurv&eacute;da, m&eacute;decine traditionnelle indienne mill&eacute;naire, le massage ayurv&eacute;dique s&rsquo;inscrit dans une approche globale visant &agrave; r&eacute;tablir l&rsquo;&eacute;quilibre entre le corps, l&rsquo;esprit et l&rsquo;&eacute;nergie vitale (prana).",
-                                    "R&eacute;alis&eacute; avec des huiles chaudes et des mouvements enveloppants, rythm&eacute;s et parfois dynamiques, ce soin agit &agrave; la fois sur les tissus, la circulation et le syst&egrave;me nerveux. Il favorise l&rsquo;&eacute;limination des toxines, relance la vitalit&eacute;, am&eacute;liore la souplesse du corps et apaise durablement le mental.",
-                                    "Un soin profond&eacute;ment r&eacute;g&eacute;n&eacute;rant, id&eacute;al pour retrouver &eacute;quilibre, &eacute;nergie et s&eacute;r&eacute;nit&eacute;, en favorisant une reconnexion &agrave; soi selon votre constitution unique (doshas)."
+                                    "Issu de l'Ayurvéda, médecine traditionnelle indienne millénaire, le massage ayurvédique s'inscrit dans une approche globale visant à rétablir l'équilibre entre le corps, l'esprit et l'énergie vitale, appelée prana.",
+                                    "Selon cette tradition, chaque individu possède une constitution unique (doshas), et le déséquilibre de ces énergies peut être à l'origine de tensions physiques, de fatigue ou de troubles émotionnels. Le massage ayurvédique vient ainsi réharmoniser ces énergies en profondeur.",
+                                    "Réalisé avec des huiles chaudes et des mouvements enveloppants, rythmés et parfois dynamiques, ce soin agit à la fois sur les tissus, la circulation et le système nerveux. Il favorise l'élimination des toxines (ama), relance la vitalité, améliore la souplesse du corps et apaise durablement le mental.",
+                                    "Au-delà de ses bienfaits physiques, il permet un véritable recentrage, une reconnexion à soi et une harmonisation globale de l'être.",
+                                    "Un soin profondément régénérant, idéal pour retrouver équilibre, énergie et sérénité."
                                 ]}
                             />
                              <ServiceCard 
-                                title="Massage Lomi-Lomi" 
-                                price="70&euro;" 
-                                duration="60 minutes"
+                                title="Le Lomi-Lomi" 
+                                price="70€" 
+                                duration="60 à 75 minutes"
                                 desc={[
-                                    "Issu de la tradition ancestrale hawa&iuml;enne, le massage Lomi-Lomi est bien plus qu&rsquo;un simple soin du corps : c&rsquo;est un v&eacute;ritable rituel de gu&eacute;rison, profond&eacute;ment ancr&eacute; dans la philosophie du Aloha, qui invite &agrave; l&rsquo;harmonie, &agrave; l&rsquo;amour et &agrave; la fluidit&eacute;.",
-                                    "R&eacute;alis&eacute; avec les avant-bras, dans des mouvements longs, fluides et enveloppants rappelant le va-et-vient des vagues, le Lomi-Lomi agit en profondeur sur les tensions musculaires, la circulation et le syst&egrave;me nerveux.",
-                                    "Il favorise un l&acirc;cher-prise intense, aide &agrave; lib&eacute;rer les m&eacute;moires &eacute;motionnelles et permet au corps de retrouver son &eacute;quilibre naturel. Une v&eacute;ritable renaissance int&eacute;rieure."
+                                    "Le massage Lomi-Lomi est un soin rituel venu d'Hawaï, imprégné de la philosophie locale Huna. Ses mouvements fluides, amples et rythmés, donnés principalement avec les avant-bras, rappellent le doux va-et-vient des vagues, plongeant le corps dans une profonde et enveloppante relaxation.",
+                                    "Plus qu'un simple massage, le Lomi-Lomi agit puissamment sur les plans physique et subtil. Il libère avec douceur les nœuds musculaires, dissipe les tensions émotionnelles enfouies et relance harmonieusement la circulation de l'énergie.",
+                                    "Ce soin procure une sensation d'unité, de recentrage et de profonde détente, comme une véritable renaissance intérieure.",
+                                    "Un voyage sensoriel unique, pour se reconnecter à soi, relâcher ce qui n'a plus lieu d'être et retrouver une harmonie globale."
                                 ]}
                             />
                              <ServiceCard 
-                                title="Massage Pr&eacute;natal" 
-                                price="45&euro;" 
-                                duration="30 &agrave; 45 minutes"
+                                title="Le Prénatal" 
+                                price="45€" 
+                                duration="30 à 45 minutes"
                                 desc={[
-                                    "Le massage pr&eacute;natal est un soin sp&eacute;cialement con&ccedil;u pour accompagner la femme tout au long de sa grossesse, en douceur et en s&eacute;curit&eacute;.",
-                                    "Durant cette p&eacute;riode de grands changements, ce massage permet de soulager les tensions musculaires (dos, jambes, bassin), tout en am&eacute;liorant la circulation et r&eacute;duisant les sensations de jambes lourdes.",
-                                    "Gr&acirc;ce &agrave; des gestes enveloppants et adapt&eacute;s, il favorise la d&eacute;tente profonde, apaise le syst&egrave;me nerveux. Un accompagnement pr&eacute;cieux pour vivre sa grossesse plus sereinement et un v&eacute;ritable moment de connexion &agrave; soi et &agrave; son b&eacute;b&eacute;."
+                                    "Le massage prénatal est un soin spécialement conçu pour accompagner la femme tout au long de sa grossesse, en douceur et en sécurité.",
+                                    "Durant cette période de grands changements physiques et émotionnels, ce massage permet de soulager les tensions musculaires, notamment au niveau du dos, des jambes et du bassin, tout en améliorant la circulation et en réduisant les sensations de jambes lourdes.",
+                                    "Grâce à des gestes enveloppants et adaptés, il favorise la détente profonde, apaise le système nerveux et aide à mieux vivre les inconforts liés à la grossesse.",
+                                    "Au-delà des bienfaits physiques, ce soin offre un véritable moment de connexion à soi et à son bébé, dans un cocon de douceur et de bienveillance.",
+                                    "Un accompagnement précieux pour vivre sa grossesse plus sereinement et en harmonie avec son corps."
                                 ]}
                             />
                         </div>
@@ -163,19 +232,19 @@ export default function PrestationsPage() {
 
                     {/* DISLAIMERS / NOTES IMPORTANTES */}
                     <div style={{ marginTop: '100px', backgroundColor: 'var(--sable-warm)', padding: '60px', borderRadius: '40px', border: '1px solid rgba(212, 175, 55, 0.2)' }}>
-                        <h3 className="font-serif" style={{ fontSize: '2rem', marginBottom: '24px', color: 'var(--text-main)', textAlign: 'center' }}>Le bien-&ecirc;tre accessible &agrave; tous</h3>
+                        <h3 className="font-serif" style={{ fontSize: '2rem', marginBottom: '24px', color: 'var(--text-main)', textAlign: 'center' }}>Le bien-être accessible à tous</h3>
                         <p style={{ fontSize: '1.2rem', color: 'var(--text-muted)', lineHeight: 1.8, marginBottom: '20px' }}>
-                            Certaines mutuelles proposent une <strong>prise en charge partielle ou totale</strong> des consultations en naturopathie, ainsi que de certaines s&eacute;ances de r&eacute;flexologie. Une facture pourra vous &ecirc;tre remise afin de faciliter vos d&eacute;marches aupr&egrave;s de votre organisme compl&eacute;mentaire.
+                            Certaines mutuelles proposent une <strong>prise en charge partielle ou totale</strong> des consultations en naturopathie, ainsi que de certaines séances de réflexologie. Une facture pourra vous être remise afin de faciliter vos démarches auprès de votre organisme complémentaire.
                         </p>
                         <p style={{ fontSize: '1.2rem', color: 'var(--text-muted)', lineHeight: 1.8, marginBottom: '20px' }}>
-                            Dans une volont&eacute; de rendre le bien-&ecirc;tre accessible &agrave; tous, des tarifs adapt&eacute;s peuvent &eacute;galement &ecirc;tre propos&eacute;s aux &eacute;tudiants et aux personnes b&eacute;n&eacute;ficiant du RSA. Prendre soin de son hygi&egrave;ne de vie et de sa sant&eacute; devrait &ecirc;tre &agrave; la port&eacute;e de chacun.
+                            Dans une volonté de rendre le bien-être accessible à tous, des tarifs adaptés peuvent également être proposés aux étudiants et aux personnes bénéficiant du RSA. Prendre soin de son hygiène de vie et de sa santé devrait être à la portée de chacun.
                         </p>
                         <p style={{ fontSize: '1.2rem', color: 'var(--gold-vibrant)', fontWeight: 600, textAlign: 'center', marginTop: '30px' }}>
-                            Les forfaits peuvent &ecirc;tre pay&eacute;s en plusieurs fois.
+                            Les forfaits peuvent être payés en plusieurs fois.
                         </p>
                         
                         <div style={{ textAlign: 'center', marginTop: '40px' }}>
-                            <Link href="/contact" className="btn-premium" style={{ display: 'inline-flex', padding: '20px 50px' }}>R&Eacute;SERVER MA S&Eacute;ANCE</Link>
+                            <Link href="/contact" className="btn-premium" style={{ display: 'inline-flex', padding: '20px 50px' }}>RÉSERVER MA SÉANCE</Link>
                         </div>
                     </div>
 
@@ -199,7 +268,7 @@ function ServiceCard({ title, subtitle, price, duration, desc, forfait, isPremiu
                 <div>
                     <h3 className="font-serif" style={{ fontSize: '1.8rem', color: isPremium ? 'var(--gold-warm)' : 'var(--text-main)', margin: '0 0 8px' }}>{title}</h3>
                     {subtitle && <p style={{ fontSize: '1rem', color: 'var(--text-muted)', fontStyle: 'italic', margin: 0 }}>{subtitle}</p>}
-                    {duration && <p style={{ fontSize: '0.9rem', color: 'var(--sauge-dark)', margin: '8px 0 0', fontWeight: 600, letterSpacing: '1px' }}>DUR&Eacute;E : {duration.toUpperCase()}</p>}
+                    {duration && <p style={{ fontSize: '0.9rem', color: 'var(--sauge-dark)', margin: '8px 0 0', fontWeight: 600, letterSpacing: '1px' }}>DURÉE : {duration.toUpperCase()}</p>}
                 </div>
                 <div style={{ fontSize: '2.4rem', fontWeight: 300, color: 'var(--text-main)', display: 'flex', flexDirection: 'column', alignItems: 'flex-end' }}>
                     {price}
@@ -220,8 +289,8 @@ function ServiceCard({ title, subtitle, price, duration, desc, forfait, isPremiu
                         <p key={idx} style={{ color: 'var(--text-muted)', lineHeight: 1.7, fontSize: '1.05rem', margin: 0 }}>
                             {parts.map((part, i) => 
                                 part.startsWith('**') && part.endsWith('**') ? 
-                                <strong key={i} style={{ color: 'var(--text-main)' }}>{part.slice(2, -2).replace(/'/g, '&apos;').replace(/’/g, '&rsquo;')}</strong> : 
-                                part.replace(/'/g, '&apos;').replace(/’/g, '&rsquo;')
+                                <strong key={i} style={{ color: 'var(--text-main)' }}>{part.slice(2, -2)}</strong> : 
+                                part
                             )}
                         </p>
                     );
