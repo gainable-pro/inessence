@@ -42,8 +42,11 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     // Isoler les blocs de textes et d'images
     const blocks = post.content_blocks || [];
     
-    // Le premier bloc contenant du texte servira d'introduction sous le H1 (s'il existe)
-    // Nous laisserons l'éditeur choisir l'ordre. On parcourt simplement les blocs.
+    // Grouper les blocs par paires pour créer l'effet ZigZag
+    const rows = [];
+    for (let i = 0; i < blocks.length; i += 2) {
+        rows.push(blocks.slice(i, i + 2));
+    }
     
     return (
         <div className="animate-fade-in">
@@ -87,33 +90,51 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             <section style={{ padding: '120px 0', backgroundColor: 'var(--white)' }}>
                 <div className="container" style={{ maxWidth: '1100px' }}>
 
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: '80px', marginBottom: '140px' }}>
-                        {blocks.map((block: any, index: number) => {
-                            if (block.type === 'image') {
-                                return (
-                                    <div key={block.id || index} style={{ borderRadius: '50px', overflow: 'hidden', boxShadow: 'var(--shadow-soft)', width: '100%', maxWidth: '800px', margin: '0 auto' }}>
-                                        {block.url ? (
-                                            <img src={block.url} alt={block.caption || post.title} style={{ width: '100%', maxHeight: '600px', objectFit: 'cover', display: 'block' }} />
-                                        ) : null}
-                                        {block.caption && (
-                                            <div style={{ padding: '15px', textAlign: 'center', backgroundColor: '#fdfcf9', fontSize: '0.95rem', color: 'var(--text-muted)', fontStyle: 'italic' }}>
-                                                {block.caption}
-                                            </div>
-                                        )}
-                                    </div>
-                                );
-                            } else if (block.type === 'text') {
-                                // Rendu du texte en HTML de manière sécurisée ou simple P
-                                return (
-                                    <div key={block.id || index} style={{ width: '100%', maxWidth: '850px', margin: '0 auto' }}>
-                                        <div 
-                                            style={{ fontSize: '1.25rem', lineHeight: 1.9, color: 'var(--text-main)', fontWeight: 300, whiteSpace: 'pre-line' }}
-                                            dangerouslySetInnerHTML={{ __html: block.content || '' }}
-                                        />
-                                    </div>
-                                );
-                            }
-                            return null;
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '100px', marginBottom: '140px' }}>
+                        {rows.map((row: any[], rowIndex: number) => {
+                            const isReversed = rowIndex % 2 !== 0;
+                            return (
+                                <div key={rowIndex} style={{
+                                    display: 'flex',
+                                    flexDirection: isReversed ? 'row-reverse' : 'row',
+                                    alignItems: 'center',
+                                    gap: '60px',
+                                    flexWrap: 'wrap'
+                                }}>
+                                    {row.map((block: any, bIndex: number) => (
+                                        <div key={block.id || bIndex} style={{ flex: '1 1 400px', minWidth: 0 }}>
+                                            {block.type === 'image' ? (
+                                                <div style={{ borderRadius: '40px', overflow: 'hidden', boxShadow: 'var(--shadow-soft)', width: '100%' }}>
+                                                    {block.url && (
+                                                        <img 
+                                                            src={block.url} 
+                                                            alt={block.caption || post.title} 
+                                                            style={{ width: '100%', maxHeight: '450px', objectFit: 'cover', display: 'block' }} 
+                                                        />
+                                                    )}
+                                                    {block.caption && (
+                                                        <div style={{ padding: '15px', textAlign: 'center', backgroundColor: '#fdfcf9', fontSize: '0.9rem', color: 'var(--text-muted)', fontStyle: 'italic' }}>
+                                                            {block.caption}
+                                                        </div>
+                                                    )}
+                                                </div>
+                                            ) : (
+                                                <div style={{ padding: '20px 0' }}>
+                                                    {block.title && (
+                                                        <h2 className="font-serif" style={{ fontSize: '2.2rem', marginBottom: '24px', color: 'var(--sauge-dark)', lineHeight: 1.2 }}>
+                                                            {block.title}
+                                                        </h2>
+                                                    )}
+                                                    <div 
+                                                        style={{ fontSize: '1.15rem', lineHeight: 1.8, color: 'var(--text-main)', fontWeight: 300, whiteSpace: 'pre-line' }}
+                                                        dangerouslySetInnerHTML={{ __html: block.content || '' }}
+                                                    />
+                                                </div>
+                                            )}
+                                        </div>
+                                    ))}
+                                </div>
+                            );
                         })}
                     </div>
 

@@ -7,6 +7,7 @@ import { useRouter } from 'next/navigation'
 type Block = {
   id: string
   type: 'text' | 'image'
+  title?: string
   content?: string
   url?: string
   caption?: string
@@ -204,15 +205,23 @@ export default function PostEditor({ initialPost }: { initialPost?: any }) {
                      </div>
                    </div>
 
-                   {block.type === 'text' ? (
-                     <textarea 
-                       value={block.content || ''}
-                       onChange={e => updateBlock(block.id, { content: e.target.value })}
-                       rows={6}
-                       style={{ width: '100%', padding: '12px', borderRadius: '8px', border: '1px solid #cbd5e1', fontSize: '1rem', resize: 'vertical', outline: 'none' }}
-                       placeholder="Écrivez le paragraphe ici (vous pouvez utiliser HTML si besoin <b>gras</b>)..."
-                     />
-                   ) : (
+                    {block.type === 'text' ? (
+                      <div style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
+                        <input 
+                          value={block.title || ''}
+                          onChange={e => updateBlock(block.id, { title: e.target.value })}
+                          placeholder="Titre du bloc (Optionnel, ex: Les origines de la pratique...)"
+                          style={{ width: '100%', padding: '12px', borderRadius: '8px', border: '1px solid #cbd5e1', fontSize: '1.05rem', fontWeight: 600, outline: 'none', backgroundColor: 'white' }}
+                        />
+                        <textarea 
+                          value={block.content || ''}
+                          onChange={e => updateBlock(block.id, { content: e.target.value })}
+                          rows={6}
+                          style={{ width: '100%', padding: '12px', borderRadius: '8px', border: '1px solid #cbd5e1', fontSize: '1rem', resize: 'vertical', outline: 'none' }}
+                          placeholder="Écrivez le paragraphe ici..."
+                        />
+                      </div>
+                    ) : (
                      <div style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
                        {block.url ? (
                          <div style={{ position: 'relative' }}>
@@ -321,6 +330,31 @@ export default function PostEditor({ initialPost }: { initialPost?: any }) {
               />
             </div>
 
+          </div>
+
+          {/* ASSISTANT IA PROMPT */}
+          <div style={{ backgroundColor: 'var(--sable-warm)', padding: '25px', borderRadius: '16px', boxShadow: 'var(--shadow-soft)', display: 'flex', flexDirection: 'column', gap: '15px', border: '1px solid var(--gold-warm)' }}>
+            <h3 style={{ fontSize: '1.2rem', margin: 0, color: 'var(--gold-vibrant)' }}>✨ Assistant IA Seo</h3>
+            <p style={{ fontSize: '0.85rem', color: 'var(--text-main)', lineHeight: 1.5 }}>
+              Copiez ce prompt expert dans ChatGPT pour générer un contenu sur-mesure pour votre structure Zig-Zag.
+            </p>
+            <textarea 
+               readOnly
+               value={`Agis comme un expert SEO et naturopathe. Rédige un article complet sur le sujet : "${title || '...'}"\n\nL'article doit être structuré pour un format 'Zig-Zag' (alternance de 4 à 6 blocs distincts).\n\nFournis-moi exactement :\n1. Une balise Meta Title optimisée (30 à 65 caractères).\n2. Une Meta Description attractive (120 à 160 caractères).\n3. Un titre principal H1 accrocheur.\n4. Pour CHACUN des blocs, fournis un Titre structurant et un paragraphe de texte ciblé de 100 à 150 mots.\n5. Indique clairement à quel moment je devrais insérer une image d'illustration.`}
+               rows={8}
+               style={{ width: '100%', padding: '15px', borderRadius: '8px', border: '1px solid #e2e8f0', fontSize: '0.8rem', resize: 'vertical', outline: 'none', backgroundColor: 'white', color: '#475569', lineHeight: 1.6 }}
+            />
+            <button 
+              onClick={(e) => {
+                e.preventDefault();
+                const text = `Agis comme un expert SEO et naturopathe. Rédige un article complet sur le sujet : "${title || '...'}"\n\nL'article doit être structuré pour un format 'Zig-Zag' (alternance de 4 à 6 blocs distincts).\n\nFournis-moi exactement :\n1. Une balise Meta Title optimisée (30 à 65 caractères).\n2. Une Meta Description attractive (120 à 160 caractères).\n3. Un titre principal H1 accrocheur.\n4. Pour CHACUN des blocs, fournis un Titre structurant et un paragraphe de texte ciblé de 100 à 150 mots.\n5. Indique clairement à quel moment je devrais insérer une image d'illustration.`;
+                navigator.clipboard.writeText(text);
+                alert('Prompt expert copié ! Collez-le dans ChatGPT.');
+              }}
+              style={{ padding: '12px', backgroundColor: 'var(--gold-warm)', color: 'white', borderRadius: '8px', border: 'none', cursor: 'pointer', fontWeight: 600, fontSize: '0.9rem' }}
+            >
+              📋 Copier le Prompt
+            </button>
           </div>
 
         </div>
