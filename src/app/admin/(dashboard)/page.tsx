@@ -70,7 +70,7 @@ export default async function AdminDashboardPage() {
                         Éditer
                       </Link>
                       {post.is_published && (
-                        <a href={`/blog/${post.slug}`} target="_blank" rel="noopener noreferrer" style={{ color: 'white', backgroundColor: 'var(--sauge-dark)', fontWeight: 600, fontSize: '0.9rem', padding: '6px 16px', borderRadius: '6px', textDecoration: 'none' }}>
+                        <a href={`/articles/${post.slug}`} target="_blank" rel="noopener noreferrer" style={{ color: 'white', backgroundColor: 'var(--sauge-dark)', fontWeight: 600, fontSize: '0.9rem', padding: '6px 16px', borderRadius: '6px', textDecoration: 'none' }}>
                           Voir
                         </a>
                       )}
