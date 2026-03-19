@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { createClient } from '@/utils/supabase/server'
+import DeletePostButton from '@/components/admin/DeletePostButton'
 
 export const revalidate = 0 // Pas de cache dynamique pour l'admin
 
@@ -73,6 +74,7 @@ export default async function AdminDashboardPage() {
                           Voir
                         </a>
                       )}
+                      <DeletePostButton postId={post.id} postTitle={post.title} />
                     </div>
                   </td>
                 </tr>
