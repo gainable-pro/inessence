@@ -27,13 +27,9 @@ export default function LegalPage() {
                                 src="/images/logo-exceed.png" 
                                 alt="Exceed Digital Logo" 
                                 style={{ maxWidth: '200px', height: 'auto', display: 'block', marginBottom: '15px' }} 
-                                onError={(e) => {
-                                    // Fallback s'il n'y a pas d'image encore dans public/images
-                                    e.currentTarget.style.display = 'none';
-                                }}
                             />
                             <p style={{ margin: 0 }}>
-                                <strong>Ce site a été conçu et réalisé par l'agence EXCEED DIGITAL.</strong>
+                                <strong>Ce site a été conçu et réalisé par l&apos;agence EXCEED DIGITAL.</strong>
                             </p>
                         </div>
                         <ul style={{ listStyleType: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '8px', flex: '2 1 300px' }}>
@@ -60,7 +56,7 @@ export default function LegalPage() {
                 <section>
                     <h2 className="font-serif" style={{ color: 'var(--text-main)', marginBottom: '20px', borderBottom: '1px solid #e2e8f0', paddingBottom: '10px' }}>4. Propriété intellectuelle</h2>
                     <p>
-                        L'ensemble de ce site relève de la législation française et internationale sur le droit d'auteur et la propriété intellectuelle. Tous les droits de reproduction sont réservés, y compris pour les documents téléchargeables et les représentations iconographiques et photographiques.
+                        L&apos;ensemble de ce site relève de la législation française et internationale sur le droit d&apos;auteur et la propriété intellectuelle. Tous les droits de reproduction sont réservés, y compris pour les documents téléchargeables et les représentations iconographiques et photographiques.
                     </p>
                 </section>
 
@@ -68,7 +64,7 @@ export default function LegalPage() {
                     <h2 className="font-serif" style={{ color: 'var(--text-main)', marginBottom: '20px', borderBottom: '1px solid #e2e8f0', paddingBottom: '10px' }}>5. Avertissement médical</h2>
                     <p>
                         La naturopathie ne remplace en aucun cas un avis médical ou un traitement allopathique. 
-                        Les informations contenues sur ce site ont pour but d'améliorer votre hygiène de vie et votre santé globale via des méthodes naturelles. Ne jamais arrêter ou modifier un traitement médical sans l'avis préalable de votre médecin traitant.
+                        Les informations contenues sur ce site ont pour but d&apos;améliorer votre hygiène de vie et votre santé globale via des méthodes naturelles. Ne jamais arrêter ou modifier un traitement médical sans l&apos;avis préalable de votre médecin traitant.
                     </p>
                 </section>
 
