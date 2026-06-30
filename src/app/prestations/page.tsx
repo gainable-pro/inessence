@@ -137,7 +137,7 @@ export default function PrestationsPage() {
                         <div style={{ display: 'grid', gap: '30px' }}>
                             <ServiceCard 
                                 title="Massage Lymphatique" 
-                                price="50€" 
+                                price="90€" 
                                 duration="45 à 60 minutes"
                                 desc={[
                                     "Le massage drainant lymphatique est une technique douce et rythmée qui vise à stimuler la circulation de la lymphe et à favoriser l’élimination des toxines.",
@@ -149,13 +149,24 @@ export default function PrestationsPage() {
                             />
                             <ServiceCard 
                                 title="Forfait 5 séances Lymphatique" 
-                                price="210€"
+                                price="450€"
                                 subtitle="Espacées de 3 jours maximum" 
                                 desc={[
                                     "Le forfait 5 séances, espacées de 3 jours maximum, permet de stimuler efficacement et durablement la circulation lymphatique.",
                                     "Ce rythme rapproché est essentiel pour relancer le système d’élimination du corps de manière continue, éviter que la lymphe ne stagne à nouveau et potentialiser les effets du drainage. Chaque séance vient renforcer les bienfaits de la précédente, permettant un travail progressif et en profondeur.",
                                     "Au fil des séances, les tissus se décongestionnent, la rétention d’eau diminue, la silhouette s’affine et la peau gagne en tonicité.",
                                     "Ce protocole est idéal pour obtenir des résultats visibles et durables, tout en soutenant les capacités naturelles de détoxification de l’organisme."
+                                ]}
+                            />
+                            <ServiceCard 
+                                title="Forfait 10 séances Lymphatique" 
+                                price="800€"
+                                subtitle="Pour des résultats profonds et durables" 
+                                desc={[
+                                    "Le forfait 10 séances est une véritable cure de régénération et de détoxification profonde pour votre organisme.",
+                                    "Ce protocole complet permet d'ancrer durablement les bienfaits du drainage lymphatique : élimination profonde des toxines, réduction durable de la rétention d'eau et amélioration globale de la circulation lymphatique et sanguine.",
+                                    "Au fil des séances, la silhouette s'affine, les tissus se raffermissent et le corps retrouve une légèreté et une vitalité optimales.",
+                                    "Un accompagnement recommandé pour celles et ceux qui souhaitent s'engager dans une démarche globale de santé, de détox et de mieux-être durable."
                                 ]}
                             />
                             <ServiceCard 
@@ -183,7 +194,7 @@ export default function PrestationsPage() {
                             />
                             <ServiceCard 
                                 title="Forfait 10 séances Kobido" 
-                                price="560€" 
+                                price="800€" 
                                 subtitle="Pour des résultats profonds et durables"
                                 desc={[
                                     "Le forfait 10 séances est une véritable cure régénérante, pensée pour des résultats profonds, visibles et durables.",
