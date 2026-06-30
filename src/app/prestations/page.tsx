@@ -160,7 +160,7 @@ export default function PrestationsPage() {
                             />
                             <ServiceCard 
                                 title="Forfait 10 séances Lymphatique" 
-                                price="800€"
+                                price="600€"
                                 subtitle="Pour des résultats profonds et durables" 
                                 desc={[
                                     "Le forfait 10 séances est une véritable cure de régénération et de détoxification profonde pour votre organisme.",
@@ -194,7 +194,7 @@ export default function PrestationsPage() {
                             />
                             <ServiceCard 
                                 title="Forfait 10 séances Kobido" 
-                                price="800€" 
+                                price="600€" 
                                 subtitle="Pour des résultats profonds et durables"
                                 desc={[
                                     "Le forfait 10 séances est une véritable cure régénérante, pensée pour des résultats profonds, visibles et durables.",
