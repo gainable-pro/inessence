@@ -1,3 +1,13 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Mentions Légales | Inessence Naturopathie",
+    description: "Consultez les mentions légales du site Inessence Naturopathie à Miramas.",
+    alternates: {
+        canonical: "/mentions-legales",
+    },
+};
+
 export default function LegalPage() {
     return (
         <div className="container" style={{ padding: '160px 24px', maxWidth: '800px' }}>

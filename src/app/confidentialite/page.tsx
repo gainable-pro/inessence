@@ -1,3 +1,13 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Politique de Confidentialité | Inessence Naturopathie",
+    description: "Consultez la politique de confidentialité et de gestion des données personnelles du site Inessence.",
+    alternates: {
+        canonical: "/confidentialite",
+    },
+};
+
 export default function ConfidentialitePage() {
     return (
         <div className="container" style={{ padding: '160px 24px', maxWidth: '800px' }}>

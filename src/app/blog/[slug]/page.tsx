@@ -14,13 +14,19 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     const post = BLOG_POSTS.find((p) => p.slug === slug);
     if (!post) return { title: 'Article non trouvé' };
 
+    const canonicalUrl = `/blog/${slug}`;
+
     return {
         title: post.metaTitle,
         description: post.metaDesc,
         openGraph: {
             title: post.metaTitle,
             description: post.metaDesc,
+            url: canonicalUrl,
             images: [`/images/${post.img}`],
+        },
+        alternates: {
+            canonical: canonicalUrl,
         },
     };
 }

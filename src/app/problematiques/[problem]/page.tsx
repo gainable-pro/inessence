@@ -1,11 +1,36 @@
 import Link from "next/link";
 import { PROBLEMATIQUES, slugify } from "@/lib/data";
 import { notFound } from "next/navigation";
+import { Metadata } from "next";
 
 export async function generateStaticParams() {
     return PROBLEMATIQUES.map((prob) => ({
         problem: `${prob.slug}-miramas`,
     }));
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ problem: string }> }): Promise<Metadata> {
+    const { problem: fullSlug } = await params;
+    const slug = fullSlug.replace('-miramas', '');
+    const prob = PROBLEMATIQUES.find(p => p.slug === slug);
+    if (!prob) return { title: 'Motif non trouvé' };
+
+    const title = `${prob.title} à Miramas | Naturopathie & Solutions Naturelles`;
+    const description = `Accompagnement en naturopathie pour ${prob.title.toLowerCase()} à Miramas. Découvrez une méthode holistique et naturelle.`;
+    const canonicalUrl = `/problematiques/${fullSlug}`;
+
+    return {
+        title,
+        description,
+        openGraph: {
+            title,
+            description,
+            url: canonicalUrl,
+        },
+        alternates: {
+            canonical: canonicalUrl,
+        },
+    };
 }
 
 export default async function ProblemPage({ params }: { params: Promise<{ problem: string }> }) {

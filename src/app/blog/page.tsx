@@ -1,5 +1,14 @@
 import { BLOG_POSTS } from "@/lib/data";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Blog Naturopathie & Conseils Bien-être à Miramas | Inessence",
+    description: "Retrouvez tous nos articles et conseils en naturopathie : gestion du stress, troubles du sommeil, digestion, migraine et solutions naturelles.",
+    alternates: {
+        canonical: "/blog",
+    },
+};
 
 export default function BlogIndex() {
     return (

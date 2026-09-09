@@ -1,4 +1,13 @@
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Techniques de Naturopathie | Phytothérapie, Aromathérapie & Réflexologie",
+    description: "Découvrez les techniques de naturopathie proposées par Inessence à Miramas : phytothérapie, aromathérapie, gemmothérapie, réflexologie plantaire et gestion du stress.",
+    alternates: {
+        canonical: "/techniques",
+    },
+};
 
 export default function TechniquesPage() {
     const techniquesData = [

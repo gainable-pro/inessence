@@ -12,10 +12,10 @@ export function SchemaOrg({ type, data }: { type: 'LocalBusiness' | 'FAQPage' | 
                 "addressRegion": "Provence-Alpes-Côte d'Azur",
                 "addressCountry": "FR"
             },
-            "url": "https://inessence.fr",
+            "url": "https://www.inessencenaturopathe.com",
             "telephone": "+33000000000",
             "priceRange": "$$",
-            "image": "https://inessence.fr/logo.png"
+            "image": "https://www.inessencenaturopathe.com/images/logo-inessence.png"
         };
     }
 

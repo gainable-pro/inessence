@@ -1,5 +1,14 @@
 import Link from "next/link";
 import { PROBLEMATIQUES } from "@/lib/data";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Motifs de Consultation en Naturopathie à Miramas | Inessence",
+    description: "Stress, insomnie, digestion, rééquilibrage alimentaire, Fleurs de Bach ou réflexologie plantaire : découvrez quand et pourquoi consulter Inessence.",
+    alternates: {
+        canonical: "/problematiques",
+    },
+};
 
 export default function MotifsPage() {
     return (

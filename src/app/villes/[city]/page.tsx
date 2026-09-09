@@ -1,11 +1,35 @@
 import Link from "next/link";
 import { CITIES, slugify } from "@/lib/data";
 import { notFound } from "next/navigation";
+import { Metadata } from "next";
 
 export async function generateStaticParams() {
     return CITIES.map((city) => ({
         city: slugify(city),
     }));
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ city: string }> }): Promise<Metadata> {
+    const { city: citySlug } = await params;
+    const cityName = CITIES.find(c => slugify(c) === citySlug);
+    if (!cityName) return { title: 'Ville non trouvée' };
+
+    const title = `Naturopathe à ${cityName} | Consultation & Bilan Vitalité`;
+    const description = `Consultation de naturopathie à ${cityName} et dans ses environs (en cabinet ou visioconférence). Bilan de vitalité, gestion du stress, digestion et rééquilibrage alimentaire.`;
+    const canonicalUrl = `/villes/${citySlug}`;
+
+    return {
+        title,
+        description,
+        openGraph: {
+            title,
+            description,
+            url: canonicalUrl,
+        },
+        alternates: {
+            canonical: canonicalUrl,
+        },
+    };
 }
 
 export default async function CityPage({ params }: { params: Promise<{ city: string }> }) {

@@ -3,7 +3,7 @@ import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 
-const baseUrl = 'https://www.inessence-naturopathie.fr'; // Placeholder, replace with actual final domain
+const baseUrl = 'https://www.inessencenaturopathe.com';
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     description: "Consultation de naturopathie personnalisée à Miramas et en visio.",
   },
   alternates: {
-    canonical: baseUrl,
+    canonical: './',
   },
 };
 

@@ -49,7 +49,7 @@ export function Footer() {
 
                 <div style={{ borderTop: '1px solid rgba(0,0,0,0.05)', paddingTop: '30px', textAlign: 'center' }}>
                     <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '10px' }}>
-                        &copy; {new Date().getFullYear()} INESSENCE. Tous droits réservés.
+                        &copy; {new Date().getFullYear()} INESSENCE. Tous droits réservés. | Partenaire : <a href="https://www.gainable.fr" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline' }}>Gainable.fr</a>
                     </p>
                     <p style={{ fontSize: '0.7rem', color: 'var(--accent-gold)', maxWidth: '600px', margin: '0 auto' }}>
                         La naturopathie ne remplace pas un avis médical. Consultez toujours votre médecin pour toute question relative à votre santé.
