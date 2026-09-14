@@ -1,29 +1,60 @@
-export function SchemaOrg({ type, data }: { type: 'LocalBusiness' | 'FAQPage' | 'Practitioner', data: any }) {
-    let schema: any = {};
+interface FAQQuestion {
+    question: string;
+    answer: string;
+}
+
+interface LocalBusinessData {
+    city?: string;
+    description?: string;
+    url?: string;
+}
+
+interface FAQData {
+    questions: FAQQuestion[];
+}
+
+export function SchemaOrg({ 
+    type, 
+    data 
+}: { 
+    type: 'LocalBusiness' | 'FAQPage'; 
+    data: LocalBusinessData | FAQData;
+}) {
+    let schemaRecord: Record<string, unknown> = {};
 
     if (type === 'LocalBusiness') {
-        schema = {
+        const lbData = data as LocalBusinessData;
+        const cityName = lbData.city || "Miramas";
+        schemaRecord = {
             "@context": "https://schema.org",
             "@type": "HealthAndBeautyBusiness",
-            "name": "INESSENCE Naturopathie",
+            "name": `INESSENCE Naturopathe — ${cityName}`,
+            "description": lbData.description || `Cabinet de naturopathie et bilan de vitalité à ${cityName} et en visioconférence.`,
             "address": {
                 "@type": "PostalAddress",
-                "addressLocality": data.city || "Miramas",
-                "addressRegion": "Provence-Alpes-Côte d'Azur",
+                "streetAddress": "6 rue pierre tristani",
+                "addressLocality": cityName,
+                "postalCode": "13140",
+                "addressRegion": "Bouches-du-Rhône",
                 "addressCountry": "FR"
             },
-            "url": "https://www.inessencenaturopathe.com",
-            "telephone": "+33000000000",
-            "priceRange": "$$",
-            "image": "https://www.inessencenaturopathe.com/images/logo-inessence.png"
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 43.5817,
+                "longitude": 5.0022
+            },
+            "url": lbData.url || "https://www.inessencenaturopathe.com",
+            "priceRange": "€€",
+            "areaServed": [
+                "Miramas", "Istres", "Salon-de-Provence", "Aix-en-Provence", "Marseille", "Bouches-du-Rhône"
+            ]
         };
-    }
-
-    if (type === 'FAQPage') {
-        schema = {
+    } else if (type === 'FAQPage') {
+        const faqData = data as FAQData;
+        schemaRecord = {
             "@context": "https://schema.org",
             "@type": "FAQPage",
-            "mainEntity": data.questions.map((q: any) => ({
+            "mainEntity": faqData.questions.map((q) => ({
                 "@type": "Question",
                 "name": q.question,
                 "acceptedAnswer": {
@@ -37,7 +68,7 @@ export function SchemaOrg({ type, data }: { type: 'LocalBusiness' | 'FAQPage' | 
     return (
         <script
             type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaRecord) }}
         />
     );
 }

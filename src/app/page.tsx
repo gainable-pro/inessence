@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { CITIES, slugify } from "@/lib/data";
+import { SchemaOrg } from "@/components/seo/SchemaOrg";
 
 export default function Home() {
   const techniques = [
@@ -45,6 +46,7 @@ export default function Home() {
 
   return (
     <div className="animate-fade-in">
+      <SchemaOrg type="LocalBusiness" data={{ city: "Miramas", description: "Cabinet de naturopathie personnalisée à Miramas et en visioconférence." }} />
       {/* IMMERSIVE HERO SECTION */}
       <section style={{
         minHeight: '95vh',

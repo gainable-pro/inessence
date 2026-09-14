@@ -2,6 +2,7 @@ import Link from "next/link";
 import { CITIES, slugify } from "@/lib/data";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
+import { SchemaOrg } from "@/components/seo/SchemaOrg";
 
 export async function generateStaticParams() {
     return CITIES.map((city) => ({
@@ -45,8 +46,16 @@ export default async function CityPage({ params }: { params: Promise<{ city: str
         .sort(() => 0.5 - Math.random())
         .slice(0, 8);
 
+    const faqItems = [
+        { question: "Comment se déroule la première séance ?", answer: "La première séance dure environ 1h30. C'est un moment d'échange approfondi où nous parcourons vos antécédents, votre mode de vie et vos objectifs. J'établis ensuite votre Programme d'Hygiène de Vie (PHV)." },
+        { question: "Est-ce remboursé par la mutuelle ?", answer: "Bien que non prise en charge par la Sécurité Sociale, de plus en plus de mutuelles remboursent les consultations de naturopathie. Je vous invite à vous renseigner auprès de la vôtre." },
+        { question: "Où se situe le cabinet par rapport à " + cityName + " ?", answer: "Je vous accueille à Miramas ou je me déplace à votre domicile à " + cityName + ". La visioconférence est également une excellente option pour un suivi optimal sans déplacement." }
+    ];
+
     return (
         <article className="animate-fade-in" style={{ backgroundColor: 'var(--sable-warm)' }}>
+            <SchemaOrg type="LocalBusiness" data={{ city: cityName, description: `Naturopathe qualifiée à ${cityName} et en visioconférence.` }} />
+            <SchemaOrg type="FAQPage" data={{ questions: faqItems }} />
             {/* HEROS SECTION PREMIUM */}
             <section style={{
                 padding: '160px 0 100px',
@@ -140,14 +149,10 @@ export default async function CityPage({ params }: { params: Promise<{ city: str
                     </div>
 
                     <div style={{ display: 'grid', gap: '30px' }}>
-                        {[
-                            { q: "Comment se déroule la première séance ?", a: "La première séance dure environ 1h30. C'est un moment d'échange approfondi où nous parcourons vos antécédents, votre mode de vie et vos objectifs. J'établis ensuite votre Programme d'Hygiène de Vie (PHV)." },
-                            { q: "Est-ce remboursé par la mutuelle ?", a: "Bien que non prise en charge par la Sécurité Sociale, de plus en plus de mutuelles remboursent les consultations de naturopathie. Je vous invite à vous renseigner auprès de la vôtre." },
-                            { q: "Où se situe le cabinet par rapport à " + cityName + " ?", a: "Je vous accueille à Miramas ou je me déplace à votre domicile à " + cityName + ". La visioconférence est également une excellente option pour un suivi optimal sans déplacement." }
-                        ].map((faq, idx) => (
+                        {faqItems.map((faq, idx) => (
                             <div key={idx} style={{ padding: '40px', background: 'var(--bg-secondary)', borderRadius: '30px' }}>
-                                <h4 style={{ fontSize: '1.6rem', marginBottom: '15px', color: 'var(--sauge-dark)' }}>{faq.q}</h4>
-                                <p style={{ opacity: 0.9 }}>{faq.a}</p>
+                                <h4 style={{ fontSize: '1.6rem', marginBottom: '15px', color: 'var(--sauge-dark)' }}>{faq.question}</h4>
+                                <p style={{ opacity: 0.9 }}>{faq.answer}</p>
                             </div>
                         ))}
                     </div>
