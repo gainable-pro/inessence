@@ -489,9 +489,25 @@ export default function Home() {
           <div style={{ marginBottom: '40px' }}>
             <img src="/images/logo-inessence.png" alt="Logo" style={{ width: '150px', mixBlendMode: 'multiply' }} />
           </div>
-          <div style={{ marginBottom: '60px', display: 'flex', flexDirection: 'column', gap: '10px' }}>
+          <div style={{ marginBottom: '40px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
             <p style={{ fontSize: '1.4rem', color: 'var(--text-main)', fontWeight: 600 }}>6 rue pierre tristani, 13140 Miramas</p>
-            <p style={{ fontSize: '1.2rem', color: 'var(--text-muted)' }}>Cabinet & Visioconférence</p>
+            <p style={{ fontSize: '1.05rem', color: 'var(--sauge-dark)', fontWeight: 500 }}>
+              Lun, Mar, Jeu : 9h00–16h00 | Ven : 9h00–19h00 <br />
+              <span style={{ fontSize: '0.9rem', color: 'var(--text-muted)', fontStyle: 'italic' }}>Fermé mer, sam, dim et jours fériés</span>
+            </p>
+            <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)' }}>Cabinet & Visioconférence</p>
+            <div style={{ marginTop: '16px' }}>
+              <a 
+                href="https://www.medoucine.com/consultation/miramas/ines-fernandez/23273?addressId=86159&utm_source=google&utm_medium=organic&utm_campaign=gbp-partoo&utm_content=reserver-en-ligne"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-premium"
+                style={{ padding: '14px 32px', borderRadius: '100px', fontSize: '0.95rem', display: 'inline-flex', alignItems: 'center', gap: '8px' }}
+              >
+                <span>📅 Prendre RDV sur Médoucine</span>
+                <span>→</span>
+              </a>
+            </div>
           </div>
           <p style={{ fontSize: '1rem', color: 'var(--text-muted)', maxWidth: '1000px', margin: '0 auto', lineHeight: 2, opacity: 0.6, fontWeight: 300 }}>
             <strong>Note importante :</strong> La naturopathie est un ensemble de méthodes complémentaires qui visent à favoriser le bien-être physique, mental et émotionnel en utilisant des ressources naturelles. Elle ne remplace en aucun cas un avis médical, un diagnostic ou un traitement prescrit par un professionnel de santé.

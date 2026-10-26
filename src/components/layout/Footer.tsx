@@ -12,16 +12,31 @@ export function Footer() {
                         <div style={{ width: '80px', height: '80px', marginBottom: '24px' }}>
                             <img src="/images/logo-inessence.png" alt="Logo" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                         </div>
-                        <p style={{ fontSize: '0.9rem', color: 'var(--text-main)', fontWeight: 600, marginBottom: '8px' }}>
+                        <p style={{ fontSize: '0.9rem', color: 'var(--text-main)', fontWeight: 600, marginBottom: '6px' }}>
                             6 rue pierre tristani, 13140 Miramas
                         </p>
-                        <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', lineHeight: 1.6, fontWeight: 300, marginBottom: '16px' }}>
-                            Accompagnement holistique pour une santé vibrante. <br />
+                        <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)', lineHeight: 1.5, marginBottom: '12px' }}>
+                            <p style={{ fontWeight: 600, color: 'var(--sauge-dark)', margin: '0 0 2px' }}>Horaires du cabinet :</p>
+                            <p style={{ margin: 0 }}>Lun, Mar & Jeu : 9h–16h</p>
+                            <p style={{ margin: 0 }}>Vendredi : 9h–19h</p>
+                            <p style={{ margin: '2px 0 0', fontStyle: 'italic', opacity: 0.8 }}>Fermé mer, sam, dim & fériés</p>
+                        </div>
+                        <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', lineHeight: 1.6, fontWeight: 300, marginBottom: '14px' }}>
                             Cabinet & Visioconférence.
                         </p>
-                        <a href="tel:+33761211132" style={{ fontSize: '1.1rem', fontWeight: 600, color: 'var(--gold-warm)', textDecoration: 'none' }}>
-                            07 61 21 11 32
-                        </a>
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                            <a href="tel:+33761211132" style={{ fontSize: '1.05rem', fontWeight: 600, color: 'var(--gold-warm)', textDecoration: 'none' }}>
+                                📞 07 61 21 11 32
+                            </a>
+                            <a 
+                                href="https://www.medoucine.com/consultation/miramas/ines-fernandez/23273?addressId=86159&utm_source=google&utm_medium=organic&utm_campaign=gbp-partoo&utm_content=reserver-en-ligne" 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                style={{ fontSize: '0.85rem', color: 'var(--sauge-dark)', fontWeight: 600, textDecoration: 'underline' }}
+                            >
+                                📅 Réserver sur Médoucine
+                            </a>
+                        </div>
                     </div>
 
                     <div>

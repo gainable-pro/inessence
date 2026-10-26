@@ -44,7 +44,22 @@ export function SchemaOrg({
                 "longitude": 5.0022
             },
             "url": lbData.url || "https://www.inessencenaturopathe.com",
+            "telephone": "+33761211132",
             "priceRange": "€€",
+            "openingHoursSpecification": [
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": ["Monday", "Tuesday", "Thursday"],
+                    "opens": "09:00",
+                    "closes": "16:00"
+                },
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "Friday",
+                    "opens": "09:00",
+                    "closes": "19:00"
+                }
+            ],
             "areaServed": [
                 "Miramas", "Istres", "Salon-de-Provence", "Aix-en-Provence", "Marseille", "Bouches-du-Rhône"
             ]
