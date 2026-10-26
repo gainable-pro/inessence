@@ -12,7 +12,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     if (!post) return { title: 'Article non trouvé' };
 
     const coverBlock = post.content_blocks?.find((b: any) => b.type === 'image' && b.url);
-    const canonicalUrl = `/articles/${resolvedParams.slug}`;
+    const canonicalUrl = `https://www.inessencenaturopathe.com/articles/${resolvedParams.slug}`;
     
     return {
         title: post.meta_title || post.title,

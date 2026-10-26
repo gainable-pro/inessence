@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     title: "Blog Naturopathie & Conseils Bien-être à Miramas | Inessence",
     description: "Retrouvez tous nos articles et conseils en naturopathie : gestion du stress, troubles du sommeil, digestion, migraine et solutions naturelles.",
     alternates: {
-        canonical: "/blog",
+        canonical: "https://www.inessencenaturopathe.com/blog",
     },
 };
 

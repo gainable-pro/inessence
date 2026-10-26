@@ -4,7 +4,7 @@ export const metadata: Metadata = {
     title: "Mentions Légales | Inessence Naturopathie",
     description: "Consultez les mentions légales du site Inessence Naturopathie à Miramas.",
     alternates: {
-        canonical: "/mentions-legales",
+        canonical: "https://www.inessencenaturopathe.com/mentions-legales",
     },
 };
 

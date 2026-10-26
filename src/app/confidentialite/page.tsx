@@ -4,7 +4,7 @@ export const metadata: Metadata = {
     title: "Politique de Confidentialité | Inessence Naturopathie",
     description: "Consultez la politique de confidentialité et de gestion des données personnelles du site Inessence.",
     alternates: {
-        canonical: "/confidentialite",
+        canonical: "https://www.inessencenaturopathe.com/confidentialite",
     },
 };
 

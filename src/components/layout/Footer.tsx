@@ -53,11 +53,15 @@ export function Footer() {
                     </div>
 
                     <div>
-                        <h4 style={{ fontSize: '0.9rem', marginBottom: '20px', letterSpacing: '1px' }}>LIENS UTILES</h4>
+                        <h4 style={{ fontSize: '0.9rem', marginBottom: '20px', letterSpacing: '1px' }}>EXPLORER</h4>
                         <ul style={{ listStyle: 'none', fontSize: '0.85rem', display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                            <li><Link href="/articles" className="hover-text-sauge" style={{ fontWeight: 600, color: 'var(--sauge-dark)' }}>Articles</Link></li>
-                            <li><Link href="/mentions-legales" className="hover-text-sauge">Mentions Légales</Link></li>
-                            <li><Link href="/confidentialite" className="hover-text-sauge">Confidentialité</Link></li>
+                            <li><Link href="/prestations" className="hover-text-sauge">Prestations & Tarifs</Link></li>
+                            <li><Link href="/problematiques" className="hover-text-sauge">Motifs de Consultation</Link></li>
+                            <li><Link href="/techniques" className="hover-text-sauge">Techniques Naturelles</Link></li>
+                            <li><Link href="/blog" className="hover-text-sauge">Le Blog Naturo</Link></li>
+                            <li><Link href="/articles" className="hover-text-sauge">Articles & Dossiers</Link></li>
+                            <li><Link href="/mentions-legales" className="hover-text-sauge" style={{ opacity: 0.7 }}>Mentions Légales</Link></li>
+                            <li><Link href="/confidentialite" className="hover-text-sauge" style={{ opacity: 0.7 }}>Confidentialité</Link></li>
                         </ul>
                     </div>
                 </div>

@@ -25,9 +25,6 @@ export const metadata: Metadata = {
     title: "INESSENCE | Naturopathe à Miramas",
     description: "Consultation de naturopathie personnalisée à Miramas et en visio.",
   },
-  alternates: {
-    canonical: './',
-  },
 };
 
 export default function RootLayout({

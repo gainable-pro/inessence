@@ -1,5 +1,14 @@
 import Link from "next/link";
+import { Metadata } from "next";
 import { createClient } from '@/utils/supabase/server';
+
+export const metadata: Metadata = {
+    title: "Articles & Conseils Santé Naturelle | Inessence Miramas",
+    description: "Consultez tous nos articles et dossiers santé : naturopathie, alimentation vivante, phytothérapie, gestion des émotions et vitalité au quotidien.",
+    alternates: {
+        canonical: "https://www.inessencenaturopathe.com/articles",
+    },
+};
 
 export const revalidate = 60 // Revalidation par minute pour de bonnes perfs SEO
 

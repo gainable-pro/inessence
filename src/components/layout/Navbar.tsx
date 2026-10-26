@@ -18,6 +18,7 @@ export function Navbar() {
         { href: "/", label: "ACCUEIL" },
         { href: "/consultations", label: "CONSULTATIONS" },
         { href: "/prestations", label: "PRESTATIONS" },
+        { href: "/techniques", label: "TECHNIQUES" },
         { href: "/blog", label: "BLOG" },
         { href: "/contact", label: "CONTACT" }
     ];

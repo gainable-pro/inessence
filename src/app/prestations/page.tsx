@@ -5,7 +5,7 @@ export const metadata: Metadata = {
     title: "Prestations & Tarifs Naturopathie, Massages et Soins à Miramas | Inessence",
     description: "Consultez les prestations et tarifs d'Inessence à Miramas : bilan de vitalité, drainage lymphatique brésilien, Kobido, massages bien-être et soins énergétiques.",
     alternates: {
-        canonical: "/prestations",
+        canonical: "https://www.inessencenaturopathe.com/prestations",
     },
 };
 

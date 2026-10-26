@@ -5,7 +5,7 @@ export const metadata: Metadata = {
     title: "Consultations de Naturopathie à Miramas | Inessence",
     description: "Découvrez le déroulement d'une consultation de naturopathie avec Inessence : bilan de vitalité, programme d'hygiène de vie sur-mesure à Miramas ou en visio.",
     alternates: {
-        canonical: "/consultations",
+        canonical: "https://www.inessencenaturopathe.com/consultations",
     },
 };
 

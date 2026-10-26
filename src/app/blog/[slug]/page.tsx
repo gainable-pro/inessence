@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     const post = BLOG_POSTS.find((p) => p.slug === slug);
     if (!post) return { title: 'Article non trouvé' };
 
-    const canonicalUrl = `/blog/${slug}`;
+    const canonicalUrl = `https://www.inessencenaturopathe.com/blog/${slug}`;
 
     return {
         title: post.metaTitle,

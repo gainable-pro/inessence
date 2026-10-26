@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: { params: Promise<{ problem: 
 
     const title = `${prob.title} à Miramas | Naturopathie & Solutions Naturelles`;
     const description = `Accompagnement en naturopathie pour ${prob.title.toLowerCase()} à Miramas. Découvrez une méthode holistique et naturelle.`;
-    const canonicalUrl = `/problematiques/${fullSlug}`;
+    const canonicalUrl = `https://www.inessencenaturopathe.com/problematiques/${fullSlug}`;
 
     return {
         title,
@@ -159,13 +159,26 @@ export default async function ProblemPage({ params }: { params: Promise<{ proble
             </section>
 
             {/* CTA Section */}
-            <section style={{ padding: '140px 0', textAlign: 'center' }}>
-                <div className="container">
-                    <h2 className="font-serif typewriter" style={{ marginBottom: '40px' }}>Reprenez le pouvoir sur votre <span className="italic text-gold">BIEN-ÊTRE</span></h2>
-                    <p style={{ maxWidth: '600px', margin: '0 auto 56px', fontSize: '1.2rem', color: 'var(--text-muted)' }}>
-                        Je vous accompagne à Miramas ou en ligne pour construire ensemble votre nouvelle hygiène de vie.
+            <section style={{ padding: '120px 0', textAlign: 'center', backgroundColor: 'var(--white)' }}>
+                <div className="container" style={{ maxWidth: '850px' }}>
+                    <h2 className="font-serif typewriter" style={{ marginBottom: '32px', fontSize: '3rem' }}>Reprenez le pouvoir sur votre <span className="italic text-gold">BIEN-ÊTRE</span></h2>
+                    <p style={{ maxWidth: '650px', margin: '0 auto 40px', fontSize: '1.2rem', color: 'var(--text-muted)' }}>
+                        Je vous accompagne au cabinet à Miramas ou en visioconférence pour soulager vos {prob.title.toLowerCase()} et construire ensemble votre nouvel équilibre.
                     </p>
-                    <Link href="/contact" className="btn-premium" style={{ padding: '24px 64px', fontSize: '1.2rem' }}>DÉBUTER MA DEMANDE</Link>
+                    <div style={{ display: 'flex', justifyContent: 'center', gap: '16px', flexWrap: 'wrap' }}>
+                        <a 
+                            href="https://www.medoucine.com/consultation/miramas/ines-fernandez/23273?addressId=86159&utm_source=google&utm_medium=organic&utm_campaign=gbp-partoo&utm_content=reserver-en-ligne"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="btn-premium"
+                            style={{ padding: '18px 44px', fontSize: '1.05rem', borderRadius: '100px' }}
+                        >
+                            📅 RÉSERVER MA CONSULTATION EN LIGNE →
+                        </a>
+                        <Link href="/prestations" className="btn-outline" style={{ padding: '18px 44px', fontSize: '1.05rem', borderRadius: '100px', display: 'inline-flex', alignItems: 'center' }}>
+                            VOIR LES TARIFS
+                        </Link>
+                    </div>
                 </div>
             </section>
         </article>

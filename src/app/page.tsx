@@ -1,6 +1,20 @@
 import Link from "next/link";
+import { Metadata } from "next";
 import { CITIES, slugify } from "@/lib/data";
 import { SchemaOrg } from "@/components/seo/SchemaOrg";
+
+export const metadata: Metadata = {
+  title: "Naturopathe à Miramas | Drainage Brésilien, Kobido & Bien-Être | Inessence",
+  description: "Cabinet de naturopathie, drainage lymphatique brésilien, massage Kobido et réflexologie plantaire à Miramas (13140). Bilan de vitalité sur-mesure. Prenez rendez-vous.",
+  alternates: {
+    canonical: "https://www.inessencenaturopathe.com",
+  },
+  openGraph: {
+    title: "INESSENCE | Naturopathe à Miramas & En Ligne",
+    description: "Cabinet de naturopathie, drainage lymphatique brésilien, Kobido et réflexologie plantaire à Miramas.",
+    url: "https://www.inessencenaturopathe.com",
+  },
+};
 
 export default function Home() {
   const techniques = [
